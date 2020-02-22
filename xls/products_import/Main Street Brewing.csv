@@ -1,0 +1,66 @@
+product,sku,batch_id,batch_name,upc,litres_per_bottle,bottles_per_skid,bottles_per_case,alcohol_percentage,litter_rate,mfr_price,rtl_price,sp_price,ws_price,category_1,category_2,active
+Checkpoint Charlie Berliner Weisse,241281,,,0,0.19,1,1,0.05,0.3,0.69,0.69,0,0,Beer,Columbia,f
+Double Ipa Anniversary Ale,266692,,,0,0,1,12,0.05,0,0.04,0.04,0,0,Beer,Beer,f
+Checkpoint Charlie Berliner Weisse,267963,,,0,0,1,12,0.05,0,0.04,0.05,0,0,Beer,Packaged,f
+Company  L Growler,404418,,,0,0.01,1,1,0.05,0,0,0,0,0,Beer,Packaged,t
+Company  Up Jumped The Devil Belgium Tripel,429670,T,,0,0.19,1,1,0.05,0.3,0.92,0.92,0,0,Beer,Bc,t
+Westminster Brown Ale,438937,,,808755011353,6.5,1,12,0.06,10,0.04,0.04,0,0,Beer,Packaged,f
+Belgian Bonsai,439513,,,0,0.5,1,1,0.05,0.3,1.82,1.82,0,0,Beer,,f
+Company  Hare And The Dog Bitter,442798,,,0,0.19,1,1,0.06,0.3,0.75,0.75,0,0,Beer,Bc,t
+Company  Hare And The Dog Bitter,450346,,,0,0.5,1,1,0.06,0.3,1.85,1.85,0,0,Beer,Draught,t
+Company  Hail Mary Wit,453381,,,0,0.19,1,1,0.06,0.3,0.75,0.75,0,0,Beer,Bc,t
+Company  Session Ipa  Do Not Use,464123,,,0,0.19,1,1,0.06,0.3,0.75,0.75,0,0,Beer,Bc,t
+Naked Fox Ipa,4929,,,808755011346,0.19,1,1,0.01,0.3,0.69,0.69,0,0,Beer,,f
+Pilsner,499285,,,1,0.58,1,1,0.01,0.3,1.73,1.73,0,0,Beer,,f
+Old Knights Pale Ale,499285,OK,,1,0.58,1,1,0.01,0.3,1.73,1.73,0,0,Beer,,f
+Saison 7,499483,,,0,0,1,12,0.06,0,0.04,0.04,0,0,Beer,Bc,f
+Company  Beltline White Ipa,503623,B,,0,0.19,1,1,0.05,0.3,0.82,0.82,0,0,Beer,Bc,t
+By Hook Bohemian Pilsner,503623,BH,,1,0.19,1,1,0.01,0.3,0.82,0.82,0,0,Beer,,t
+Company  Fernweh Kolsch,503623,K,,0,0.19,1,1,0.05,0.3,0.82,0.82,0,0,Beer,Bc,t
+Session Ipa,511824,,,808755012152,0,1,12,0.04,0,0.05,0.05,0,0,Beer,Packaged,f
+Company  Pilsner,518159,,,0,0.5,1,1,0.05,0.3,1.85,1.85,0,0,Beer,Draught,t
+By Hook Bohemian Pilsner,518159,BH,,808755011346,0.5,1,1,0.01,0.3,1.64,1.64,0,0,Beer,,f
+Company  Session Ipa,543686,,,0,0.58,1,1,0.04,0.3,2.17,2.17,0,0,Beer,Draught,t
+Company Seasonal Cask,546358,,,0,0.4,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+Company  Session Ipa Cans,546549,,,0,0,4,24,0.06,0,0.11,0.11,0,0,Beer,Bc,f
+Naked Fox Ipa,563643,,,1,0.5,1,1,0.01,0.3,1.64,1.64,0,0,Beer,,f
+Old Knights Pale Ale,567255,,,1,0.5,1,1,0.11,0.3,1.64,1.64,0,0,Beer,,f
+Westminster Brown Ale,59626,,,0,0.58,1,1,0.06,0.3,2.17,2.17,0,0,Beer,Draught,f
+Scotch Ale,609750,,,0,0.58,1,1,0.06,0.3,2.17,2.17,0,0,Beer,Bc,f
+Company  Pilsner,613521,,,0,0.58,1,1,0.05,0.3,1.73,1.73,0,0,Beer,Draught,t
+Company Growler,618975,,,0,0.01,1,1,0.05,0,0,0,0,0,Beer,Packaged,t
+Westminster Brown Ale,619825,BA,,1,0.19,1,1,0.01,0.3,0.69,0.69,0,0,Beer,,t
+Pilsner,619825,PIL,,1,0.19,1,1,0.01,0.3,0.69,0.69,0,0,Beer,,t
+Saison 7,619825,SA,,1,0.19,1,1,0.01,0.3,0.69,0.69,0,0,Beer,,t
+Half Time Session Ipa,619825,SES,,1,0.19,1,1,0.01,0.3,0.69,0.69,0,0,Beer,,f
+Hare And The Dog Bitter,642561,,,0,0.58,1,1,0.05,0.3,2.17,2.17,0,0,Beer,Draught,f
+Westminster Brown Ale,657510,BA,,1,0.5,1,1,0.01,0.3,1.72,1.72,0,0,Beer,,t
+Nightingale,657510,NGALE,,0,0.5,1,1,0,0.3,1.72,1.72,0,0,Beer,,f
+Pilsner,657510,PIL,,0,0.5,1,1,0,0.3,1.72,1.72,0,0,Beer,,t
+Saison 7,657510,SA,,1,0.5,1,1,0.01,0.3,1.72,1.72,0,0,Beer,,t
+Half Time Session Ipa,657510,SES,,1,0.5,1,1,0.01,0.3,1.72,1.72,0,0,Beer,,f
+Belgian Bonsai,662213,,,1,0.19,1,1,0.01,0.3,0.79,0.79,0,0,Beer,,f
+Company  Seasonal Berliner Wiesse,674069,,,0,0.58,1,1,0.05,0.3,2.17,2.17,0,0,Beer,Draught,t
+Company  Harvest Fresh Hop,679035,,,808755011360,0,1,12,0.05,0,0.05,0.05,0,0,Beer,Packaged,t
+Company  Westminster Brown Ale,749127,,,0,0.5,1,1,0.06,0.3,1.64,1.64,0,0,Beer,Draught,f
+Hail Mary Wit,762005,,,0,0,1,12,0.06,0,0.05,0.05,0,0,Beer,Bc,f
+Belgian Bonsai,762021,,,808755012183,0,1,12,0.06,0,0.05,0.05,0,0,Beer,Packaged,f
+Company  Stag  Pheasant Imperial Stout,770222,,,808755012343,0,1,12,0.09,0,0.06,0.06,0,0,Beer,Packaged,t
+Company  Saison 7,773606,,,0,0.5,1,1,0.06,0.3,1.64,1.64,0,0,Beer,Bc,f
+Company  Up Jumped The Devil Belgium Tripel,773606,T,,0,0.5,1,1,0.06,0.3,2.05,2.05,0,0,Beer,Bc,t
+Company  Westminster Brown Ale,791293,,,0,0.19,1,1,0.06,0.3,0.69,0.69,0,0,Beer,Draught,f
+Company  Red Back Ale,82560,,,808755012350,0,1,12,0.07,0,0.05,0.05,0,0,Beer,Packaged,t
+By Hook Bohemian Pilsner,82560,BH,,808755011346,6.5,1,12,0.01,0.1,0.04,0.04,0,0,Beer,,f
+Company  Saison 7,845529,,,0,0.19,1,1,0.06,0.3,0.69,0.69,0,0,Beer,Bc,f
+Company   Old Knights Pale Ale,846584,,,808755011346,6.5,1,12,0.05,0.01,0.04,0.04,0,0,Beer,,f
+Company  Hare And The Dog Bitter,848598,,,0,0,1,12,0.06,0,0.05,0.05,0,0,Beer,Bc,t
+Company  Saison 7,848598,SA,,1,0,1,12,0.01,0.1,0.04,0.04,0,0,Beer,,t
+Pilsner Cans,85258,,,0,0,4,24,0.06,0,0.12,0.12,0,0,Beer,Bc,f
+Company  Session Ipa  Do Not Use,854349,,,0,0.5,1,1,0.04,0.3,1.85,1.85,0,0,Beer,Draught,t
+Naked Fox Ipa,878330,,,1,6.5,1,12,0.06,0.1,0.04,0.04,0,0,Beer,,f
+Company   Beltline White Ipa,883561,B,,0,0.5,1,1,0.04,0.3,1.86,1.86,0,0,Beer,Bc,t
+Company   Fernweh Kolsch,883561,K,,0,0.5,1,1,0.04,0.3,1.86,1.86,0,0,Beer,Bc,t
+Company  Southern Hop Ipa,884643,,,808755012176,0,1,12,0.06,0,0.05,0.05,0,0,Beer,Packaged,t
+Old Knights Pale Ale,885137,,,1,0.19,1,1,0.01,0.3,0.69,0.69,0,0,Beer,,f
+Company  Pilsner,891184,,,0,0.19,1,1,0.06,0.3,0.69,0.69,0,0,Beer,Draught,f
+Pilsner Bomber,962993,,,808755011346,0,1,12,0.05,0,0.04,0.04,0,0,Beer,Packaged,f

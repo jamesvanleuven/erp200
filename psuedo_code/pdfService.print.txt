@@ -1,0 +1,14 @@
+/*****************************
+ * AUTHOR: JAMES VAN LEUVEN
+ * DATE: 2017-09-17 02:49:00 AM
+ * REWRITE MODULE PRINT FUNCTION
+ * FILE: ./app/scripts/services/events/pdfServices.js
+ * LINE: 374 (starting)
+ */
+ 
+ 1: test for company_logo
+    true: base64 data conversion
+    false: pull the dt logo | save it to the profile.root | base64 data conversion
+ 2: build pdf print document
+ 3: call factories for element formatting
+ 4: print the doc

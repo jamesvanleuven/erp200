@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row-fluid hide">
+        <div class="col-md-12">
+            <ol class="breadcrumb">
+                <li ng-repeat="route in currentModule.route.visits">
+                    <a tabindex="0" 
+                       class="text-capitalize"
+                       role="button" 
+                       data-toggle="popover" 
+                       data-placement="bottom"
+                       data-trigger="focus" 
+                       title="{{ route.name }}" 
+                       data-ng-bind="route.name"
+                       data-content="{{ route.location.address }}"></a>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="row-fluid">
+            <iframe src="https://app.routific.com/?u=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1NTg0NTIyYmEyNTRlOTEwMDBjYzE2ODIiLCJpYXQiOjE0NzgzMTE3Nzh9.H-4TrNUoXE1bY8Pl-8i9y0TPyHgzGl7ow39iYtEms8A" class="widget-iframe"></iframe>
+    </div>
+</div>
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAPIUx-zDa8R6VwyL8amOaa2-IkxuoVnEM"></script>

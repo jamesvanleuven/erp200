@@ -1,0 +1,56 @@
+<div class="row">
+    <!-- NOTES -->
+    <div class="col-md-7">
+        <div class="clearfix underline">
+            <div class="pull-right">
+                <button class="btn btn-xs" 
+                        data-note="-1" 
+                        data-ng-click="showNote(-1)"><small>New Note</small></button></div>
+            <div class="pull-left"><label class="note-label">Notes</label></div>
+            <div data-ng-include="'views/modules/_partials/_transactions/_widgets/_addTransferNote.html'"></div>
+        </div>
+        <br/>
+        <div id="notesFrame">
+            <div id="noteContainer" data-ng-repeat="notes in newTransaction.notes.value">
+                <div data-ng-if="notes.type.admin == true && $root.credentials.group_id == 1">
+                    <br />
+                    <div class="clearfix author issues">
+                        <div class="pull-right note">
+                            {{notes.created | date:'MM/dd/yyyy @ h:mm:ss a'}} 
+                            &nbsp;<button class="link author" data-ng-click="showNote($index)">
+                            <i class="fa fa-reply fa-1x" title="reply"></i> Reply</button>
+                        </div>
+                        <div class="pull-left note">{{ notes.author.FullName }}</div>
+                    </div>
+                    <p class="note" data-ng-bind-html="notes.details"/>
+                    <blockquote data-ng-repeat="note in notes.comments">
+                        <div class="clearfix author underline">
+                            <div class="pull-right comment">{{note.created | date:'MM/dd/yyyy @ h:mm:ss a'}}&nbsp;</div>
+                            <div class="pull-left comment">{{ note.author.FullName }}</div>
+                        </div>
+                        <p class="comment" data-ng-bind-html="note.details"/>
+                    </blockquote>
+                </div>
+                <div data-ng-if="notes.type.admin != true">
+                    <br />
+                    <div class="clearfix author underline">
+                        <div class="pull-right note">
+                            {{notes.created | date:'MM/dd/yyyy @ h:mm:ss a'}} 
+                            &nbsp;<button class="link author" data-ng-click="showNote($index)">
+                            <i class="fa fa-reply fa-1x" title="reply"></i> Reply</button>
+                        </div>
+                        <div class="pull-left note">{{ notes.author.FullName }}</div>
+                    </div>
+                    <p class="note" data-ng-bind-html="notes.details"/>
+                    <blockquote data-ng-repeat="note in notes.comments">
+                        <div class="clearfix author underline">
+                            <div class="pull-right comment">{{note.created | date:'MM/dd/yyyy @ h:mm:ss a'}}&nbsp;</div>
+                            <div class="pull-left comment">{{ note.author.FullName }}</div>
+                        </div>
+                        <p class="comment" data-ng-bind-html="note.details"/>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

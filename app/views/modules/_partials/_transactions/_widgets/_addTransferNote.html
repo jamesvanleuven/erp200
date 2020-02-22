@@ -1,0 +1,24 @@
+                <div class="input-group" data-ng-show="visible" style="margin: 5px auto;padding: 5px">
+                    <div class="clearfix">
+                        <div class="input-group" data-ng-hide="newTransaction.transfer_type.selected.id === 3">
+                            <span class="input-group-addon input-sm">Note Assignment</span>
+                            <select class="form-control input-sm" 
+                                    name="note_type" 
+                                    data-ng-init="newNote.type" 
+                                    data-ng-model="newNote.type" 
+                                    data-ng-options="opt as opt.value for opt in $root.assets.transfers.note_types" next-on-enter/>
+                            <br />
+                        </div>
+                        <textarea class="note-details form-control" 
+                                  style="width: 658px; height: 100px;" 
+                                  data-ng-model="newNote.details" next-on-enter></textarea>
+                        <div class="pull-right" style="margin-top: 5px;">
+                            <button next-on-enter class="btn btn-default btn-xs" data-ng-click="closeNote()">
+                                <i class="fa fa-times"></i> Cancel
+                            </button>
+                            <button next-on-enter class="btn btn-primary btn-xs" data-ng-click="saveNote()">
+                                <i class="fa fa-save"></i> Save
+                            </button>
+                        </div>
+                    </div>
+                </div>

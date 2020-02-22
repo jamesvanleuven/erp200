@@ -1,0 +1,11 @@
+# ignore logFiles
+*.log
+
+# IGNORE NODE MODULES
+node_modules/
+bower_components/
+
+# IGNORE ALL JSON PACKAGE FILES
+*.json
+*.lock
+*.config.js

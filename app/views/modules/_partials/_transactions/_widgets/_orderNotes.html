@@ -1,0 +1,96 @@
+<div data-ng-init="$root.addNewNote">
+    
+    <div data-ng-show="$root.addNewNote != true" class="col-xs-12 clearfix">
+        <div class="clearfix">
+            <button next-on-enter class="btn btn-xs button-primary" data-ng-click="addNoteForm(-1)">Add Note</button>
+            <!-- NOTES -->
+            <ul class="list-group scroll-notes">
+
+                <!-- ADMIN VIEWABLE NOTES -->
+                <li class="list-group-item" 
+                    data-ng-repeat="notes in newTransaction.notes.value" 
+                    data-ng-show="notes.type.admin = 'true' && $root.credentials.group_id == 1">
+                    <h4 class="list-group-item-heading">
+                        <small>
+                            Created: {{notes.created | date:'MM/dd/yyyy @ h:mm:ss a'}} | 
+                            Author: {{notes.author.FullName}}<br/> 
+                            Reason : {{notes.type.value}} |
+                            Tags: <span data-ng-repeat="tag in notes.tags">
+                            <span class="label label-info" style="margin: 3px auto">{{tag.text}}</span>
+                            </span>
+                        </small>
+                    </h4>
+                    <p>{{notes.details}}</p>
+                </li>
+                <!-- // -->
+
+                <!-- USER VIEWABLE NOTES -->
+                <li class="list-group-item" 
+                    data-ng-repeat="notes in newTransaction.notes.value" 
+                    data-ng-show="notes.type.admin = 'false' && $root.credentials.group_id !== 1">
+                    <h4 class="list-group-item-heading">
+                        <small>
+                            Created: {{notes.created | date:'MM/dd/yyyy @ h:mm:ss a'}} | 
+                            Author: {{notes.author.FullName}}<br/> 
+                            Reason : {{notes.type.value}} |
+                            Tags: <span data-ng-repeat="tag in notes.tags">
+                            <span class="label label-info" style="margin: 3px auto">{{tag.text}}</span>
+                            </span>
+                        </small>
+                    </h4>
+                    <p>{{notes.details}}</p>
+                </li>
+                <!-- // -->
+
+            </ul>
+        </div>
+    </div>
+
+    <div data-ng-show="$root.addNewNote != false" class="col-xs-12 clearfix">
+        <form name="noteForm">
+            <div class="form-group">
+                <label for="note_type">Type: </label>
+                <!-- SYSTEM ADMIN GROUP -->
+                <select class="form-control input-sm" 
+                        id="note_type"
+                        name="note_type" 
+                        data-ng-model="newNote.type" 
+                        data-ng-show="$root.credentials.group_id == 1"
+                        data-ng-options="opt as opt.value for opt in $root.assets.orders.note_types | filter: opt.admin = true"/>
+                <!-- USER GROUP -->
+                <select class="form-control input-sm" 
+                        id="note_type"
+                        name="note_type" 
+                        data-ng-model="newNote.type" 
+                        data-ng-show="$root.credentials.group_id != 1"
+                        data-ng-options="opt as opt.value for opt in $root.assets.orders.note_types | filter: opt.admin = false"/>
+                
+            </div>
+
+            <!-- <div class="form-group">
+                <label for="tags">Tags: </label>
+                <tags-input id="tags" data-ng-model="newNote.tags" class="ti-input-md"/>
+            </div> -->
+
+            <div class="form-group">
+                <label for="details">Details: </label>
+                <textarea id="details" 
+                          class="form-control" 
+                          cols="3" 
+                          style="margin: 5px auto;" 
+                          data-ng-model="newNote.details"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-default btn-xs" data-ng-click="hideNote()">
+                    <i class="fa fa-times fa-lg"></i> <small>Exit</small></button>
+                <button class="btn btn-primary btn-xs" 
+                        data-ng-disabled="!noteForm.$dirty" 
+                        data-ng-click="saveNote()">
+                    <i class="fa fa-save fa-lg"></i> <small>Attach</small></button>
+            </div>
+        </form>
+    </div>
+    <!-- // -->
+    
+</div>

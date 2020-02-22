@@ -1,0 +1,95 @@
+    <header class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle" style="background-color: #98978B;" type="button"
+                        data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle Menu</span>
+                    <span class="fa fa-ellipsis-v"></span>
+                </button>
+                <a href="/#!/" class="navbar-brand"><img id="navlogo" src="images/nav-logo.png"/></a>
+            </div>
+            <!-- navigationModules -->
+            <nav class="nav navbar-collapse collapse" role="navigation">
+
+                <!-- angular repeater for navigationModules -->
+                <ul class="nav navbar-nav" data-ng-init="$root.modules">
+                    <li class="animate-repeat" 
+                        data-ng-repeat="items in $root.modules" 
+                        data-ng-class='{active:isActive("/{{items.module | lowercase }}")}'>
+                        <a id="{{item.id}}" data-ng-href="/#!/{{ items.module | lowercase }}">
+                            <small>
+                                <i class="{{items.ico}}"></i>&nbsp;<span data-ng-bind="items.module"/>
+                            </small></a>
+                    </li>
+                    <li class="divider"></li>
+                </ul>
+                <!-- /end navigationModules/ -->
+                
+                <!-- profile navigationMenu -->
+                <ul class="nav navbar-nav navbar-right" style="padding-right: 10px;">
+                    <li>
+                        <span style="position: relative; margin-right: 15px; top: 15px; display: block;">
+                            <select id="location"
+                                    name="location"
+                                    class="form-control input-sm" 
+                                    data-ng-model="currentModule.location"
+                                    data-ng-options="w as w.value for w in $root.locations track by w.id"
+                                    data-ng-change="changeLocation();">
+                            </select>
+                        </span>
+                    </li>
+                    <li class="dropdown" data-id="systemModules"
+                        data-ng-mouseenter="buttonOptions($event);" 
+                        data-ng-mouseleave=" buttonOptions($event);">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true"><small>
+                            <i class="fa fa-male"></i>&nbsp;<span data-ng-bind="$root.profile.Name.First"></span>&nbsp;
+                            <i class="fa fa-caret-down"></i>
+                        </small></a>
+                        <ul id="systemModules" class="dropdown-menu">
+<!-- SYSTEM ADMINISTRATOR GROUP | ADMINISTRATOR ROLE -->
+								<!-- loop through user modules -->
+								<li class="animate-repeat"
+									data-ng-repeat="items in $root.system.Users.modules" 
+									data-ng-show="$root.credentials.group_id == '1' && $root.credentials.role_id < '3'"
+									data-ng-class= '{active:isActive("/{{ items.module | lowercase }}")}'>
+									<a id="{{item.module_id}}" data-ng-href="/#!/{{ items.module | lowercase }}">
+										<small>
+											<i class="{{items.ico}}">&nbsp;<span data-ng-bind="items.module"/></i>
+										</small>
+									</a>
+								</li>
+								<!-- end user modules -->
+								<li class="divider" 
+									data-ng-show="$root.credentials.group_id == '1' && $root.credentials.role_id < '3'"></li>
+								<!-- loop through application modules -->
+								<li class="animate-repeat"
+									data-ng-repeat="items in $root.system.Application.modules" 
+									data-ng-show="$root.credentials.group_id == '1' && $root.credentials.role_id < '3'"
+									data-ng-class= '{active:isActive("/{{ items.module | lowercase }}")}'>
+									<a id="{{item.module_id}}" data-ng-href="/#!/{{ items.module | lowercase }}">
+										<small>
+											<i class="{{items.ico}}">&nbsp;<span data-ng-bind="items.module"/></i>
+										</small>
+									</a>
+								</li>
+								<!-- end application modules -->
+								<li class="divider" 
+									data-ng-show="$root.credentials.group_id == '1' && $root.credentials.role_id < '3'"></li>
+<!-- // -->
+                            <li>
+                                <a href="javascript:void(0);" data-ng-click="logout();">
+                                    <small>
+                                        <i class="fa fa-lock"></i>&nbsp;Logout
+                                    </small>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+-->
+                </ul>
+                <!-- /end profile menu/ -->
+
+            </nav>
+            <!-- /end navigationModules/ -->
+        </div>
+    </header>

@@ -1,0 +1,72 @@
+/*
+
+.modal{
+    .modal-lg{
+        width: 70%;
+        .modal-content{
+            border-radius: 0px;
+            width:100% !important;
+            margin:0px;
+            .modal-header , .modal-footer{
+                border:0px
+            }
+            .modal-body{
+                .addForm{
+                    padding-top: 15px;
+                    form{
+                        .noMargin{
+                            margin-bottom:0px;   
+                        }
+                    }
+                    .preview{
+                        .list-group{
+                            a{
+                            padding: 8px 12px;   
+                            }    
+                        }
+                        h1{
+                            font-size: 20px;
+                        }
+                    }
+                    table{
+                        .form-control{
+                            border:0px;
+                        }
+                         tr{
+                             th.rowNum{
+                                 top: 5px;
+                                position: relative;
+                            }
+                            td{
+                                a{
+                                    span.glyphicon-minus{
+                                        color: $brand-danger;
+                                        top: 7px;
+                                    }
+                                    span.glyphicon-plus{
+                                        color: $brand-success;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .notes{
+                        .list-group-item {
+                            padding: 10px 15px;
+                            p{
+                                word-break: break-all;
+                                margin:0px;
+                            }
+                            .close {
+                                font-size: 15px;
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+*/

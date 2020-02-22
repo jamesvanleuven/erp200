@@ -1,0 +1,61 @@
+/**
+ * PDF STYLES
+ */
+
+.doc60 {
+    font-size: 11px;
+    margin-bottom: 40px;
+    background: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+.doc60 .row dt { 
+    text-align: left;
+}
+.doc60 .row dd { 
+    text-align: right;
+}
+.doc60 .row table { 
+    float: left; 
+    font-size: 10px;
+}
+.doc60 .row table tr th, 
+.doc60 .row table tr td { 
+    text-align: center; 
+    font-size: inherit;
+}
+.doc60 .row.doc_info .list-group-item { 
+    padding: 10px 15px;
+}
+
+.doc60 .row.doc_info .list-group-item .badge{ 
+    background:gray;
+}
+.doc60 .row.doc_info h2 { 
+    font-size: 14px; 
+    text-transform: uppercase;
+}
+.doc60 .row.doc_info h2.gray { 
+    font-size: 16px; 
+    color: lightgray;
+}
+.doc60 .row.doc_info dt { 
+    text-align: left; 
+    width: 50%;
+}
+.doc60 .row.doc_info dd { 
+    text-align: right; 
+    width: 50%; 
+    margin-left: 110px;
+}
+.doc60 .row.signatures { 
+    margin-top: 40px; 
+    text-align: center;
+}
+.doc60 .row.signatures .form-control { 
+    border-radius: 0px; 
+    border: none; 
+    border-bottom: 1px solid gray; 
+    box-shadow: none;
+}

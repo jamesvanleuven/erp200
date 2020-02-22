@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/**
+ * THIS REMOVES THE ACCESSABILITY BLUE OUTLINE WHICH RENDERS
+ * ON ALL CLICKED OBJECTS - IT'S KIND OF ANNOYING BUT IT'S
+ * ALSO A REQUIREMENT FOR THOSE INDIVIDUALS WHO NEED TO TAB
+ * THROUGH ELEMENTS IN ORDER TO ACTIVATE THEM.
+ * *:focus { outline:none !important }
+ * CURRENTLY THIS IS COMMENTED OUT
+ */
+*:active { outline:none !important; }
+*:focus { outline: none !important; }
+
+
+.scroll-notes {
+    height: 250px; 
+    max-height: 250px;
+    overflow-x: scroll;
+}
+
+/**
+ * FORM TEXT ALIGN TOP | LEFT
+ */
+.text-label {
+    vertical-align: top;
+    text-align: left;
+}
+
+.border-wrap {
+    margin: 2px;
+    border: 1px solid $input-group-addon-border-color;
+}
+
+div#modules {
+    height: 100% !important;
+    overflow:auto;
+    background: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+ul.dd-panel li span {
+    padding: 0 2px 0 2px;
+    margin: 0 2px 0 2px;
+}
+
+a.navbar-brand img {
+    width: 100px;
+    margin: 0 5px 5px 0;
+    display: block;
+}
+
+div#modules div#sections {
+    top: 60px !important;
+    margin: 50px 10px 10px 10px;
+}
+
+div#sections select#location {
+    top: 60px !important;
+    margin: 22px 0;
+}
+
+img.avatar-sm {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    width: 38px;
+    height: 38px;
+    margin: -8px 5px 0 0;
+    border: 2px solid #fff;
+}
+
+img.avatar-md {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid $brand-primary;
+}
+
+img.avatar-lg {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 2px solid $brand-primary;
+}
+
+.ghost {
+  opacity: 0.4;
+  background: #C8EBFB;
+  border: 2px dotted #000;
+}
+
+.isdefault {
+    background: #B0DA92;
+}
+
+/**
+ * EXTRA CSS
+ */
+.rounded-border {
+    border: 1px solid $gray-light;
+    border-radius: 0.5em;
+    margin: 0.2em;
+    padding-left: 0.4em;
+    padding-top: 0.3em;
+    padding-bottom: 0.1em;
+}
+
+.checkbox-inline {
+    display: inline-block;
+}
+
+.faint {
+  opacity: 0.4;
+}
+
+/**
+ * PDF STYLES
+ */
+
+.doc60 {
+    font-size: 11px;
+    margin-bottom: 40px;
+    background: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+.doc60 .row dt { 
+    text-align: left;
+}
+.doc60 .row dd { 
+    text-align: right;
+}
+.doc60 .row table { 
+    float: left; 
+    font-size: 10px;
+}
+.doc60 .row table tr th, 
+.doc60 .row table tr td { 
+    text-align: center; 
+    font-size: inherit;
+}
+.doc60 .row.doc_info .list-group-item { 
+    padding: 10px 15px;
+}
+
+.doc60 .row.doc_info .list-group-item .badge{ 
+    background:gray;
+}
+.doc60 .row.doc_info h2 { 
+    font-size: 14px; 
+    text-transform: uppercase;
+}
+.doc60 .row.doc_info h2.gray { 
+    font-size: 16px; 
+    color: lightgray;
+}
+.doc60 .row.doc_info dt { 
+    text-align: left; 
+    width: 50%;
+}
+.doc60 .row.doc_info dd { 
+    text-align: right; 
+    width: 50%; 
+    margin-left: 110px;
+}
+.doc60 .row.signatures { 
+    margin-top: 40px; 
+    text-align: center;
+}
+.doc60 .row.signatures .form-control { 
+    border-radius: 0px; 
+    border: none; 
+    border-bottom: 1px solid gray; 
+    box-shadow: none;
+}

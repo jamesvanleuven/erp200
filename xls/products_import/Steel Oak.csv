@@ -1,0 +1,70 @@
+product,sku,batch_id,batch_name,upc,litres_per_bottle,bottles_per_skid,bottles_per_case,alcohol_percentage,litter_rate,mfr_price,rtl_price,sp_price,ws_price,category_1,category_2,active
+Steel  Oak  Collaboration Gratzer,279919,,,0,0.3,1,1,0.04,0.3,1.26,1.26,0,0,Beer,Draught,f
+Steel  Oak  Esb,290791,,,0,0.5,1,1,0.05,0.3,1.78,1.72,0,0,Beer,Draught,f
+Steel  Oak  Red Pilsner,388330,,,6,0,1,12,0.05,0,0.04,0.05,0,0,Beer,Bc,f
+Steel  Oak  Weizenbock,401232,,,0,6.5,1,12,0.05,0.01,0.05,0.05,0,0,Beer,Packaged,f
+Steel  Oak  Vcbw Collaboration,404624,,,6,0,1,12,0.06,0,0.04,0.05,0,0,Beer,Bc,f
+Steel  Oak  Barrel Aged Hefe,415935,,,0,0,1,12,0.07,0,0.08,0.08,0,0,Beer,Bc,f
+Steel  Oak  Dark Lager Growler,422345,,,0,0.01,1,1,0.05,0,0.1,0.1,0,0,Beer,Packaged,t
+Steel  Oak  Weizenbock Growler,442350,,,0,0.01,1,1,0.06,0,0.12,0.12,0,0,Beer,Packaged,t
+Steel  Oak  Porter,464032,,,6,0,1,12,0.06,0,0.04,0.05,0,0,Beer,Bc,f
+Steel  Oak  Weizenbock Growler,47340,,,0,0.01,1,1,0.06,0,0.06,0.06,0,0,Beer,Packaged,t
+Steel  Oak  Red Pilsner,477992,,,0,0.5,1,1,0.05,0.3,1.72,1.72,0,0,Beer,Draught,f
+Steel  Oak  Collaboration Gratzer,485060,,,628451330011,0,1,12,0.04,0,0.05,0.05,0,0,Beer,Packaged,f
+Steel  Oak  Royal City Ale,505503,,,0,0.5,1,1,0.05,0.3,1.72,1.72,0,0,Beer,Draught,f
+Steel  Oak  Specialty Cask Ale,526590,,,0,0.2,1,1,0.05,0.3,1.01,1.01,0,0,Beer,Draught,f
+Steel  Oak  BeechwoodSmoked Hefeweizen L Growler,531459,,,0,0.01,1,1,0.05,0,0.05,0.05,0,0,Beer,Packaged,t
+Steel  Oak  Rye Lager,537225,,,6,0,1,12,0.04,0,0.04,0.05,0,0,Beer,Bc,f
+Steel  Oak  Seasonal Growler,537381,,,0,0.01,1,1,0.05,0,0.05,0.05,0,0,Beer,Packaged,t
+Steel  Oak  Esb L Growler,538306,,,0,0.01,1,1,0.05,0,0.05,0.05,0,0,Beer,Packaged,t
+Steel  Oak  Titian,548008,,,6,0,1,12,0.07,0,0.08,0.09,0,0,Beer,Bc,f
+Steel  Oak  Seasonal  Blackthorn,548198,,,0,0.5,1,1,0.04,0,2,2,0,0,Beer,True,f
+Steel  Oak  Red Pilsner Growler,548958,,,0,0.01,1,1,0.05,0,0.05,0.05,0,0,Beer,Packaged,f
+Steel  Oak  Anniversary 2015  Sour Red Lager,554022,,,0,0,1,12,0.05,0,0.04,0.05,0,0,Beer,Bc,f
+Steel  Oak  Rye Lager,558874,,,0,0.5,1,1,0.04,0.3,1.72,1.72,0,0,Beer,Bc,f
+Steel  Oak  Premium Seasonal  Marzen,558957,,,0,0.5,1,1,0.05,0,2,2,0,0,Beer,True,f
+Steel  Oak  Royal City Ale,559369,,,0,0.01,1,1,0.05,0,0.04,0.04,0,0,Beer,Packaged,t
+Steel  Oak  BeechwoodSmoked Hefeweizen,560730,,,0,0.5,1,1,0.05,0.3,1.8,1.8,0,0,Beer,Draught,f
+Steel  Oak  Dark Smoked Hefeweizen,572750,,,0,0.5,1,1,0.05,0.3,1.8,1.8,0,0,Beer,Draught,f
+Steel  Oak  Dark Smoked Hefeweizen Growler,587634,,,0,0.01,1,1,0.05,0,0.05,0.05,0,0,Beer,Packaged,t
+Steel  Oak  Red Pilsner Growler,602904,,,0,0.01,1,1,0.05,0,0.1,0.1,0,0,Beer,Packaged,t
+Steel  Oak  Dark Smoked Hefeweizen Growler,60566,,,0,0.01,1,1,0.05,0,0.01,0.01,0,0,Beer,Packaged,t
+Steel  Oak  Dry Hopped Esb,611004,,,6,0,1,12,0.04,0,0.04,0.05,0,0,Beer,Bc,f
+Steel  Oak  Royal City Ale Can  4x0473l,612358,,,6,4.73,4,24,0.05,0.4,0.09,0.11,0,0,Beer,Canada,f
+Steel  Oak  BeechwoodSmoked Hefeweizen Growler,612861,,,0,0.01,1,1,0.05,0,0.1,0.1,0,0,Beer,Packaged,t
+Steel  Oak  Esb,617597,,,0,0.3,1,1,0.05,0.3,1.11,1.11,0,0,Beer,Draught,f
+Steel  Oak  Dark Lager Growler,629386,,,0,0.01,1,1,0.05,0,0.05,0.05,0,0,Beer,Packaged,t
+Steel  Oak  Roggenweizen,647859,,,0,6.5,1,12,0,0.1,0.04,0.05,0,0,Beer,True,f
+Steel  Oak  Seasonal  Blackthorn,652867,,,0,0.3,1,1,0.04,0,1.35,1.35,0,0,Beer,True,f
+Steel  Oak  Cask Ale,653865,,,0,0.2,1,1,0.05,0.3,0.93,0.93,0,0,Beer,Draught,f
+Steel  Oak  Weizenbock,661819,,,0,0.3,1,1,0.06,0.3,1.35,1.35,0,0,Beer,Draught,f
+Steel  Oak  Seasonal Growler,663179,,,0,0.01,1,1,0.05,0,0.1,0.1,0,0,Beer,Packaged,t
+Steel  Oak  Royal City Ale,666685,,,0,0.3,1,1,0.05,0.3,1.11,1.11,0,0,Beer,Draught,f
+Steel  Oak  Seasonal  Porter,670042,,,0,0.5,1,1,0.05,0.3,1.72,1.72,0,0,Beer,Draught,f
+Steel  Oak  Seasonal  Smoked Lager,670042,B,,0,0.5,1,1,0.05,0.3,2,1.72,0,0,Beer,Bc,f
+Steel  Oak  Smoked Dunkelweizen,672675,,,0,6.5,1,12,0,0.1,0.04,0.05,0,0,Beer,Packaged,f
+Steel  Oak  Red Pilsner,672808,,,0,0.3,1,1,0.05,0.3,1.11,1.11,0,0,Beer,Draught,f
+Steel  Oak  Roggen Weizen,684811,,,0,0.3,1,1,0.05,0.3,1.17,1.17,0,0,Beer,Draught,f
+Steel  Oak  Rye Lager,689109,,,0,0.3,1,1,0.04,0.3,1.11,1.11,0,0,Beer,Bc,f
+Steel  Oak  Dark Lager,693341,,,0,0.5,1,1,0.05,0.3,1.72,1.72,0,0,Beer,Draught,f
+Steel  Oak  Smoked Honey Bock,73007,,,6,0,1,12,0.07,0,0.04,0.05,0,0,Beer,Bc,f
+Steel  Oak  Premium Seasonal  Marzen,762781,,,0,0.3,1,1,0.05,0,1.35,1.35,0,0,Beer,True,f
+Steel  Oak  BeechwoodSmoked Hefeweizen,764605,,,0,0.3,1,1,0.05,0.3,1.17,1.17,0,0,Beer,Draught,f
+Steel  Oak  Royal City Ale,772699,,,0,0.01,1,1,0.05,0,0.09,0.09,0,0,Beer,Packaged,t
+Steel  Oak  Dry Hopped Lager,772970,,,6,0,1,12,0.04,0,0.04,0.05,0,0,Beer,Bc,f
+Steel  Oak  Smoked Dunkelweizen,790592,,,0,0.3,1,1,0.05,0.3,1.17,1.17,0,0,Beer,Draught,f
+Steel  Oak  Esb Growler,794255,,,0,0.01,1,1,0.05,0,0.1,0.1,0,0,Beer,Packaged,t
+Steel  Oak  Roggen Weizen,796060,,,0,0.5,1,1,0.05,0.3,1.8,1.8,0,0,Beer,Draught,f
+Steel  Oak  Anniversary 2015,835405,,,0,0.5,1,1,0.05,0.3,1.8,1.8,0,0,Beer,Bc,f
+Steel  Oak  Cask Ale,848390,,,0,0.4,1,1,0.05,0.3,1.77,1.77,0,0,Beer,Draught,f
+Steel  Oak  BeechwoodSmoked Hefeweizen,849216,,,0,6.5,1,12,0,0.1,0.04,0.05,0,0,Beer,True,f
+Steel  Oak  Vcbw Tu Meke,857821,,,0,0.5,1,1,0.06,0.3,2,2,0,0,Beer,Draught,f
+Steel  Oak  Anniversary 2015,861336,,,0,0.3,1,1,0.05,0.3,1.17,1.17,0,0,Beer,Bc,f
+Steel  Oak  Marzen,867630,,,0,0,1,12,0.05,0,0.04,0.05,0,0,Beer,Bc,f
+Steel  Oak  Seasonal  Porter,867978,,,0,0.3,1,1,0.05,0.3,1.11,1.11,0,0,Beer,Draught,f
+Steel  Oak  Seasonal  Smoked Lager,867978,B,,0,0.3,1,1,0.05,0.3,1.11,1.11,0,0,Beer,Bc,f
+Steel  Oak  Dark Lager,877092,,,0,0.3,1,1,0.05,0.3,1.11,1.11,0,0,Beer,Draught,f
+Steel  Oak  Kataja,88344,,,6,0,1,12,0.05,0,0.04,0.05,0,0,Beer,Bc,f
+Steel  Oak  Specialty Cask Ale,888651,,,0,0.4,1,1,0.05,0.3,1.95,1.95,0,0,Beer,Draught,f
+Steel  Oak  Tortuga,890467,,,6,0,1,12,0.07,0,0.08,0.09,0,0,Beer,Bc,f
+Steel  Oak  Dark Lager,892059,,,6,0,1,12,0.05,0,0.04,0.05,0,0,Beer,Bc,f

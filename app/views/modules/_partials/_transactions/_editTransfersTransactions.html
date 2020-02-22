@@ -1,0 +1,119 @@
+<div class="col-md-10">
+    <div class="panel">
+        <div class="panel-body">
+            <div class="col-sm-12">
+                <div class="row">
+                    
+                    <!-- SELECT MANUFACTURER -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon input-sm">Manufacturer</span>
+                                <input next-on-enter type="text" 
+                                   class="form-control input-sm" 
+                                   data-ng-blur="modalBlur($event, 'transfer_type')" 
+                                   data-ng-model="newTransaction.manufacturer.selected.value" disabled/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SELECT TRANSFER TYPE -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon input-sm">Transfer Type</span>
+                                <input next-on-enter type="text" 
+                                   class="form-control input-sm" 
+                                   data-ng-blur="modalBlur($event, 'transfer_type')" 
+                                   data-ng-model="newTransaction.transfer_type.selected.value" disabled/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="col-sm-12" data-ng-if="newTransaction.transfer_type.selected.id == 1">
+                <div class="row" data-ng-include="'views/modules/_partials/_transactions/_widgets/_warehouse.html'"></div>
+            </div>
+
+            <div class="col-sm-12" data-ng-if="newTransaction.transfer_type.selected.id == 2">
+                <div class="row" data-ng-include="'views/modules/_partials/_transactions/_widgets/_production.html'"></div>
+            </div>
+
+            <div class="col-sm-12" data-ng-if="newTransaction.transfer_type.selected.id == 3">
+                <div class="row" data-ng-include="'views/modules/_partials/_transactions/_widgets/_adjustment.html'"></div>
+            </div>
+            
+            <!-- LINE-ITEMS -->
+            <div class="col-sm-12" data-ng-show="newTransaction.manufacturer.selected.id !== 0 && newTransaction.transfer_type.selected.id > 0">
+                <div class="row" data-ng-include="'views/modules/_partials/_transactions/_widgets/_transferLineItems.html'"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-2">
+    
+    <div class="panel panel-default" data-spy="affix" role="complementary" data-offset-top="0" data-offset-pin="0">
+        <div class="panel-body">
+            <div class="button-group btn-group-xs" role="group">
+                <button custom-popover next-on-enter 
+                        data-id="note-popover"
+                        type="button" 
+                        class="btn btn-xs"  
+                        content-template="views/modules/_partials/_transactions/_widgets/_orderNotes.html" 
+                        data-title="{{currentModule.name.toLowerCase() }} notes" 
+                        data-animation="am-fade-and-slide-top" 
+                        data-placement="auto"
+                        data-ng-click="showPopover(newTransaction.notes.value.length, $root);">
+                    <span class="badge">{{ newTransaction.notes.value.length }}</span> <small>Notes</small></button>
+            </div>
+        </div>
+        <ul class="list-group" data-ng-show="newTransaction.transfer_type.selected.id > 0">
+            <!--<li class="list-group-item clearfix" data-ng-hide="newTransaction.transfer_type.selected.id == 3">
+                <button class="btn btn-default btn-sm" data-ng-click="boolean('pickup', $index)" type="button">PICKUP</button>
+            </li>-->
+            <li class="list-group-item clearfix" data-ng-hide="newTransaction.status.selected.id == 4 || newTransaction.status.selected.id >= 7">
+                <span data-ng-show="$root.credentials.group_id == 2 && currentModule.hwh == true">
+                    <button next-on-enter type="button" 
+                            class="btn btn-danger btn-sm" 
+                            data-ng-disabled="disableButton"
+                            data-ng-click="voidTransaction(4, newTransaction.id)" 
+                            data-ng-hide="newTransaction.status.selected.id >= 7 || newTransaction.status.selected.id == 4">VOID</button>
+                    <button next-on-enter type="button" 
+                            class="btn btn-success btn-sm" 
+                            data-ng-disabled="disableButton"
+                            data-ng-click="statusUpdate(6, newTransaction.id)" 
+                            data-ng-hide="currentModule.hwh == false"
+                            data-ng-show="newTransaction.status.selected.id == 5">ACCEPT</button>
+                    <button next-on-enter type="button" 
+                            class="btn btn-warning btn-sm" 
+                            data-ng-disabled="disableButton"
+                            data-ng-click="inventoryUpdate(7, newTransaction.id, false)" 
+                            data-ng-show="newTransaction.status.selected.id == 6">RECEIVE</button>
+                </span>
+                
+                <span data-ng-show="$root.credentials.group_id != 2">
+                    <button next-on-enter type="button" 
+                            class="btn btn-danger btn-sm" 
+                            data-ng-disabled="disableButton"
+                            data-ng-click="voidTransaction(4, newTransaction.id)" 
+                            data-ng-hide="newTransaction.status.selected.id >= 7 || newTransaction.status.selected.id == 4">VOID</button>
+                    <button next-on-enter type="button" 
+                            class="btn btn-success btn-sm" 
+                            data-ng-disabled="disableButton"
+                            data-ng-click="statusUpdate(6, newTransaction.id)" 
+                            data-ng-hide="currentModule.hwh == false"
+                            data-ng-show="newTransaction.status.selected.id == 5">ACCEPT</button>
+                    <button next-on-enter type="button" 
+                            class="btn btn-warning btn-sm" 
+                            data-ng-disabled="disableButton"
+                            data-ng-click="inventoryUpdate(7, newTransaction.id, false)" 
+                            data-ng-show="newTransaction.status.selected.id == 6">RECEIVE</button>
+                </span>
+            </li>
+        </ul>
+    </div>
+    
+</div>

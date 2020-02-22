@@ -1,0 +1,150 @@
+supplier_num,license_number,products,sku,batch_number,batch_name,upc,litres_per_bottle,bottles_per_skid,bottles_per_case,alcohol_percentage,litter_rate,mfr_price,rtl_price,sp_price,ws_price,category_1,category_2,active
+442,306332,Bru Hefeweizen,37218,,,0,0.3,1,1,0.05,0.3,1.03,1.03,0,0,Beer,,f
+442,306332,Keg Credit,1000004,,,100000,0.19,1,1,0,0.3,0,0,0,0,Beer,,f
+442,306332,Ipa,11155,,,64294613421,0.3,1,1,0.05,0.3,1.03,1.03,0,0,Beer,Draught,f
+442,306332,Original JoeS Light,132522,,,0,0.58,1,1,0.04,0.3,1.18,1.18,0,0,Beer,Draught,f
+442,306332,Black Amber Ale,162016,,,64294616002,0,6,24,0.05,0,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Ipa,162032,,,64294613407,0,6,24,0.05,0,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Traditional Ale Can,162057,,,64294000788,0,6,24,0.05,0.01,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Grasshopper Wheat Ale Can,162065,,,64294000771,0,15,15,0.05,0.01,0.27,0.27,0,0,Beer,Packaged,t
+442,306332,Ipa,174086,,,64294613483,0.58,1,1,0.05,0.3,1.64,1.64,0,0,Beer,Draught,f
+442,306332,Double Happiness Lager,175588,,,0,0.58,1,1,0.05,0.3,1.39,1.39,0,0,Beer,Draught,f
+442,306332,Scottish Heavy Ale,203133,,,0,0.3,1,1,0.07,0.3,1.03,1.03,0,0,Beer,Draught,f
+442,306332,Dunkelwiezen Dark Wheat Ale,210112,,,64294001358,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+442,306332,Dunkelwiezen,210963,,,0,0.3,1,1,0.05,0.3,1.03,1.03,0,0,Beer,Draught,f
+442,306332,Urban  White Rocket Unfiltered Ipa 58l,227124,,,0,0.58,1,1,0.07,0.3,1.64,1.64,0,0,Beer,,f
+442,306332,Lime Can,227702,,,64294628104,0,6,24,0.04,0,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Rock Creek Tall Can,227868,,,64294628395,0,1,24,0.05,0,0,0,0,0,Cider,,f
+442,306332,Rock Creek Tall Can,227868,,,64294628371,0,1,24,0.07,0.1,0.02,0.02,0,0,Beer,,f
+442,306332,Traditional Ale,256446,,,0,0.58,1,1,0.05,0.3,1.64,1.64,0,0,Beer,Draught,f
+442,306332,Alberta Honey Brown,256453,,,0,0.58,1,1,0.05,0.3,1.64,1.64,0,0,Beer,Draught,f
+442,306332,Saaz Republic Pilz,267369,,,64294623154,0,6,24,0.05,0,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Saaz Republic Pilz 30l,267393,,,64294623161,0.3,1,1,0.05,0.3,1.03,1.03,0,0,Beer,Draught,f
+442,306332,Life Of Chai,288118,,,64294100778,0.3,1,1,0.06,0.3,1.35,1.35,0,0,Beer,Draught,t
+442,306332,Hellesbock 6 Pk,297077,,,64294623277,0,6,24,0.06,0,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Bl Amber,299875,,,0,0.58,1,1,0.05,0.3,1.9,1.9,0,0,Beer,Draught,t
+442,306332,Bl Blonde,299941,,,0,0.58,1,1,0.05,0.3,1.9,1.9,0,0,Beer,Draught,t
+442,306332,Lime,372250,,,64294628135,0,12,24,0.04,0.01,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Fowl Mouth Esb Bottle,374595,,,64294623475,0,6,24,0.05,0,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Scottish Style Heavy Ale Bottle,381418,,,64294614022,0,6,24,0.07,0,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Sips Scottish,381418,B,,64294613988,3.3,6,24,0.05,0.6,0.1,0.1,0,0,Beer,Packaged,t
+442,306332,Rhubarb Wit,382192,,,0,0.3,1,1,0.05,0.3,1.03,1.03,0,0,Beer,,f
+442,306332,Bru Pin Cask,410563,,,0,0.2,1,1,0.05,0.3,0.97,0.97,0,0,Beer,,f
+442,306332,Purple Gas Can,417527,,,64294623369,0,6,24,0.05,0,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Wayfinder Pale Ale,421784,,,64294613216,6.5,1,12,0.01,0.1,0.05,0.05,0,0,Beer,,f
+442,306332,Urban  White  Ipa,422105,,,64294613216,6.5,1,12,0.01,0.1,0.05,0.05,0,0,Beer,,f
+442,306332,Urban  White  Ipa,422105,,,64294613216,6.5,1,12,0.01,0.1,0.05,0.05,0,0,Beer,,f
+442,306332,Fowl Mouth Esb Keg,435503,,,64294623482,0.3,1,1,0.05,0.3,1.03,1.03,0,0,Beer,Draught,f
+442,306332,Radtrad Cascadian Ale,438911,,,64294623901,0.3,1,1,0.06,0.3,1.03,1.03,0,0,Beer,Draught,f
+442,306332,Wayfinder Pale Ale,448282,,,0,0.3,1,1,0.04,0.3,1.03,1.03,0,0,Beer,,f
+442,306332,Spec   Dead Reckoning,450114,,,64294623598,0,1,12,0.07,0,0.04,0.04,0,0,Beer,Packaged,f
+442,306332,Urban  St Adams Holiday Ale,453522,,,0,0.3,1,1,0.08,0.3,1.03,1.03,0,0,Beer,,f
+442,306332,Alberta Genuine Draft Can 15 Pack,45708,,,64294821116,0,15,15,0.05,0.01,0.18,0.18,0,0,Beer,Packaged,f
+442,306332,Honey Brown Lager,45880,,,64294619904,0,6,24,0.05,0,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Original JoeS Blonde,464115,,,64294613117,0.58,1,1,0.05,0.3,1.18,1.18,0,0,Beer,Draught,f
+442,306332,McnallyS Extra Ale Bottle,465641,,,64294613988,0,6,24,0.07,0.6,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Rosmarinus Aromatic Ale Keg,472571,,,64294623420,0.3,1,1,0.05,0.3,1.35,1.35,0,0,Beer,Draught,t
+442,306332,Winter Spice,47357,,,64294613216,0.3,1,1,0.06,0.3,1.25,1.25,0,0,Beer,Draught,t
+442,306332,Rock Creek  Pear Cider Can,478701,,,64294626209,0,6,24,0.05,0,0,0,0,0,Cider,,f
+442,306332,Urban   Cascade Wet Hop,479980,,,1,6.5,1,12,0.01,0.1,0.05,0.05,0,0,Beer,,f
+442,306332,Midnight Rhapsody,48496,,,64294613216,6.5,1,12,0.01,0.1,0.05,0.05,0,0,Beer,,f
+442,306332,Cherazz Bomber,487397,,,1,6.5,1,12,0.01,0.1,0.05,0.05,0,0,Beer,,f
+442,306332,Cuvee Bru,497149,,,64294613797,0,1,12,0.05,0,0.1,0.1,0,0,Beer,Packaged,t
+442,306332,Urban  Midnight Rhapsody,51235,,,0,0.3,1,1,0.01,0.3,1.03,1.03,0,0,Beer,,f
+442,306332,Helles Bock 30l,513481,,,0,0.3,1,1,0.06,0.3,1.35,1.35,0,0,Beer,Draught,t
+442,306332,Urban  Centennial Wet  Hop,519264,,,1,6.5,1,12,0.01,0.1,0.05,0.05,0,0,Beer,,f
+442,306332,Mosaic Lager Bottle,524611,,,64294821116,3.3,6,24,0.05,0.06,0.1,0.1,0,0,Beer,,f
+442,306332,Swinger Pack 12 Pack,540922,,,64294623666,0,12,12,0.05,0.01,0.18,0.18,0,0,Beer,Packaged,f
+442,306332,Rhine Stone Cowboy Can,543322,,,64294615005,0,6,24,0.05,0.06,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Urban  Frankincense  Myrrh,547976,,,0,0.3,1,1,0.04,0.3,1.03,1.03,0,0,Beer,,f
+442,306332,Warthog Ale Bottle,551358,,,64294614060,0,6,24,0.04,0,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Life Of Chai,560359,,,64294628401,0,6,24,0.06,0,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Berezan Lemon Zest Bomber,565663,,,1,6.5,1,12,0.01,0.1,0.05,0.05,0,0,Beer,,f
+442,306332,Barn Burner Variety Pack,567230,,,64294623970,0,12,24,0.05,0.01,0.2,0.2,0,0,Beer,Packaged,t
+442,306332,Rhubarb Wit,57034,,,64294613216,6.5,1,12,0.01,0.1,0.05,0.05,0,0,Beer,,f
+442,306332,Citradelic Single Hop Ipa,571554,,,64294613216,0.3,1,1,0.01,0.3,1.03,1.03,0,0,Beer,,f
+442,306332,Mosaic Lager 30l Keg,572438,,,1,0.3,1,1,0,0.3,1.03,1.03,0,0,Beer,,f
+442,306332,Original JoeS Red,592550,,,64294613155,0.58,1,1,0.05,0.3,1.18,1.18,0,0,Beer,Draught,f
+442,306332,Peach Wheat Ale,592915,,,64294623451,0.58,1,1,0.05,0.3,2.19,2.19,0,0,Beer,Draught,t
+442,306332,WaiIti Wheat Ale Bottle,598789,,,64294613988,0,6,24,0.05,0.06,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,The Cascadian Bottle,598912,,,64294613988,3.3,6,24,0.05,0.6,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Anthea Wet Hop,601500,,,1,6.5,1,12,0.01,0.1,0.04,0.04,0,0,Beer,,f
+442,306332,Anthea Wet Hop,601500,,,64294613759,0,1,12,0.06,0,0.04,0.04,0,0,Beer,Packaged,f
+442,306332,Rye  Ginger,605816,,,64294628081,0.3,1,1,0.05,0.3,1.35,1.35,0,0,Beer,Draught,t
+442,306332,Winter Variety,612218,,,64294628463,0,12,24,0.05,0.01,0.22,0.22,0,0,Beer,Packaged,t
+442,306332,Mosaic Lager Can,624080,,,64294613988,0,6,24,0.05,0.06,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Scottish Heavy Ale Tall Can 24 Pack,647719,,,64294628371,0,1,24,0.07,0.1,0.02,0.02,0,0,Beer,Packaged,f
+442,306332,Citradelic Single Hop Ipa Bombers,653501,,,1,6.5,1,12,0.01,0.1,0.05,0.05,0,0,Beer,,f
+442,306332,Rhinestone Cowboy Kolsch Style Ale Bottle,654947,,,64294623673,0,6,24,0.04,0,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Rock Creek Limited Edition Variety Pack,672261,,,64294623758,0,6,24,0.05,0,0,0,0,0,Cider,,f
+442,306332,Rock Creek Can,673566,,,64294629903,0,6,24,0.05,0,0,0,0,0,Cider,,f
+442,306332,Hollow Tree Pacific Northwest Red  Ale,681718,,,1,6.5,1,12,0.01,0.1,0.05,0.05,0,0,Beer,,t
+442,306332,Hollow Tree Pacific Northwest Red Ale,681718,,,0,6.5,1,12,0.05,0.1,0.05,0.05,0,0,Beer,,f
+442,306332,Hollow Tree Pnw Red Ale,688689,,,0,0.3,1,1,0.05,0.3,1.03,1.03,0,0,Beer,,f
+442,306332,Traditional Ale,691220,,,64294100815,0.3,1,1,0.05,0.3,1.03,1.03,0,0,Beer,Draught,f
+442,306332,Grasshopper Wheat Ale,691238,,,64294100822,0.3,1,1,0.05,0.3,1.03,1.03,0,0,Beer,Draught,f
+442,306332,Kold Lager,691253,,,64294100525,0.58,1,1,0.05,0.3,2.02,2.02,0,0,Beer,Draught,t
+442,306332,Rock Creek  Draught Cider,692111,,,64294100853,0.3,1,1,0.05,0.3,1.24,1.24,0,0,Cider,Canada,t
+442,306332,Rock Creek Apple,692111,,,64294613216,0.3,1,1,0.06,0.3,1.24,1.24,0,0,Cider,,f
+442,306332,Honey Brown Lager Can,693168,,,64294613971,0,6,24,0.05,0.6,0.1,0.1,0,0,Beer,,f
+442,306332,Genuine Alberta Draft,693820,,,64294100532,0.58,1,1,0.05,0.3,1.2,1.2,0,0,Beer,Draught,f
+442,306332,India Pale Ale,694414,,,64294617504,0,6,24,0.05,0,0.11,0.11,0,0,Beer,Packaged,t
+442,306332,Alberta Genuine Draft Can Flat,694422,,,64294625004,0,6,24,0.05,0,0.07,0.07,0,0,Beer,Packaged,f
+442,306332,Rock Creek  Draught Cider,705293,,,64294100549,0.58,1,1,0.05,0.3,2.5,2.5,0,0,Cider,Canada,t
+442,306332,Rock Creek Apple Cider,705293,,,64294613216,0.58,1,1,0.06,0.3,2.21,2.21,0,0,Cider,,f
+442,306332,Traditional Ale SC,717645,,,6,0,1,1,0.05,0,0.01,0.01,0,0,Beer,Packaged,t
+442,306332,Scottish Heavy Ale,736405,,,64294613490,0,6,24,0.07,0,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Rye And Ginger Ale,744466,,,64294628319,0,6,24,0.05,0,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Rock Creek Pear,751917,,,64294613216,0.3,1,1,0.05,0.3,1.24,1.24,0,0,Cider,,f
+442,306332,Radtrad,76380,,,64294624045,0,6,24,0.06,0,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Purple Gas,764977,,,64294623444,0.3,1,1,0.05,0.3,1.03,1.03,0,0,Beer,Draught,f
+442,306332,Saaz Republic Pilz Bottle,771071,,,64294614015,0,6,24,0.04,0,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Rock Creek  Peach Cider 30l Keg,77719,,,123,0.3,1,1,0.01,0.3,1.29,1.29,0,0,Beer,,f
+442,306332,Bru Opening  Lager,790535,,,1,0.3,1,1,0.01,0.3,1.03,1.03,0,0,Beer,,f
+442,306332,Citradelic Single Hop Ipa,791285,,,0,0.58,1,1,0.06,0.01,1.64,1.64,0,0,Beer,,f
+442,306332,Rhine Stone Cowboy,795815,,,64294623680,0.3,1,1,0.04,0.3,1.03,1.03,0,0,Beer,Draught,f
+442,306332,Original JoeS   Hausfrau,810093,,,0,0.58,1,1,0.05,0.3,1.18,1.18,0,0,Beer,Draught,f
+442,306332,Saaz Republic Pilz Tall Can 24 Pack,812511,,,64294623338,0,1,24,0.04,0.1,0.02,0.02,0,0,Beer,Packaged,f
+442,306332,Cherazz 30l,816256,,,64294619997,0.3,1,1,0.04,0.3,1.03,1.03,0,0,Beer,Draught,f
+442,306332,Rock Creek,816702,,,64294623710,0,6,24,0.05,0,0,0,0,0,Cider,,f
+442,306332,Ipa Bottle,819623,,,64294613971,0,6,24,0.05,0,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Winter Spice,829499,,,0,0.3,1,1,0.06,0.3,1.03,1.03,0,0,Beer,Draught,f
+442,306332,Cherry Bomber Hefeweizen Ale,83329,,,64294623932,0,1,12,0.05,0,0.05,0.05,0,0,Beer,Packaged,t
+442,306332,Session Ipa Tall Can 24 Pack,839878,,,64294628388,0,1,24,0.05,0.1,0.02,0.02,0,0,Beer,Packaged,f
+442,306332,Original JoeS Honey Brown,842716,,,64294613278,0.58,1,1,0.05,0.3,1.18,1.18,0,0,Beer,Draught,f
+442,306332,Citradelic Single Hop Ipa Bottle,844704,,,64294613971,0,6,24,0.05,0,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Grasshopper Wheat Ale Bottle,848218,,,64294613940,0,6,24,0.05,0,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Traditional Ale Bottle,849935,,,64294614039,0,6,24,0.05,0,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Bru Stout,854190,,,0,0.3,1,1,0.04,0.3,1.03,1.03,0,0,Beer,Stout,f
+442,306332,Abandoned Abbey Belgium Dark Ale,858860,,,64294629095,0,1,12,0.09,0,0.06,0.06,0,0,Beer,Packaged,t
+442,306332,Dead Reckoning Keg,869644,,,64294613681,0.3,1,1,0.07,0.3,1.03,1.03,0,0,Beer,Draught,f
+442,306332,Honey Brown Lager Bottle,87213,,,64294614077,0,6,24,0.05,0,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,PaulS Angels,873265,,,64294623178,0,6,24,0.05,0,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Winter Spice,87387,,,64294620191,0,6,24,0.06,0,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,Bru Pilsner,880708,,,0,0.3,1,1,0.05,0.3,1.03,1.03,0,0,Beer,Pilsner,f
+442,306332,Urban  Craft Beer Market Belgian Strong,888081,,,0,0.3,1,1,0.08,0.3,1.03,1.03,0,0,Beer,,f
+442,306332,Bru Nano  Saisonweizen,892331,,,0,0.3,1,1,0.05,0.3,1.03,1.03,0,0,Beer,Nano,f
+442,306332,Variety Pack Case,895797,,,64294613971,0,12,12,0.05,0.01,0.18,0.18,0,0,Beer,Packaged,f
+442,306332,Traditional Ale Can,903914,,,64294615005,0,6,24,0.05,0,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,,907253,,,64294605006,0,6,24,0.05,0,0.1,0.1,0,0,Beer,Packaged,t
+442,306332,Traditional Ale,907287,,,64294100556,0.58,1,1,0.05,0.3,1.99,1.99,0,0,Beer,Draught,t
+442,306332,Grasshopper Wheat Ale Can Flat,908210,,,64294623000,0,6,24,0.05,0,0.1,0.1,0,0,Beer,Packaged,f
+442,306332,McnallyS Extra Ale,915595,,,64294602005,0,6,24,0.07,0,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Warthog Ale,921965,,,64294612004,0,6,24,0.04,0,0.1,0.1,0,0,Beer,Packaged,t
+442,306332,Grasshopper Wheat Ale,923813,,,64294100594,0.58,1,1,0.05,0.3,1.64,1.64,0,0,Beer,Draught,f
+442,306332,,924266,,,64294613001,0,6,24,0.05,0,0.1,0.1,0,0,Beer,Packaged,t
+442,306332,Barrel Aged Edition Bourbon Bomber,931378,,,1,6.5,1,12,0.01,0.1,0.05,0.05,0,0,Beer,,f
+442,306332,Barrel Aged Edition Bourbon Bomber,931378,,,1,6.5,1,12,0.01,0.1,0.05,0.05,0,0,Beer,,f
+442,306332,Rosmarinus Aromatic Ale,93666,,,64294623406,0,6,24,0.05,0,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Urban  White Rocket Unfiltered Ipa Bomber,957795,,,64294613216,6.5,1,12,0.06,0.1,0.05,0.05,0,0,Beer,,f
+442,306332,Rock Creek Cider Sc,962639,,,6,0,1,1,0.05,0,0,0,0,0,Cider,,f
+442,306332,Grasshopper Wheat Ale SC,990747,,,6,0,1,1,0.05,0,0.01,0.01,0,0,Beer,Packaged,t
+442,306332,White Rocket Unfiltered Ipa,991679,,,0,0.3,1,1,0.07,0.3,1.03,1.03,0,0,Beer,,f
+442,306332,Traditional Ale SB,993907,,,64294001402,0,1,1,0.05,0,0.01,0.01,0,0,Beer,Packaged,t
+442,306332,Lumberjack Pack,99432,,,64294613858,0,6,24,0.06,0,0.12,0.12,0,0,Beer,Packaged,t
+442,306332,Warthog Ale SB,994814,,,64294000085,0,1,1,0.04,0,0.01,0.01,0,0,Beer,Packaged,t
+442,306332,Grasshopper SB,995373,,,64294000092,0,1,1,0.05,0,0.01,0.01,0,0,Beer,Packaged,t
+442,306332,Alberta Genuine Draft SC,996538,,,6,0,1,1,0.05,0,0.01,0.01,0,0,Beer,Packaged,t
+442,306332,Honey Brown Lager Sb,997643,,,6,0,1,1,0.05,0,0.01,0.01,0,0,Beer,Packaged,t
+442,306332,Mcnallys SB,997890,,,64294000061,0,1,1,0.07,0,0.01,0.01,0,0,Beer,Packaged,t
+442,306332,India Pale Ale SB,998237,,,6,0,1,1,0.05,0,0.01,0.01,0,0,Beer,Packaged,t

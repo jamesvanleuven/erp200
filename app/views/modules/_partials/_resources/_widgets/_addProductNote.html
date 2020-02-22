@@ -1,0 +1,27 @@
+                <div class="input-group" data-ng-show="visible" style="margin: 5px auto;padding: 5px">
+                    <div class="clearfix">
+                        <div class="input-group">
+                            <span class="input-group-addon input-sm">Note Assignment</span>
+                            <select class="form-control input-sm" 
+                                    name="note_type" 
+                                    data-ng-init="newNote.type" 
+                                    data-ng-model="newNote.type" 
+                                    data-ng-options="opt.id as opt.value for opt in $root.assets.products.note_types"/><br />
+                        </div>
+                        <textarea class="note-details form-control" 
+                                  style="width: 558px; height: 100px;" 
+                                  data-ng-model="newNote.details"></textarea>
+                        <div class="pull-right" style="margin-top: 5px;">
+                            <button data-parent="" 
+                                    data-note="" 
+                                    class="btn btn-default btn-xs" 
+                                    data-ng-click="showHide(-1, $event)">
+                                <i class="fa fa-times"></i> Cancel</button>
+                            <button class="btn btn-primary btn-xs" 
+                                    data-id="{{$index}}" 
+                                    data-note="{{notes.id}}" 
+                                    data-ng-click="saveNote($event)">
+                                <i class="fa fa-save"></i> Save</button>
+                        </div>
+                    </div>
+                </div>

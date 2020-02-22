@@ -1,0 +1,59 @@
+
+
+    <!-- DATERANGE -->
+    <div class="col-md-3">
+        <div class="form-group">
+            <div class="input-group" style="width: 245px; max-width: 245px !important;">
+                <span class="input-group-addon input-sm">Date Range: </span>
+                <input id="daterange" 
+                       name="daterange" 
+                       class="form-control input-sm date-picker" 
+                       type="text" 
+                       data-ng-model="filterItems.range" 
+                       options="opts" 
+                       date-range-picker />
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <div class="input-group" style="left: -35px;">
+                <span class="input-group-addon input-sm">Location: </span>
+                <div id="status" 
+                     style="text-align: left;"
+                     custom-select="l as l.value for l in $root.profile.locations track by $index" 
+                     data-ng-model="filterItems.location">
+                    <div class="media">
+                        <div class="media-body">
+                             <h6 class="media-heading text-capitalize">{{ l.value }}</h6>
+                        </div>
+                    </div>
+                </div>
+                <span class="input-group-btn">
+                    <button type="button" 
+                            class="btn btn-sm btn-primary" 
+                            data-ng-click="reportFilter()">Jump!</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="btn-group pull-right" role="group">
+            <button type="button" 
+                class="search-button btn btn-primary btn-sm" title="Filter {{currentModule.name}} Search"
+                data-ng-click="sidebar()" 
+                data-ng-disabled="disableButton">
+                <i class="fa fa-search"></i> <small>Search</small>
+            </button>
+            
+            <button type="button" 
+                    class="btn btn-primary btn-sm" title="Export {{currentModule.report.value}} CSV"
+                    data-id="export" 
+                    data-ng-click="button(0, $event)" 
+                    data-ng-disabled="disableButton">
+                <i class="fa fa-download"></i> <small>Export Report</small>
+            </button>
+        </div>
+    </div>

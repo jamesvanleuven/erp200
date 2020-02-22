@@ -1,0 +1,44 @@
+
+.border-rounded {
+    border: 0.05em solid #ccc;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.module-content{
+    .form-control{
+        border:0px !important;
+    }
+    .checkbox{
+        margin-top: 2px;
+        margin-bottom: 0px;
+    }
+}
+
+.bold-column-header {
+    font-style: italic;
+}
+
+.istrue {
+    @extend .text-danger;
+	text-transform: uppercase;
+}
+.isfalse {
+    display: none;
+}
+
+.is-rush {
+	color: darkred;
+}
+
+.is-paid {
+	color: green;
+}
+
+.is-pickup {
+	color: orange;
+}
+
+.is-promo {
+	color:  darkblue;
+}

@@ -1,0 +1,81 @@
+<div class="container-fluid">
+    <div class="row clearfix">
+        <data-ng-if="currentModule.type = '1'">
+            <div class="col-md-6" style="text-align: left;">
+                <div custom-select="m.id as m.value for m in asyncModule($searchTerm, 'manufacturers') track by $index" 
+                     custom-select-options="customManufacturerProducts" 
+                     data-ng-model="$root.profile.establishment" 
+                     style="width: 100%;" next-on-enter required>
+                    <div class="media" style="border-bottom: 1px dotted #ccc;">
+                        <div class="media-left" style="margin:2px auto;">
+                            <img src="images/brand/{{ m.key }}.png" 
+                                 class="media-object" 
+                                 hspace="3" 
+                                 vspace="3" 
+                                 style="width: 50px; height: 50px;"/>
+                        </div>
+                        <div class="media-body">
+                             <h5 class="media-heading">{{ m.value }}<br/>
+                                <small>LIC NO. {{ m.license_number }}</small><br/>
+                                <small>STORE NO. {{ m.store_number }}</small></h5>
+                            <address>
+                                <small><em>
+                                    {{ m.address }}<br/>
+                                </em></small>
+                                <small>Opens: {{ m.opens }}<br/>
+                                Closes: {{ m.closes }}<br />
+                                <!-- Delivery Days: {{ m.delivery_days.toString() }} -->
+                                </small>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                    
+                <data-if-ng="currentModule.type = '2'">
+                    <!-- BATCH ORDER BUTTONS -->
+                    <div data-ng-include="'views/modules/_partials/_batch/_orders.html'"></div>
+                    <!-- BATCH TRANSFER BUTTONS -->
+                    <div data-ng-include="'views/modules/_partials/_batch/_transfers.html'"></div>
+                </data-if-ng>
+            </div>
+        </data-ng-if>
+        <div class="col-md-6" style="text-align: right;">
+            <div class="btn-group" role="group">
+                <button next-on-enter type="button" 
+                    class="search-button btn btn-primary btn-sm" title="Filter {{currentModule.name}} Search"
+                    data-ng-click="sidebar()" 
+                    data-ng-disabled="disableButton">
+                    <i class="fa fa-search"></i> <small>Search</small></button>
+                <button next-on-enter type="button" 
+                        class="btn btn-primary btn-sm" title="Add {{currentModule.name}} Manually" 
+                        data-id="add" 
+                        data-ng-click="button(-1, $event)" 
+                        data-ng-disabled="disableButton">
+                    <i class="fa fa-plus"></i> <small>Add <span data-ng-bind="currentModule.name"/></small></button>
+                <button next-on-enter type="button" 
+                        class="btn btn-primary btn-sm" title="Import {{currentModule.name}} CSV" 
+                        data-id="import" 
+                        data-ng-click="button(0, $event)" 
+                        data-ng-disabled="disableButton">
+                    <i class="fa fa-upload"></i> <small>Import <span data-ng-bind="currentModule.name"/></small></button>
+                <!-- 
+                <button type="button" 
+                        class="btn btn-primary btn-sm" title="Export {{currentModule.name}} CSV"
+                        data-id="export" 
+                        data-ng-click="button(0, $event)" 
+                        data-ng-disabled="disableButton">
+                    <i class="fa fa-download"></i> <small>XLS <span data-ng-bind="currentModule.name"/> Template</small></button>
+                -->
+                <button type="button" 
+                        class="btn btn-primary btn-sm" title="Download {{currentModule.name}} CSV Template"
+                        data-id="template" 
+                        data-type="xls"
+                        data-ng-click="button(0, $event)" 
+                        data-ng-disabled="disableButton">
+                    <i class="fa fa-file-excel-o"></i> <small>XLS <span data-ng-bind="currentModule.name"/> Template</small>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>

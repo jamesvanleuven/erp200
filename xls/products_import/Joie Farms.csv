@@ -1,0 +1,94 @@
+product,sku,batch_id,batch_name,upc,litres_per_bottle,bottles_per_skid,bottles_per_case,alcohol_percentage,litter_rate,mfr_price,rtl_price,sp_price,ws_price,category_1,category_2,active
+A Noble Blend Rt,138263,,,0,0,1,12,0.12,0,0.23,0.19,0,0,Wine,Canada,f
+2015 Noble Blend Rt,138263,B,,0,7.5,1,12,0.12,0.01,0.19,0.19,0,0,Wine,Canada,f
+Noble Blend,138263,SS,,0,0,1,1,0.12,0,0.23,0.17,0,0,Wine,Bc,t
+Chardonnay UnOaked Wh,146456,,,0,0,1,12,0.12,0,0.22,0.18,0,0,Wine,Canada,f
+2015 UnOaked Chardonnay Wh,146456,B,,0,7.5,1,12,0.12,0.1,0.18,0.18,0,0,Wine,Canada,f
+Chardonnay UnOaked,146456,SS,,0,0,1,1,0.12,0,0.23,0.17,0,0,Wine,Bc,t
+Reserve Chardonnay,150862,,,0,0,1,6,0.12,0,0.29,0.25,0,0,Wine,Canada,f
+Reserve Chardonnay,150862,SS,,0,0,1,1,0.12,0,0.29,0.22,0,0,Wine,Bc,t
+Muscat Wh,167239,,,0,0,1,12,0.1,0,0.22,0.18,0,0,Wine,Canada,f
+2015 Muscat Wh,167239,B,,0,7.5,1,12,0.1,0.1,0.18,0.18,0,0,Wine,Canada,f
+Muscat,167239,SS,,0,0,1,1,0.1,0,0.23,0.17,0,0,Wine,Bc,t
+farm Muscat Keg,191932,,,0,0.19,1,1,0.1,0.3,0,0,0,0,Wine,Canada,t
+2014 Pinot Noir Keg,2014,,,0,0.19,1,1,0.13,0,4.52,4.52,0,0,Wine,Canada,f
+2015 Plein De Vie Brut,2015,,,0,0,1,12,0.1,0,0.18,0.18,0,0,Wine,Canada,f
+2015 Noble Blend Magnum,2015,,,0,0.01,1,6,0.13,0,0.59,0.55,0,0,Wine,Canada,f
+Pinot Noir Rose 2005,255000,,,0,0,1,12,0.12,0,0,0,0,0,Wine,Canada,t
+Pinot Noir Rose,255000,SS,,0,0,1,1,0.12,0,0.2,0.12,0,0,Wine,Bc,t
+UnOaked Chardonnay 2005,256792,,,0,0,1,12,0.12,0,0,0,0,0,Wine,Canada,t
+UnOaked Chardonnay,256792,SS,,0,0,1,1,0.12,0,0.22,0.13,0,0,Wine,Bc,t
+Noble Blend 2005,256958,,,626990064428,0,1,12,0.12,0,0,0,0,0,Wine,Canada,t
+Noble Blend,256958,SS,,6,0,1,1,0.12,0,0.23,0.14,0,0,Wine,Bc,t
+farm Chardonnay,288068,,,69273900257,0,1,12,0.13,0,0,0,0,0,Wine,Canada,t
+farm Chardonnay,288068,SS,,6,0,1,1,0.13,0,0.14,0.14,0,0,Wine,Bc,t
+The Creek Pinot Blanc Private Label,302398,,,692739002952,0,1,12,0.12,0,0,0,0,0,Wine,Canada,t
+Gamay,38877,,,692739000187,0,1,12,0.13,0,0.23,0.2,0,0,Wine,Canada,f
+Gamay 2012,388772012,,,0,0,1,12,0.12,0,0.23,0.2,0,0,Wine,Canada,f
+farm Gamay,38877,SS,,6,0,1,1,0.13,0,0.23,0.2,0,0,Wine,Bc,t
+Muscat Rt,40139,,,0,0,1,12,0.1,0,0.22,0.18,0,0,Wine,Canada,f
+2015 Muscat Rt,40139,B,,0,7.5,1,12,0.1,0.1,0.18,0.18,0,0,Wine,Canada,f
+Muscat,40139,SS,,0,0,1,1,0.1,0,0.13,0.16,0,0,Wine,Bc,t
+Wines  Plein De Vie Bubble Wh,405365,,,0,0,1,12,0.1,0,0.17,0.16,0,0,Wine,Canada,t
+Wines  Plein De Vie Bubble,405365,SS,,6,0,1,1,0.13,0,0.17,0.17,0,0,Wine,Bc,t
+Rose Magnum 2006,416875,,,0,0.01,1,6,0.12,0,0,0,0,0,Wine,Canada,t
+farm Ptg Keg,422808,,,0,0.19,1,1,0.13,0.3,0,0,0,0,Wine,Canada,t
+Rose Rt,426551,,,0,0,1,12,0.12,0,0.2,0.16,0,0,Wine,Canada,f
+2015 Rose Rt,426551,B,,0,7.5,1,12,0.12,0.1,0.16,0.16,0,0,Wine,Canada,f
+Rose,426551,SS,,0,0,1,1,0.12,0,0.14,0.14,0,0,Wine,Bc,t
+Chardonnay UnOaked Rt,441279,,,0,0,1,12,0.12,0,0.2,0.18,0,0,Wine,Canada,f
+2015 UnOaked Chardonnay Rt,441279,B,,0,7.5,1,12,0.12,0.1,0.18,0.18,0,0,Wine,Canada,f
+Chardonnay UnOaked,441279,SS,,0,0,1,1,0.12,0,0.14,0.14,0,0,Wine,Bc,t
+Pinot Noir  Keg,484279,,,0,0.19,1,1,0.13,0.3,4.52,4.52,0,0,Wine,Canada,f
+2014 Plein De Vie Brut,509208,,,0,0,1,12,0.1,0,0.18,0.16,0,0,Wine,Packaged,f
+Rose Wh,511469,,,692739000026,0,1,12,0.12,0,0.2,0.16,0,0,Wine,Canada,f
+2015 Rose Wh,511469,B,,0,7.5,1,12,0.12,0.1,0.2,0.16,0,0,Wine,Canada,f
+Rose,511469,SS,,6,0,1,1,0.12,0,0.14,0.14,0,0,Wine,Bc,t
+A Noble Blend Keg,520569,,,0,0.19,1,1,0.12,0.3,4.25,4.25,0,0,Wine,Canada,f
+2015 Noble Blend Keg,520569,B,,0,0.19,1,1,0.12,0,4.25,4.25,0,0,Wine,Canada,f
+Wild Thyme  Tsunami White Blend 2013,523340,,,692739002938,0,1,12,0.13,0,0,0,0,0,Wine,Canada,t
+Wild Thyme  Tsunami White Blend,523340,SS,,6,0,1,1,0.13,0,0.14,0.14,0,0,Wine,Bc,t
+2015 UnOaked Chardonnay Keg,565846,,,0,0.19,1,1,0.12,0.3,3.9,3.9,0,0,Wine,Canada,f
+farm Rose,570416,,,0,0.19,1,1,0.12,0.3,0,0,0,0,Wine,Canada,t
+Wild Thyme Rose,601468,,,692739002884,0,1,12,0.12,0,0,0,0,0,Wine,Canada,t
+Plein De Vie Brut Rt,601468,B,,0,0,1,12,0.1,0,0.17,0.16,0,0,Wine,Packaged,t
+Wild Thyme Rose,601468,SS,,6,0,1,1,0.12,0,0.14,0.14,0,0,Wine,Bc,t
+Riesling Rt,661249,,,0,0,1,12,0.11,0,0.22,0.18,0,0,Wine,Canada,f
+Riesling,661249,SS,,0,0,1,1,0.11,0,0.14,0.14,0,0,Wine,Bc,t
+farm Riesling Keg,668764,,,0,0.19,1,1,0.11,0.3,0,0,0,0,Wine,Canada,t
+farm A Noble Blend,671396,,,0,0.19,1,1,0.12,0.3,0,0,0,0,Wine,Canada,t
+2014 Reserve Pinot Noir,675900,,,0,7.5,1,6,0.13,0.01,0.39,0.34,0,0,Wine,Canada,f
+Reserve Pinot Noir,675900,,,692739000149,0,1,6,0.13,0,0.39,0.34,0,0,Wine,Canada,f
+2011 Reserve Pinot Noir,6759002011,,,0,0,1,6,0.12,0,0.39,0.34,0,0,Wine,Canada,f
+farm Reserve Pinot Noir,675900,SS,,6,0,1,1,0.13,0,0.14,0.14,0,0,Wine,Bc,t
+Riesling Wh,71233,,,0,0,1,12,0.11,0,0.22,0.18,0,0,Wine,Canada,f
+Riesling,71233,SS,,0,0,1,1,0.11,0,0.22,0.17,0,0,Wine,Bc,t
+Farm Pinot Blanc Wh,748004,,,692739000163,0,1,12,0.13,0,0.22,0.18,0,0,Wine,Canada,f
+2015 Pinot Blanc Wh,748004,B,,0,7.5,1,12,0.12,0.1,0.18,0.18,0,0,Wine,Canada,f
+Farm Pinot Blanc,748004,SS,,6,0,1,1,0.13,0,0.14,0.14,0,0,Wine,Bc,t
+Noble Blend Magnum,748855,,,0,0.01,1,6,0.12,0,0.52,0.48,0,0,Wine,Canada,f
+farm Gewurztraminer,754317,,,692739002648,0,1,12,0.12,0,0,0,0,0,Wine,Canada,t
+farm Gewurztraminer,754317,SS,,6,0,1,1,0.12,0,0.14,0.14,0,0,Wine,Bc,t
+Wild Thyme Gewurztraminer,757146,,,692739002716,0,1,12,0.12,0,0,0,0,0,Wine,Canada,f
+Wild Thyme Gewurztraminer,757146,SS,,6,0,1,1,0.12,0,0.14,0.14,0,0,Wine,Bc,t
+Alpine White,759480,,,0,0,1,12,0.12,0,0,0,0,0,Wine,Canada,f
+Alpine White,759480,SS,,0,0,1,1,0.12,0,0.14,0.14,0,0,Wine,Bc,t
+Muscat R 2006,806315,,,0,0,1,12,0.1,0,0,0,0,0,Wine,Canada,t
+Muscat,806315,SS,,0,0,1,1,0.1,0,0.14,0.14,0,0,Wine,Bc,t
+Pinot Blanc Rt,821017,,,0,0,1,12,0.12,0,0.22,0.18,0,0,Wine,Canada,f
+2015 Pinot Blanc Rt,821017,B,,0,7.5,1,12,0.1,0.1,0.18,0.18,0,0,Wine,Canada,f
+Wines  Pinot Blanc Dedication,821017,SS,,0,0,1,1,0.12,0,0.14,0.14,0,0,Wine,Bc,t
+Ptg,823799,,,692739000064,0,1,12,0.13,0,0.23,0.2,0,0,Wine,Canada,f
+2014 Ptg,823799,,,0,7.5,1,12,0.12,0.1,0.25,0.2,0,0,Wine,,f
+Ptg,823799,SS,,6,0,1,1,0.13,0,0.14,0.14,0,0,Wine,Bc,t
+Reserve Gewurztraminer,865766,,,692739000156,0,1,12,0.13,0,0.27,0.24,0,0,Wine,Canada,f
+Reserve Gewurztraminer 2012,865766,,,0,0.75,1,12,0.12,0,0.27,0.24,0,0,Wine,Canada,t
+farm Reserve Gewurztraminer,865766,SS,,6,0,1,1,0.13,0,0.14,0.14,0,0,Wine,Bc,t
+A Noble Blend Wh,882027,,,692739000019,0,1,12,0.12,0,0.23,0.19,0,0,Wine,Canada,f
+2015 Noble Blend Wh,882027,B,,0,7.5,1,12,0.12,0.1,0.19,0.19,0,0,Wine,Canada,f
+A Noble Blend,882027,SS,,6,0,1,1,0.12,0,0.14,0.14,0,0,Wine,Bc,t
+Pinot Noir,885145,,,692739000170,0,1,12,0.13,0,0.23,0.2,0,0,Wine,Canada,f
+farm Pinot Noir,885145,SS,,6,0,1,1,0.13,0,0.14,0.14,0,0,Wine,Bc,t
+Noble Blend Double Magnum 2007,886952,,,0,0.03,1,1,0.12,0,0,0,0,0,Wine,Canada,t
+Wild Thyme Viognier,97303,,,0,0,1,12,0.13,0,0,0,0,0,Wine,Canada,t
+Wild Thyme,97303,SS,,0,0,1,1,0.13,0,0.11,0.11,0,0,Wine,Bc,t

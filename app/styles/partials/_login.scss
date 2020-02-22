@@ -1,0 +1,43 @@
+/* login flexible background - cover layout */
+div#welcome {
+    height: 100% !important;
+    overflow: auto;
+    background: transparent image-url('../../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+div#login-container {
+    height: 100% !important;
+}
+div.login-buffer {
+    padding: 25px 14px !important;
+}
+
+.white {
+    color: #fff !important;
+}
+
+#navlogo {
+    height: 30px;
+    width: 30px;
+    margin-top: 3px;
+}
+/* -- */
+/* footer (not relevant to the login */
+#footer {position: relative;
+    margin-top: -150px; /* negative value of footer height */
+    height: 150px;
+    clear:both;
+}
+
+.hide-login {
+    background: #3E3F3A !important;
+    display: none !important;
+}
+
+.show-login {
+    background: transparent;
+    display: block !important;
+}

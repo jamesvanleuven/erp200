@@ -1,0 +1,54 @@
+product,sku,batch_id,batch_name,upc,litres_per_bottle,bottles_per_skid,bottles_per_case,alcohol_percentage,litter_rate,mfr_price,rtl_price,sp_price,ws_price,category_1,category_2,active
+Waes Hael Spiced Seasonal Ale,23944984589498,,,626990207276,0.5,1,1,0.06,0.3,1.76,1.76,0,0,Beer,Draught,t
+Dia De Los Muertos Cerveza Fuerte,377176,,,626990207245,0.5,1,1,0.09,0.3,0,0,0,0,Beer,Draught,t
+Runestone Peated Scotch Ale  Bomber,387886,,,0,6.5,1,12,0.05,0.1,0.04,0.04,0,0,Beer,Packaged,f
+Keg 195l Full Sleeve Stout,394403,,,626990207146,0.19,1,1,0.05,0.3,0.75,0.75,0,0,Beer,Draught,f
+Acp Golden AleFlat,39628,,,626990207290,0,6,24,0.05,0,0,0.11,0,0,Beer,Packaged,f
+Full Sleeve Stout Aluminum  Bottle,40626,,,626990207207,0,6,24,0.05,0,0.1,0.1,0,0,Beer,Packaged,f
+Los Muertos Cerveza Negra  Aluminum Bottle,412650,,,626990207092,0,6,24,0.05,0,0.1,0.1,0,0,Beer,Packaged,f
+Tramp Stamp Pale Ale  Flat,426726,,,626990219262,0,6,24,0.05,0,0.11,0.11,0,0,Beer,Packaged,f
+No Walls Berliner Weisse  Bomber,465153,,,0,6.5,1,12,0.05,0,0.05,0.05,0,0,Beer,Packaged,f
+Waes Hael Spiced Seasonal Ale,465153,X,,626990207269,0,1,12,0.06,0,0.05,0.05,0,0,Beer,Packaged,t
+Keg 195l Runestone Peated Scottish Ale,473660,,,0,0.19,1,1,0.05,0.3,0.75,0.75,0,0,Beer,Draught,f
+Keg 195l  True Love Kolsch,474296,,,0,0.19,1,1,0.05,0.3,0.75,0.75,0,0,Beer,Draught,f
+Keg 195l Tramp Stamp,479899,,,0,0.19,1,1,0,0.3,0.75,0.75,0,0,Wine,Canada,f
+Keg 195l Cold Press Coffee Porter,483230,,,0,0.19,1,1,0.05,0.3,0.75,0.75,0,0,Beer,Draught,f
+Keg 50l  True Love Kolsch,509109,,,0,0.5,1,1,0.05,0.3,1.76,1.76,0,0,Beer,Draught,f
+Dia De Los Muertos La Resurreccion,529693,,,626990219354,7.5,1,9,0.11,0.1,0.19,0.19,0,0,Beer,Packaged,f
+Keg 50l Waes Hael Spiced Seasonal Ale,542209,,,1,0.5,1,1,0.01,0.3,1.76,1.76,0,0,Wine,Canada,f
+Acp Golden Ale,56804,,,626990207047,0.19,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+Westcoast Ipa  Flat,581090,,,626990207320,0,6,24,0.06,0,0.11,0.11,0,0,Beer,Packaged,f
+Keg 50l No Walls Berliner Weisse,600312,,,6,0.5,1,1,0.03,0.3,1.76,1.76,0,0,Beer,Bc,f
+Keg 50l Full Sleeve Stout,610394,,,6,0.5,1,1,0.05,0.3,1.76,1.76,0,0,Beer,Bc,f
+Full Sleeve Stout  Bomber,630822,,,626990207108,0,1,12,0.05,0,0.05,0.05,0,0,Beer,Packaged,f
+Midnight Hopmare Seasonal Bomber,63123,,,626990219422,0,1,12,0.06,0,0.05,0.05,0,0,Beer,Packaged,f
+Acp Golden Ale Growler,640284,,,626990207061,0.01,1,1,0.05,0,0,0,0,0,Beer,Packaged,t
+Keg 195l Acp Golden Ale,641183,,,0,0.19,1,1,0.05,0.3,0.75,0.75,0,0,Beer,Draught,f
+True Love Kolsch  Bomber,642017,,,0,6.5,1,12,0.05,0,0.05,0.05,0,0,Beer,Packaged,f
+Westcoast Ipa Aluminum  Bottle,649962,,,626990207191,0,6,24,0.06,0,0.1,0.1,0,0,Beer,Packaged,f
+Los Muertos Cerveza NegraBomber,660167,,,626990207115,0,1,12,0.05,0,0.05,0.05,0,0,Beer,Packaged,f
+Keg 50l Los Muertos Cerveza Negra,665778,,,626990207160,0.5,1,1,0.05,0.3,1.76,1.76,0,0,Beer,Draught,f
+Flash Pack Variety 12 Pack  1 Pack,671297,,,0,0,1,1,0.05,0.01,0,0.2,0,0,Beer,Packaged,t
+Flash Pack,671297,B,,1,0,1,2,0.05,0.01,0,0.2,0,0,Beer,Packaged,f
+Cask 20l Seasonal Pin,671487,,,0,0.2,1,1,0.05,0.3,0.84,0.84,0,0,Beer,Draught,f
+Seasonal Pin Cask,671487,X,,626990207214,0.2,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+Dia De Los Muertos Cerveza Fuerte,673996,,,626990207252,0,1,9,0.09,0,0.14,0.14,0,0,Beer,Packaged,f
+Keg 50l Cold Press Coffee Porter,675611,,,0,0.5,1,1,0.05,0.3,1.76,1.76,0,0,Beer,Draught,f
+Acp Golden Ale Growler,676791,,,626990207054,0.01,1,1,0.05,0,0,0,0,0,Beer,Packaged,t
+Okanagan Sunset Smash  50l Keg,692061,,,626990207238,0.5,1,1,0.08,0.3,0,0,0,0,Beer,Draught,t
+Los Muertos Cerveza Negra  Flat,71563,,,626990207306,0,6,24,0.05,0,0.11,0.11,0,0,Beer,Packaged,f
+Keg 50l Westcoast Ipa,754259,,,626990207184,0.5,1,1,0.06,0.3,1.76,1.76,0,0,Beer,Draught,f
+Keg 50l Tramp Stamp Pale Ale,758789,,,626990219286,0.5,1,1,0.05,0.3,1.76,1.76,0,0,Beer,Draught,f
+Keg 195l No Walls Berliner Weisse,788885,,,6,0.19,1,1,0.03,0.3,0.75,0.75,0,0,Beer,Bc,f
+Acp Golden Ale Aluminum Bottle,79673,,,626990207085,0,6,24,0.05,0,0,0.1,0,0,Beer,Packaged,f
+Keg 50l Runestone Peated Scottish Ale,79723,,,0,0.5,1,1,0.05,0.3,1.76,1.76,0,0,Beer,Draught,f
+Cask 40l Seasonal Firkin,840405,,,0,0.4,1,1,0.05,0.3,1.56,1.56,0,0,Beer,Draught,f
+Seasonal  Cask,840405,X,,626990207221,0.4,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+Keg 195l West Coast Ipa,856336,,,626990207139,0.19,1,1,0.06,0.3,0.75,0.75,0,0,Beer,Draught,f
+Full Sleeve Stout  Flat,869651,,,626990207313,0,6,24,0.05,0,0.11,0.11,0,0,Beer,Packaged,f
+Keg 50l Acp Golden Ale,882985,,,626990207030,0.5,1,1,0.05,0.3,1.76,1.76,0,0,Beer,Draught,f
+Westcoast Ipa  Bomber,884031,,,626990207122,0,1,12,0.06,0,0.05,0.05,0,0,Beer,Packaged,f
+Keg 195l Los Muertos Cerveza Negra,892695,,,626990207153,0.19,1,1,0.05,0.3,0.75,0.75,0,0,Beer,Draught,f
+Acp Golden Ale  Bomber,894105,,,626990207078,0,1,12,0.05,0,0,0.05,0,0,Beer,Packaged,f
+Tramp Stamp Pale Ale  Bomber,895532,,,626990219279,0,1,12,0.05,0,0.05,0.05,0,0,Beer,Packaged,f
+Waes Hael Spiced Seasonal Ale  Bomber,929109,,,6,0,1,12,0.03,0,0.05,0.05,0,0,Beer,Bc,f

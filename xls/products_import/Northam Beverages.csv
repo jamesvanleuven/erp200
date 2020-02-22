@@ -1,0 +1,95 @@
+supplier_num,product,sku,batch_id,batch_name,upc,litres_per_bottle,bottles_per_skid,bottles_per_case,alcohol_percentage,litter_rate,mfr_price,rtl_price,sp_price,ws_price,category_1,category_2,active
+8522,Keg Credit,1000000001,,,100000,0.19,1,1,0,0.3,0,0,0,0,Beer,,f
+8522,Empty Keg  50l,1000000002,,,100000,0.5,1,1,0,0,0,0,0,0,Beer,,f
+8522,Empty Keg  30l,1000000003,,,100000,0.3,1,1,0.01,0,0,0,0,0,Beer,,f
+8522,Whistler  Travel Pack,106344,,,626990061724,0,12,12,0.05,0.01,0,0,0,0,Beer,Packaged,t
+8522,Whistler Black Diamond Ale,11312,,,626990091301,0.5,1,1,0.05,0.3,1.42,1.42,0,0,Beer,Draught,f
+8522,Bowen Island  Snug Cove English Special Bitter Can,114702,,,626990183679,0,1,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Peak To Pier,117077,,,1,0.5,1,1,0.01,0.3,1.68,1.68,0,0,Beer,,f
+8522,Bowen Island  Artisan Ipa,12757,,,626990098584,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Bowen Island  Twisted Trail Extra Pale Ale,132902,,,626990061311,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Bowen Island  Reef Break Hemp Blonde Ale,138917,,,626990098614,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler Seasonal Ale,142083,,,626990098621,0.5,1,1,0.05,0.3,1.68,1.68,0,0,Beer,Draught,f
+8522,Whistler  Powder Mountain Lager,164038,,,626990098591,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Whiskey Jack Ale,164046,,,626990102915,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Lonetree Cider Can,168773,,,626990098638,0,6,24,0.05,0,0,0,0,0,Cider,,t
+8522,Whistler  Growler,21071,,,626990051091,0.01,1,1,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Cheakamus Chai Maple Ale,22707,,,626990183686,0,1,12,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Earls Albino Rhino Wheat Ale,235317,,,0,0.5,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Whistler  Paradise Valley Grapefruit Ale Can,238964,,,626990129349,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Lonetree Cranberry Apple,239525,,,626990129264,0,6,24,0.05,0,0,0,0,0,Cider,,t
+8522,Whistler  Bear Paw Honey Lager,248427,,,626990091172,0.5,1,1,0.05,0.3,1.68,1.68,0,0,Beer,Draught,f
+8522,Albino Rhino Seasonal,252908,,,626990098508,0.5,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Northam Brewery  Kb Genuine Draft,262808,,,0,0.5,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Whistler Weiss Beer,297317,,,0,0.5,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Albino Honey Lager,33399,,,0,0.5,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Lonetree Cranberry Apple,345538,,,626990129301,0.5,1,1,0.05,0.3,1.92,1.92,0,0,Cider,,f
+8522,Whistler  Valley Trail Chestnut Ale,354092,,,626990170303,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Bear Paw Honey Lager,364364,,,626990061755,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Northam Brewery  JoeyS Tusk Ale,377572,,,626990091233,0.5,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Bowen Island  Sampler Pack Can,37945,,,626990183792,0,13,13,0.05,0.01,0,0,0,0,Beer,Packaged,t
+8522,Bowen Island  Mutiny Red Ale Can,423277,,,626990183662,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Lost Lake Unfiltered Ipa,42572,,,626990129325,0,1,12,0.07,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Forager Gluten Free,430652,,,626990183693,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Bowen Island  Tall Ship Pilsner Can,434662,,,626990129233,0,1,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Bowen Island  Summer Sampler Pack Can,45641,,,626990098515,0,12,12,0.05,0.01,0,0,0,0,Beer,Packaged,t
+8522,Bowen Island  Trucker Sampler Can,45914,,,626990157144,0,12,12,0.05,0.01,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Paradise Valley Grapefruit Ale,46102,,,626990202349,0.3,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Whistler  Winter Dunkel,473835,,,626990088073,0,1,12,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Big Sky Lager,483800,,,6,0.5,1,1,0.01,0.3,1.68,1.68,0,0,Beer,,f
+8522,Spec Bowen Island  Sun Chaser Cream Ale,488361,,,626990051244,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Bowen Island  Deep 6 Lager,488379,,,626990051237,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Bowen Island  Deep 6 Lager,488387,,,0,0.5,1,1,0.05,0.3,1.25,1.25,0,0,Beer,Draught,f
+8522,Bowen Island  Craft Beer Sampler Pack,495283,,,626990170358,0,12,12,0.05,0.01,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Valley Trail Chestnut Ale,510370,,,626990202332,0.3,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Whistler  Cheakamus Chai Ale Keg,511949,,,6,0.5,1,1,0.05,0.3,1.68,1.68,0,0,Beer,Bc,f
+8522,Whistler  Lost Lake Ipa,513580,,,626990170365,0,6,24,0.06,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Powder Mountain Lager,516476,,,626990202318,0.3,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Whistler  Boston Round Growler,530790,,,626990202394,0.01,1,1,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Valley Trail Chestnut Ale,532648,,,626990170297,0.5,1,1,0.05,0.3,1.68,1.68,0,0,Beer,Draught,f
+8522,Whistler  Winter Dunkel,53793,,,6,0.5,1,1,0.05,0.3,1.68,1.68,0,0,Beer,,f
+8522,Whistler  Peak To Pier 30l,543017,,,626990170297,0.3,1,1,0.01,0.3,1.05,1.05,0,0,Beer,,f
+8522,Whistler  Seasonal,543017,,,626990202363,0.3,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Whistler  Fox Tail Session Red Ale Can,544023,,,6,0,6,24,0.04,0,0,0,0,0,Beer,Bc,t
+8522,Whistler  Pineapple Express Wheat Ale,545665,,,626990129240,0,1,12,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Lost Lake Ipa,56234,,,626990202356,0.3,1,1,0.06,0.3,0,0,0,0,Beer,Draught,t
+8522,Whistler  Creekside Lager,565911,,,626990088141,0.5,1,1,0.05,0.3,1.42,1.42,0,0,Beer,Draught,f
+8522,Whistler  Paradise Valley Grapefruit Ale Keg,565929,,,626990157120,0.5,1,1,0.05,0.3,1.68,1.68,0,0,Beer,Draught,f
+8522,Whistler  Whiskey Jack Ale,576058,,,626990202325,0.3,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Whistler  Winter Mountain Mixer,5769,,,626990051213,0,12,12,0.05,0.01,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Bear Paw Honey Lager Can,602326,,,626990183655,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Lonetree Ginger Apple Cider,640656,,,626990202424,0,24,24,0.05,0.02,0,0,0,0,Cider,,t
+8522,Whistler Golden Wheat,646703,,,626990091271,0.5,1,1,0.05,0.3,1.42,1.42,0,0,Beer,Draught,f
+8522,Whistler  Lost Lake Unfiltered Ipa,647289,,,626990129332,0.5,1,1,0.07,0.3,1.68,1.68,0,0,Beer,Draught,f
+8522,Whistler  Whiskey Jack Ale Cans,653964,,,626990088110,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Northam Brewery  Pin Up Pale Ale,659904,,,0,0.5,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Northam Brewing  Albino Lager,660373,,,626990102939,0.5,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Whistler  Grapefruit Ale,661736,,,626990102892,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Bowen Island  Easy Radler Can,674200,,,6,0,6,24,0.03,0,0,0,0,0,Beer,Bc,t
+8522,Bowen Island Artisan Ipa,692400,,,626990170341,0.5,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Bear Brewing  Albino Rhino Ale,701862,,,0,0.5,1,1,0.04,0.3,0,0,0,0,Beer,Draught,t
+8522,Bear Brewing  Winter Pudding Ale,701920,,,626990157151,0.5,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Bowen Artisan Ipa,709170,,,0,0.5,1,1,0.04,0.3,0,0,0,0,Beer,Draught,t
+8522,Bowen Island  Sun Chaser Cream Ale,709352,,,0,0.5,1,1,0.04,0.3,0,0,0,0,Beer,Draught,t
+8522,Bowen Island  Mutiny Red Ale,745489,,,0,0.5,1,1,0.01,0.3,1.43,1.43,0,0,Beer,,f
+8522,Whistler  The Chief Chipotle Harvest Ale,747337,,,626990088028,0,1,12,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler Mountain Lager,764175,,,0,0.5,1,1,0.05,0.3,1.68,1.68,0,0,Beer,Draught,f
+8522,Bowen Island  Reef Break Blonde Ale,768424,,,6,0.5,1,1,0.01,0.3,1.43,1.43,0,0,Beer,,f
+8522,Lonetree Ginger Apple Dry Cider,777631,,,626990170372,0,6,24,0.05,0,0,0,0,0,Cider,,t
+8522,Whistler  Black Tusk Ale,790436,,,626990170334,0,1,12,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Bowen Island  Wild Wood Honey Brown Lager,822635,,,626990061694,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Nordic Honey Lager,829002,,,626990091264,0.5,1,1,0.05,0.3,1.42,1.42,0,0,Beer,Draught,f
+8522,Lonetree Authentic Dry Cider,829218,,,626990202417,0,24,24,0.05,0.02,0,0,0,0,Cider,,t
+8522,Whistler  Powder Mountain Lager Cans,865485,,,626990088059,0,6,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Travel Pack Cans,872523,,,626990129356,0,12,12,0.05,0.01,0,0,0,0,Beer,Packaged,t
+8522,Bowen Island  Sea Spray Amber Ale Can,879619,,,626990102991,0,1,24,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Spec Whistler  Big Sky Uncommon Lager,899005,,,626990183723,0,1,12,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Export Lager,901348,,,0,0.5,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Whistler  Black Tusk Ale,901355,,,0,0.5,1,1,0.05,0.3,1.68,1.68,0,0,Beer,Draught,f
+8522,Whistler  Whiskey Jack Pale Ale,901363,,,0,0.5,1,1,0.05,0.3,1.68,1.68,0,0,Beer,Draught,f
+8522,Whistler  Avalanche Pale Ale,904508,,,0,0.5,1,1,0.05,0.3,1.42,1.42,0,0,Beer,Draught,f
+8522,Bear Brewing  Black Bear Ale,939835,,,0,0.5,1,1,0.05,0.3,1.2,1.2,0,0,Beer,Draught,f
+8522,Bowen Island  Traditional Lager Sc,961094,,,6,0,1,1,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Bowen Island   Irish Cream Ale Sc,961136,,,6,0,1,1,0.05,0,0,0,0,0,Beer,Packaged,t
+8522,Whistler  Joey Summer Ale,962043,,,626990183778,0.5,1,1,0.05,0.3,0,0,0,0,Beer,Draught,t
+8522,Bowen Island Classic Pale Ale Sc,962589,,,6,0,1,1,0.05,0,0,0,0,0,Beer,Packaged,t

@@ -1,0 +1,63 @@
+.panel{
+    &.widget{
+        border:0px;
+        .panel-heading{
+            background:transparent;
+            border: 0px;
+            .btn-group{
+                .btn{
+                    background: transparent;
+                    color: $gray;
+                    //border: 1px solid   $gray;
+                }
+            }
+        }
+        .panel-body{
+            min-height: 150px;
+            position:relative;
+            h1{
+                margin:0px;
+                position: absolute;
+                bottom: 10px;
+                left:10px;
+            }
+            .list-group{
+                .list-group-item{
+                    padding:8px 12px;
+                    p{
+                        margin: 0px;
+                    }
+                }
+            }
+            .dl-horizontal{ 
+                dt{
+                    text-align: left;
+                    width: 50%;
+                }
+                dd {
+                    margin-left: 20px;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+.broadView{
+    .panel{
+        &.widget{
+            .panel-body{
+                min-height: 120px;
+                div[class^="col-md-"]{
+                    position    :   relative;
+                    text-align  :   center;
+                    h1{
+                        position: initial;
+                        bottom: initial;
+                        left: initial;
+                    }
+                }
+            }
+        }
+    }
+}

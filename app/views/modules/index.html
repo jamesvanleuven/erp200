@@ -1,0 +1,42 @@
+<div id="modules">
+    <div data-ng-include="'views/modules/_partials/_layout/_header.html'"></div>
+
+    <div id="sections" class="container-fluid">
+        <!-- module header section -->
+        <div class="row clearfix">
+            <div class="col-md-9">
+                <h2 class="clearfix">
+                <div class="loading pull-left" style="display:none;" data-loading>
+                    <div class="loading-spinner">
+                        <i class="fa fa-spinner fa-pulse fa-1x fa-fw margin-bottom"></i>
+                    </div>
+                </div>
+                    <i class="{{currentModule.ico}}"></i> 
+                    <span data-ng-bind="currentModule.name"></span>
+                    <span data-ng-hide="currentLocation === '/settings' || currentLocation === '/profile' || currentLocation === '/system' || currentLocation === '/support'">
+                        <small> - <span data-ng-bind="currentModule.location.value"></span></small> 
+                    </span>
+                    <span data-ng-show="currentLocation === '/settings' || currentLocation === '/profile'">
+                        <small> - <span data-ng-bind="profile.Name.FullName"></span></small>
+                    </span>
+                    <span data-ng-show="currentLocation === '/system'">
+                        <small> - <span data-ng-bind="credentials.group"></span></small>
+                    </span>                    
+                </h2>
+            </div>
+        </div>
+        <!-- // -->
+
+        <div growl inline="false" reference="2"></div>
+
+        <!-- load sections via angular-templates -->
+        <div class="row clearfix">
+            
+            <hr class="hidden-xs" />
+
+            <div id="insertModule" class="container-fluid"></div>
+
+        </div>
+
+    </div>
+</div>

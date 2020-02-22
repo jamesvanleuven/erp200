@@ -1,0 +1,70 @@
+<div class="well well-sm container-fluid">
+    <div class="row-fluid">
+        <div class="col-md-4">
+            <!-- LOCATIONS -->
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon input-sm">locations</span>
+                    <div custom-select="e.id as e.value for e in $root.assets.locations.locations track by e.id" 
+                         data-ng-model="newResource.locations.selected"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">            
+            <!-- ESTABLISHMENT TYPE -->
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon input-sm">Establishment Type</span>
+                    <div custom-select="e.id as e.value for e in $root.assets.locations.establishment_types track by e.id" 
+                         data-ng-model="newResource.establishment_types.selected"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">            
+            <!-- ESTABLISHMENT -->
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon input-sm">Establishments</span>
+                    <div custom-select="e.id as e.value for e in $root.assets.locations.establishments track by e.id" 
+                         data-ng-model="newResource.establishments.selected"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row-fluid container-fluid">
+    <!-- NOTES --
+    <div class="col-md-7">
+        <div class="clearfix underline">
+            <div class="pull-right">
+                <button class="btn btn-xs" 
+                        data-note="-1" 
+                        data-ng-click="showHide('note', $event)"><small>New Note</small></button></div>
+            <div class="pull-left"><label class="note-label">Notes</label></div>
+            <div data-ng-include="'views/modules/_partials/_resources/_widgets/_addCustomerNote.html'"></div>
+        </div>
+        <br/>
+        <div id="noteContainer" data-ng-repeat="notes in newResource.notes.value">
+            <div class="clearfix author underline">
+                <div class="pull-right note">
+                    {{notes.created | date:'MM/dd/yyyy @ h:mm:ss a'}} 
+                    &nbsp;<a href="#" 
+                             class="author" 
+                             data-note="{{$index}}" 
+                             data-ng-click="showHide('comment', $event)">
+                    <i class="fa fa-reply fa-1x" title="reply"></i> Reply</a>
+                </div>
+                <div class="pull-left note">{{ notes.author.FullName }}</div>
+            </div>
+            <p class="note" data-ng-bind-html="notes.details"/>
+            <blockquote data-ng-repeat="note in notes.comments">
+                <div class="clearfix author underline">
+                    <div class="pull-right comment">{{note.created | date:'MM/dd/yyyy @ h:mm:ss a'}}&nbsp;</div>
+                    <div class="pull-left comment">{{ note.author.FullName }}</div>
+                </div>
+                <p class="comment" data-ng-bind-html="note.details"/>
+            </blockquote>
+        </div>
+    </div>
+	-->
+</div>

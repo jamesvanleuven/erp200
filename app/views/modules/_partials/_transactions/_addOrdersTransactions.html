@@ -1,0 +1,231 @@
+<!-- REQUIRED OPTIONS AND PRICING BOX -->
+<div class="col-md-10">
+
+<!-- required selectors -->
+    <div class="panel">
+        <div class="panel-body">
+
+            <div class="col-sm-12">
+
+                <!-- ELEMENTS -->
+                <div class="row">
+
+                    <!-- ORDER REFERENCE -->
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon input-sm">Order Number</span>
+                                <input type="text" 
+                                       class="form-control input-sm" 
+                                       name="udf_reference" 
+                                       placeholder="Reference Number" 
+                                       data-ng-blur="modalBlur($event, 'order_reference')" 
+                                       data-ng-model="newTransaction.order_reference.value" next-on-enter />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // -->
+
+                    <!-- DISTRIBUTOR (LOCATION) -->
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon input-sm">Distributor</span>
+                                <input type="text" 
+                                       class="form-control input-sm" 
+                                       data-ng-model="newTransaction.location.selected.value" disabled="disabled" readonly="readonly"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // -->
+
+                    <!-- MANUFACTURER -->
+                    <div class="col-sm-6" data-ng-show="$root.credentials.group_id > 1">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon input-sm">Manufacturer</span>
+                                <input type="text" 
+                                       class="form-control input-sm" 
+                                       data-id="manufacturers" 
+                                       data-ng-blur="modalBlur($event, 'deliver_date')" 
+                                       data-ng-model="$root.profile.manufacturers[0].value" disabled="disabled" readonly="readonly"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" data-ng-show="$root.credentials.group_id == 1">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon input-sm">Manufacturer</span>
+
+                                <!-- ASYNC SOCKET CALL TYPEAHEAD (CUSTOM-SELECT) -->
+                                <div custom-select="m as m.value for m in asyncTransaction($searchTerm, 'manufacturers') track by $index" 
+                                     custom-select-options="customManufacturersOptions"  
+                                     data-ng-model="newTransaction.manufacturer.selected" 
+                                     style="width: 100%;" required>
+                                    <div class="media" style="border-bottom: 1px dotted #ccc;">
+                                        <div class="media-left" style="margin:2px auto;">
+                                            <img fallback-src 
+                                                 src="images/brand/{{ m.key }}.png" 
+                                                 class="media-object" 
+                                                 hspace="3" 
+                                                 vspace="3" 
+                                                 style="width: 50px; height: 50px;"/>
+                                        </div>
+                                        <div class="media-body">
+                                             <h5 class="media-heading text-capitalize">{{ m.value }}<br/>
+                                                <small>LIC NO. {{ m.license_number }}</small><br/>
+                                                <small>STORE NO. {{ m.store_number }}</small></h5>
+                                            <address>
+                                                <small><em>
+                                                    {{ m.address }}<br/>
+                                                </em></small>
+                                                <small>Opens: {{ m.opens }}<br/>
+                                                Closes: {{ m.closes }}<br />
+                                                <!-- Delivery Days: {{ m.delivery_days.toString() }} -->
+                                                </small>
+                                            </address>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span id="load-manufacturers" class="input-group-addon input-sm" style="display:none;">
+                                    <i class="fa fa-spinner fa-pulse fa-2x fa-fw margin-bottom"></i>
+                                </span>
+                                <!-- // -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // -->
+
+                    <!-- CUSTOMER -->
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon input-sm">Customer</span>
+
+                                <!-- ASYNC SOCKET CALL TYPEAHEAD (CUSTOM-SELECT) -->
+                                <div custom-select="c as c.value for c in asyncTransaction($searchTerm, 'customers') track by $index" 
+                                     custom-select-options="customCustomersOptions" 
+                                     data-ng-model="newTransaction.customer.selected" 
+                                     style="width: 100%;" required>
+                                    <div class="media" style="border-bottom: 1px dotted #ccc;">
+                                        <div class="media-left" style="margin:2px auto;">
+                                            <img src="images/brand/{{ c.key }}.png" 
+                                                 class="media-object" 
+                                                 hspace="3" 
+                                                 vspace="3" 
+                                                 style="width: 50px; height: 50px;"/>
+                                        </div>
+                                        <div class="media-body">
+                                             <h5 class="media-heading">{{ c.value }}<br/>
+                                                 <small>LIC NO. {{ c.license_number }}</small></h5>
+                                            <address>
+                                                <small><em>
+                                                    {{ c.address }}<br/>
+                                                </em></small>
+                                                <small>Opens: {{ c.opens }}<br/>
+                                                Closes: {{ c.closes }}<br />
+                                                <!-- Delivery Days: {{ c.delivery_days.toString() }} -->
+                                                </small>
+                                            </address>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span id="load-customers" class="input-group-addon input-sm" style="display:none;">
+                                    <i class="fa fa-spinner fa-pulse fa-2x fa-fw margin-bottom"></i>
+                                </span>
+                                <!-- // -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // -->
+
+                    <!-- DELIVERY DAYS -->
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon input-sm">Delivery Date</span>
+                                <span id="delivery_day">
+                                    <input type="text" next-on-enter
+                                       class="form-control input-sm" 
+                                       data-ng-model="newTransaction.deliver_date.startDate" disabled/>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // -->
+
+                    <!-- BUTTON EVENTS -->
+                    <div class="col-sm-6">
+                        <button data-ng-click="boolean('paid')" 
+                                class="btn btn-sm" data-ng-class="newTransaction.paid.value ? 'btn-success' : ''" type="button" next-on-enter>Paid</button>
+						<button data-ng-click="boolean('promo')" 
+                                class="btn btn-sm" 
+                                data-ng-hide="newTransaction.customer.selected.value == '' || newTransaction.products.value.length === 0"
+                                data-ng-class="newTransaction.promo.value === true ? 'btn-info' : ''" 
+                                type="button" next-on-enter>Promo</button>
+                        <button data-ng-click="boolean('pickup')" 
+                                class="btn btn-sm" data-ng-class="newTransaction.pickup.value ? 'btn-info' : ''" type="button" next-on-enter>Pickup</button>
+                        <button data-ng-click="boolean('rush')" 
+                                class="btn btn-sm" 
+                                data-ng-hide="newTransaction.customer.selected.value == ''"
+                                data-ng-class="newTransaction.rush.value ? 'btn-danger' : ''" 
+                                type="button" next-on-enter>Rush</button>			
+						
+                    </div>
+                    <!-- // -->
+
+                </div>
+                <!-- // -->
+
+            </div>
+
+        </div>
+        <!-- LINE ITEMS -->
+        <div data-ng-show="newTransaction.manufacturer.selected.id > 0 && newTransaction.customer.selected.id > 0" data-ng-include="'views/modules/_partials/_transactions/_widgets/_orderLineItems.html'"></div>
+        <!-- // -->
+
+    </div>
+<!-- // -->
+
+</div>
+<div class="col-md-2">
+
+    <div class="panel panel-default" data-spy="affix" role="complementary" data-offset-top="0" data-offset-pin="0">
+        <div class="panel-body">
+            <div class="button-group btn-group-xs" role="group">
+                <button custom-popover next-on-enter 
+                        data-id="note-popover"
+                        type="button" 
+                        class="btn btn-xs"  
+                        content-template="views/modules/_partials/_transactions/_widgets/_orderNotes.html" 
+                        data-title="{{currentModule.name.toLowerCase() }} notes" 
+                        data-animation="am-fade-and-slide-top" 
+                        data-placement="auto"
+                        data-ng-click="showPopover(newTransaction.notes.value.length, $root);">
+                    <span class="badge">{{ newTransaction.notes.value.length }}</span> <small>Notes</small></button>
+            </div>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item clearfix">
+                <span class="pull-left"><small><strong>Sub-Total:</strong></small></span>
+                <span class="pull-right"><small>{{newTransaction.subTotal | currency }}</small></span>
+            </li>
+            <li class="list-group-item clearfix">
+                <span class="pull-left"><small><strong>Tax:</strong></small></span>
+                <span class="pull-right"><small>{{newTransaction.totalTax | currency }}</small></span>
+            </li>
+            <li class="list-group-item clearfix">
+                <span class="pull-left"><small><strong>Deposit:</strong></small></span>
+                <span class="pull-right"><small>{{newTransaction.Deposit | currency }}</small></span>
+            </li>
+            <li class="list-group-item clearfix">
+                <span class="pull-left"><small><strong>TOTAL:</strong></small></span>
+                <span class="pull-right"><small>{{newTransaction.Total | currency }}</small></span>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<!-- // -->

@@ -1,0 +1,106 @@
+
+        <table id="lineitems" class="table table-condensed"> 
+            <thead> 
+                <tr> 
+                    <th><small>Product</small></th> 
+                    <th><small>SKU</small></th>
+                    <th><small>Size</small></th> 
+                    <th><small>Deposit</small></th>
+                    <th><small>Qty</small></th>
+                    <th data-ng-hide="newTransaction.modal.method == 'edit'"><small>Inventory</small></th>
+                    <th><small>Price</small></th>
+                    <th><small>Total Deposit</small></th>
+                    <th><small>Total</small></th>
+                    <th>
+                        <button data-ng-click="addRow()" class="btn btn-xs pull-right" 
+                                data-ng-hide="newTransaction.status.selected.id >= 3">
+                            <i class="fa fa-plus fa-1x"></i> <small>Add</small></button>
+                    </th>
+                </tr> 
+            </thead> 
+            <tbody> 
+                <tr data-ng-repeat="p in newTransaction.products.value track by $index" data-ng-class="p.error == true ? 'error' : ''">
+                    <td style="width: 90%;">
+                        <div data-ng-show="newTransaction.status.selected.id >= 3 || ($root.credentials.group_id == 2 && newTransaction.status.selected.id >= 2 && currentModule.hwh == false)">
+                            <smal>{{ p.product }}</smal></div>
+                        <div data-ng-hide="newTransaction.status.selected.id >= 3 || ($root.credentials.group_id == 2 && newTransaction.status.selected.id >= 2 && currentModule.hwh == false)" 
+                             data-id="{{$index}}" 
+                             custom-select="p.id as p.value for p in newTransaction.productList | filter: { value: $searchTerm } track by $index" 
+                             data-ng-model="p.selected" 
+                             custom-select-options="customProductOptions" 
+                             style="width: 100%;"
+                             next-on-enter>
+                            <div class="media" style="border-bottom: 1px dotted #ccc;">
+                                <div class="media-left" style="margin:2px auto;">
+                                    <img fallback-src 
+                                         class="media-object" 
+                                         data-ng-src="images/icons/{{p.package_type.selected.id}}.png" 
+                                         hspace="3" 
+                                         vspace="3" 
+                                         style="width: 45px; height: 45px;">
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="media-heading text-capitalize">{{ p.product }}<br/>
+                                    SKU: {{ p.sku }}</h5>
+                                    <span class="Initiated"><small>
+                                        <!-- Retail: {{p.retail_price | currency}}  <br>
+                                        Wholesale: {{p.manufacturer_price | currency}}<br>
+                                        Inventory: {{p.inventory}}  <br> -->
+                                        SIZE: {{ p.litres_per_bottle }}<br/>
+                                        INVENTORY: {{ p.inventory }}
+                                    </small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td><small><span data-ng-bind="p.sku"></span></small></td>
+                    <td><small>{{ p.litres_per_bottle | number:3 }}L</small></td>
+                    <td><small>{{ p.litter_rate | number:3 }}</small></td>
+                    <td width="90px">
+                        <div data-ng-show="newTransaction.status.selected.id >= 3 || ($root.credentials.group_id == 2 && newTransaction.status.selected.id >= 2 && currentModule.hwh == false)"><small>{{ p.quantity }}</small></div>
+                        <div data-ng-hide="newTransaction.status.selected.id >= 3 || ($root.credentials.group_id == 2 && newTransaction.status.selected.id >= 2 && currentModule.hwh == false)" 
+                             class="form-group">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-addon input-sm">
+                                    <button data-ng-click="decrement($index)" 
+                                            data-ng-disabled="p.quantity == 0 || p.inventory == 0">-</button></div>
+                                <input next-on-enter type="text" 
+                                       class="form-control input-sm"
+                                       style="width: 60px !important;" 
+                                       data-ng-change="getTotal('quantity',$index)"  
+                                       data-ng-model="p.quantity" 
+                                       min="{{ p.min | number }}" 
+                                       max="{{ p.max | number }}"/>
+                                <div class="input-group-addon input-sm">
+                                    <button data-ng-click="increment($index)" 
+                                            data-ng-disabled="p.quantity == p.inventory || p.inventory == 0">+</button></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-ng-hide="newTransaction.modal.method == 'edit'">
+                        <small><span data-ng-bind="p.nInventory"></span></small></td>
+                    <td>
+                        <div data-ng-show="newTransaction.status.selected.id >= 3 || ($root.credentials.group_id == 2 && newTransaction.status.selected.id >= 2 && currentModule.hwh == false)"><small>{{ p.calculatedPrice | number:2 }}</small></div>
+                        <div data-ng-hide="newTransaction.status.selected.id >= 3 || ($root.credentials.group_id == 2 && newTransaction.status.selected.id >= 2 && currentModule.hwh == false)">
+                            <input type="text" 
+                                   class="form-control input-sm" 
+                                   style="width: 60px !important;" 
+								   data-ng-model="p.price" 
+                                   data-ng-disabled="p.inventory == 0"
+                                   data-ng-blur="getTotal('price', $index)" 
+								   data-ng-value="{{ p.price | number:2 }}" required/>
+                        </div>
+                    </td>
+                    <td><small>{{ p.totalDeposit | number:2 }}</small></td>
+                    <td><small>
+                        {{ p.calculatedPrice * p.quantity | number:2 }}
+                    </small></td>
+                    <td>
+                        <button next-on-enter data-ng-click="removeRow($index, 'remove')" 
+                                data-ng-hide="newTransaction.status.selected.id >= 3 || ($root.credentials.group_id == 2 && newTransaction.status.selected.id >= 2 && currentModule.hwh == false)"
+                                class="btn btn-xs pull-right"><i class="fa fa-times fa-1x"></i>
+                            <small>Remove</small></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>

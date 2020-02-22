@@ -1,0 +1,18 @@
+@media  (max-width: 767px){
+    .modal{
+        .modal-lg{
+            width:initial;
+            .modal-content{
+                .modal-body{
+                    .addForm{
+                        form{
+                            .noMargin{
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

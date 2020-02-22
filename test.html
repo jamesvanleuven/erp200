@@ -1,0 +1,39 @@
+<div data-ng-include="'views/modules/_partials/_editbuttons.html'" />
+<br/>
+<div class="row">
+    <div class="col-md-12">
+        <form class="form-horizontal">
+            <input type="hidden" name="id" value="295" />
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="license_number">License Number</label>
+                <div class="col-sm-10">
+                    <input type="number" name="license_number" data-ng-model="manufacturers[0].license_number.value" class="input form-control input-sm" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="manufacturers">Manufacturers</label>
+                <div class="col-sm-10">
+                    <input type="text" name="manufacturers" data-ng-model="manufacturers[0].manufacturers.value" class="input form-control input-sm" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="establishment_types">Establishment Types</label>
+                <div class="col-sm-10">
+                    <select data-ng-model="manufacturers[0].establishment_types.selected" class="form-control input-sm" data-ng-options="item as item.value for item in $root.assets.manufacturers.establishment_types track by item.id"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="license_types">License Types</label>
+                <div class="col-sm-10">
+                    <select data-ng-model="manufacturers[0].license_types.selected" class="form-control input-sm" data-ng-options="item as item.value for item in $root.assets.manufacturers.license_types track by item.id"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="license_sub_types">License Sub Types</label>
+                <div class="col-sm-10">
+                    <select data-ng-model="manufacturers[0].license_sub_types.selected" class="form-control input-sm" data-ng-options="item as item.value for item in $root.assets.manufacturers.license_sub_types track by item.id"></select>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

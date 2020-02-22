@@ -1,0 +1,72 @@
+<div id="welcome" class="container-fluid">
+    <div id="login-container" class="row">
+        <div class="login-buffer col-md-4 col-md-offset-4">
+            <!-- begin branding -->
+            <div class="row">
+                <img class="img-responsive" src="images/brand_badge.png"/>
+            </div>
+            <!-- end branding -->
+        </div>
+
+        <div class="login-buffer col-md-4 col-md-offset-4">
+            <!-- begin user login -->
+            <div growl inline="true" reference="1"></div>
+
+            <div class="row">
+                <form class="form-horizontal"
+                      name="fmLogin"
+                      id = "fmLogin" 
+                      novalidate
+                      ng-show="!AuthenticationService.isLogged"
+                      ng-submit="login()"
+                      autocomplete="false">
+                    <input type="email" style="display:none;"/>
+                    <input type="password" style="display:none;"/>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="email" name="email" 
+                                       class="form-control" 
+                                       data-ng-model="user.email" 
+                                       data-ng-required="true" 
+                                       autocomplete="false" 
+                                       placeholder="Email Address"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="password" name="password" 
+                                       class="form-control" 
+                                       data-ng-model="user.password" 
+                                       data-ng-required="true" 
+                                       autocomplete="false"  
+                                       placeholder="Password"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <button ng-disabled="fmLogin.$invalid" 
+                                        id="submit" 
+                                        name="submit" 
+                                        class="btn btn-default btn-block">Tap In <i class="fa fa-beer"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+             <!-- end login -->
+            
+            <!-- begin login options -->
+            <div class="row clearfix">
+                <div class="col-sm-6 pull-right text-right">
+                    <a class="white" data-ng-href="/password-reset">Reset Password</a>
+                </div>
+                <div class="col-sm-6 pull-left">
+                    <a class="white" data-ng-href="/register">Register</a>
+                </div>
+            </div>
+            <!-- end options -->
+        </div>
+
+    </div>
+</div>

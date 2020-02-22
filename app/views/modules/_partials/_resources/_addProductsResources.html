@@ -1,0 +1,237 @@
+<div class="well well-sm container-fluid">
+    <div class="row-fluid">
+        <!-- PRODUCT NAME -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon input-sm">Product Name</span>
+                    <input type="text" name="product_name" 
+                           class="form-control input-sm" 
+                           data-ng-model="newResource.product.value" 
+						   placeholder="Product Name" 
+						   required/>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCT SKU -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon input-sm">SKU</span>
+                    <input type="number" name="sku" 
+                           class="form-control input-sm" 
+                           data-ng-blur="modalBlur($event, 'SKU')" 
+                           data-ng-model="newResource.sku.value" 
+						   placeholder="000000" 
+						   required/>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCT UPC -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon input-sm">UPC</span>
+                    <input type="number" name="upc" 
+                           class="form-control input-sm" 
+                           data-ng-model="newResource.upc.value" 
+						   placeholder="000000"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCT TYPE (CATEGORY 1) -->
+       <div class="col-md-4">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon input-sm">Product Type</span>
+                    <div custom-select="prt as prt.value for prt in $root.assets.products.product_type | filter: { value: $searchTerm } track by prt.id" 
+                         data-ng-model="newResource.product_type.selected" 
+                         style="width: 100%;">
+                        <div class="media" style="border-bottom: 1px dotted #ccc;">
+                            <div class="media-left" style="margin:2px auto;">
+                                <!--<img class="media-object" src="images/brand/{{prt.id}}.png" hspace="3" vspace="3" style="width: 50px; height: 50px;"/>-->
+                            </div>
+                            <div class="media-body">
+                                <h5 class="media-heading">{{prt.value}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PACKAGE TYPE (CATEGORY 2) -->
+       <div class="col-md-4">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon input-sm">Package Type</span>
+                    <div custom-select="pt as pt.value for pt in $root.assets.products.package_type | filter: { value: $searchTerm } track by pt.id" 
+                         data-ng-model="newResource.package_type.selected" 
+                         style="width: 100%;">
+                        <div class="media" style="border-bottom: 1px dotted #ccc;">
+                            <div class="media-left" style="margin:2px auto;">
+                                <img fallback-src 
+                                         class="media-object" 
+                                         data-ng-src="images/icons/{{pt.id}}.png" 
+                                         hspace="3" 
+                                         vspace="3" 
+                                         style="width: 45px; height: 45px;">
+                            </div>
+                            <div class="media-body">
+                                <h5 class="media-heading">{{pt.value}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="container-fluid">
+    <!-- product sizing -->
+    <div class="col-md-3">
+        <h5>Sizing</h5>
+        <div class="row-fluid">
+
+            <!-- LITRES PER BOTTLE -->
+            <div class="col-md-12">
+                <div class="form-group" data-ng-class="{ 'has-error': modalContainer.lpb.$invalid }">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">Litres Per Bottle</span>
+                        <input type="text" 
+							   id="litres_per_bottle" 
+							   name="litres_per_bottle" 
+                               class="form-control input-sm" 
+                               data-ng-model="newResource.litres_per_bottle.value" 
+							   data-ng-pattern="/^\d+([,.]\d+)?$/" 
+							   data-ng-blur="formatNumber($event)"
+							   step="0.001" 
+							   placeholder="0.000" 
+							   required/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTTLES PER CASE -->
+            <div class="col-md-12">
+                <div class="form-group" data-ng-class="{'has-error': modalContainer.bpc.$invalid}">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">Bottles Per Case</span>
+                        <input type="number" 
+							   id="bottles_per_case" 
+							   name="bottles_per_case" 
+                               class="form-control input-sm" 
+                               data-ng-model="newResource.bottles_per_case.value" 
+							   placeholder="1"
+                               required/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTTLES PER SKU -->
+            <div class="col-md-12">
+                <div class="form-group" data-ng-class="{'has-error': modalContainer.bps.$invalid}">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">Bottles Per SKU</span>
+                        <input type="number" 
+							   id="bottles_per_sku" 
+							   name="bottles_per_sku"  
+                               class="form-control input-sm" 
+                               data-ng-model="newResource.bottles_per_sku.value" 
+							   placeholder="1"
+                               required/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // -->
+    <!-- product pricing -->
+    <div class="col-md-3">
+        <h5>Pricing</h5>
+        <div class="row-fluid">
+			
+			<!-- LITTER RATE -->
+		   <div class="col-md-12">
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon input-sm">Deposit</span>
+						<input type="text" 
+							   id="litter_rate" 
+							   name="litter_rate"
+							   class="form-control input-sm" 
+							   data-ng-model="newResource.litter_rate.value" 
+							   data-ng-pattern="/^\d+([,.]\d+)?$/" 
+							   data-ng-blur="formatNumber($event)" 
+							   step="0.001" 
+							   placeholder="0.000" 
+							   required/>
+					</div>
+				</div>
+			</div>
+
+            <!-- MANUFACTURER PRICE -->
+            <div class="col-md-12">
+                <div class="form-group" data-ng-class="{ 'has-error': modalContainer.mfr_price.$invalid }">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">Manufacturer Price</span>
+                        <input type="text" 
+							   id="manufacturer_price" 
+							   name="manufacturer_price" 
+                               class="form-control input-sm" 
+                               data-ng-model="newResource.manufacturer_price.value" 
+							   data-ng-pattern="/^\d+([,.]\d+)?$/" 
+							   data-ng-blur="formatNumber($event)" 
+							   step="0.01" 
+							   placeholder="9.95" 
+							   required/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WHOLESALE PRICE -->
+            <div class="col-md-12">
+                <div class="form-group" data-ng-class="{ 'has-error': modalContainer.ws_price.$invalid }">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">Wholesale Price</span>
+                        <input type="text" 
+							   id="wholesale_price" 
+							   name="wholesale_price" 
+                               class="form-control input-sm" 
+                               data-ng-model="newResource.wholesale_price.value" 
+							   data-ng-pattern="/^\d+([,.]\d+)?$/" 
+							   data-ng-blur="formatNumber($event)" 
+							   step="0.01" 
+							   placeholder="9.95"
+                               required/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RETAIL PRICE -->
+            <div class="col-md-12">
+                <div class="form-group" data-ng-class="{ 'has-error': modalContainer.rtl_price.$invalid }">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">Retail Price</span>
+                        <input type="text" 
+							   id="retail_price" 
+							   name="retail_price" 
+                               class="form-control input-sm" 
+                               data-ng-model="newResource.retail_price.value" 
+							   data-ng-pattern="/^\d+([,.]\d+)?$/" 
+							   data-ng-blur="formatNumber($event)" 
+							   step="0.01" 
+							   placeholder="9.95" 
+							   required />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

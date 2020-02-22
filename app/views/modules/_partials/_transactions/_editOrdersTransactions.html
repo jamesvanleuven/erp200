@@ -1,0 +1,175 @@
+<div class="col-md-10">
+
+    <div class="panel">
+        <div class="panel-body">
+        
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">Order Number</span>
+                        <input type="text" next-on-enter 
+                               class="form-control input-sm" 
+                               name="udf_reference" 
+                               placeholder="Reference Number" 
+                               data-ng-blur="modalBlur($event, 'order_reference')" 
+                               data-ng-model="newTransaction.order_reference.value"/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">Distributor</span>
+                        <select class="form-control input-sm" next-on-enter 
+                                name="location_id" 
+                                data-ng-init="newTransaction.location.selected" 
+                                data-ng-model="newTransaction.location.selected" 
+                                data-ng-options="location.id as location.value for location in $root.assets.orders.location track by location.id" disabled="disabled" readonly="readonly"/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">Manufacturer</span>
+                        <input type="text" next-on-enter 
+                               class="form-control input-sm" 
+                               data-ng-model="newTransaction.manufacturer.selected.value" disabled="disabled" readonly="readonly"/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">Customer</span>
+                        <input type="text" next-on-enter 
+                               class="form-control input-sm" 
+                               disabled="disabled" readonly="readonly"
+							   value="(LIC: {{newTransaction.customer_info[0].license.number}}) {{newTransaction.customer.selected.value}}"/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">Delivery Date</span>
+                        <span id="delivery_day">
+                            <input type="text" next-on-enter 
+                               class="form-control input-sm" 
+                               data-ng-model="newTransaction.deliver_date.startDate" disabled="disabled" readonly="readonly"/>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <button next-on-enter 
+                        data-ng-click="boolean('paid')" 
+                        class="btn btn-sm" 
+                        data-ng-class="newTransaction.paid.value == true ? 'btn-success' : ''" 
+                        type="button">Paid</button>
+				<button data-ng-click="boolean('promo')" 
+						class="btn btn-sm" 
+						data-ng-hide="newTransaction.customer.selected.value == ''"
+						data-ng-class="newTransaction.promo.value == true ? 'btn-info' : ''" 
+						type="button" next-on-enter>Promo</button>
+                <button next-on-enter 
+                        data-ng-click="boolean('pickup', $index)" 
+                        data-ng-disabled="newTransaction.status.selected.id == 3 || disableButton == true"
+                        class="btn btn-sm" 
+                        data-ng-class="newTransaction.pickup.value == true ? 'btn-info' : ''" 
+                        type="button">Pickup</button>
+                <button next-on-enter 
+                        data-ng-click="boolean('rush')" 
+                        data-ng-disabled="newTransaction.status.selected.id == 3 || disableButton == true" 
+                        class="btn btn-sm" 
+                        data-ng-class="newTransaction.rush.value == true ? 'btn-danger' : ''" 
+                        type="button">Rush</button>
+				
+                <span data-ng-show="($root.credentials.group_id == 2 && currentModule.hwh == true) || ($root.credentials.group_id == 2 && newTransaction.created_by.selected.id == $root.profile.user_id )">
+                    <button next-on-enter 
+                            type="button" 
+                            class="btn btn-sm" 
+                            data-ng-disabled="disableButton"
+                            data-ng-click="voidTransaction(4, newTransaction.order_id)"
+							data-ng-class="newTransaction.void.value == true ? 'btn-default' : ''"
+                            data-ng-hide="newTransaction.status.selected.id == 3 || newTransaction.status.selected.id == 4">VOID</button>
+                </span>
+                
+                <span data-ng-show="($root.credentials.group_id == 2 && currentModule.hwh == true)">
+                    <button next-on-enter 
+                            type="button" 
+                            class="btn btn-success btn-sm" 
+                            data-ng-disabled="disableButton"
+                            data-ng-click="inventoryUpdate(3, newTransaction.id, false)" 
+                            data-ng-show="newTransaction.status.selected.id == 2">DELIVERED</button>
+                </span>
+                
+                <span data-ng-show="($root.credentials.group_id == 1) || ($root.credentials.group_id == 3) && currentModule.hwh == false">
+                    <button next-on-enter 
+                            type="button" 
+                            class="btn btn-sm" 
+                            data-ng-disabled="disableButton"
+                            data-ng-click="voidTransaction(4, newTransaction.order_id)"
+							data-ng-class="newTransaction.void.value == true ? 'btn-default' : ''"
+                            data-ng-hide="newTransaction.status.selected.id == 3 || newTransaction.status.selected.id == 4">VOID</button>
+                    <button next-on-enter 
+                            type="button" 
+                            class="btn btn-success btn-sm" 
+                            data-ng-disabled="disableButton"
+                            data-ng-click="inventoryUpdate(3, newTransaction.id, false)" 
+                            data-ng-show="newTransaction.status.selected.id == 2">DELIVERED</button>
+                </span>
+            </div>
+            
+        </div>
+        
+        <!-- LINE ITEMS -->
+        <div data-ng-show="newTransaction.manufacturer.selected.id > 0 && newTransaction.customer.selected.id > 0" data-ng-include="'views/modules/_partials/_transactions/_widgets/_orderLineItems.html'"></div>
+        <!-- // -->
+    </div>
+
+</div>
+<div class="col-md-2">
+            
+    <div class="panel panel-default" data-spy="affix" role="complementary" data-offset-top="0" data-offset-pin="0">
+        <div class="panel-body">
+            <div class="button-group btn-group-xs" role="group">
+                <button custom-popover 
+                        data-id="note-popover"
+                        type="button" 
+                        class="btn btn-xs"  
+                        data-ng-class="newTransaction.notes.value.length > 0 ? 'btn-warning' : null;"
+                        content-template="views/modules/_partials/_transactions/_widgets/_orderNotes.html" 
+                        data-title="{{currentModule.name.toLowerCase() }} notes" 
+                        data-animation="am-fade-and-slide-top" 
+                        data-placement="auto"
+                        data-ng-click="showPopover(newTransaction.notes.value.length, $root);" next-on-enter>
+                    <span class="badge">{{ newTransaction.notes.value.length }}</span> <small>Notes</small></button>
+            </div>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item clearfix">
+                <span class="pull-left"><small><strong>Sub-Total:</strong></small></span>
+                <span class="pull-right"><small>{{newTransaction.subTotal | currency }}</small></span>
+            </li>
+            <li class="list-group-item clearfix">
+                <span class="pull-left"><small><strong>Tax:</strong></small></span>
+                <span class="pull-right"><small>{{newTransaction.totalTax | currency }}</small></span>
+            </li>
+            <li class="list-group-item clearfix">
+                <span class="pull-left"><small><strong>Deposit:</strong></small></span>
+                <span class="pull-right"><small>{{newTransaction.Deposit | currency }}</small></span>
+            </li>
+            <li class="list-group-item clearfix">
+                <span class="pull-left"><small><strong>TOTAL:</strong></small></span>
+                <span class="pull-right"><small>{{newTransaction.Total | currency }}</small></span>
+            </li>
+        </ul>
+    </div>
+            
+</div>

@@ -1,0 +1,173 @@
+
+        <table id="lineitems" class="table table-condensed"> 
+            <thead> 
+                <tr style="border-bottom: 2px solid #ccc;"> 
+                    <th><small>Product</small></th> 
+                    <th><small>SKU</small></th>
+					<th><small>Size</small></th>
+                    <th><small>Qty</small></th>
+                    <th data-ng-show="newTransaction.status.selected.id == 5 && newTransaction.transfer_type.selected.id !== 2"><small>Inventory</small></th>
+                    <th class="clearfix" style="float:right; border: none;">
+                        <div data-ng-show="newTransaction.method == 'add'">
+                            <button data-ng-click="addRow()" 
+                                    class="btn btn-sm">
+                                <i class="fa fa-plus fa-1x"></i>
+                                <small>Add</small>
+                            </button>
+                        </div>
+                        <div data-ng-show="newTransaction.method == 'edit'">
+                            <button data-ng-click="addRow()" 
+                                    data-ng-hide="newTransaction.status.selected.id == 4 || newTransaction.status.selected.id >= 7"
+                                    class="btn btn-sm">
+                                <i class="fa fa-plus fa-1x"></i>
+                                <small>Add</small>
+                            </button>
+                        </div>
+                    </th>
+                </tr> 
+            </thead> 
+            <tbody> 
+                <tr data-ng-repeat="p in newTransaction.products.value track by $index" data-ng-class="p.error == true ? 'error' : ''">
+                    <td>
+<!-- ADD NEW TRANSFER -->
+                        <div data-ng-show="newTransaction.method == 'add'">
+                            <div data-id="{{ $index }}" 
+                                 data-ng-model="p.selected" 
+                                 custom-select-options="customProductOptions" 
+                                 custom-select="p.id as p.value for p in newTransaction.productList | filter: { value: $searchTerm } track by $index" 
+                                 style="width: 100%;" 
+                                 next-on-enter>
+                                <div class="media" style="border-bottom: 1px dotted #ccc;">
+                                    <div class="media-left" style="margin:2px auto;">
+                                        <img fallback-src 
+                                             class="media-object" 
+                                             data-ng-src="images/icons/{{p.package_type.selected.id}}.png" 
+                                             hspace="3" 
+                                             vspace="3" 
+                                             style="width: 45px; height: 45px;">
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="media-heading text-capitalize">{{ p.product }}<br/>
+                                        SKU: {{ p.sku }}</h5>
+                                        <span class="Initiated"><small>
+                                            <!-- Retail: {{p.retail_price | currency}}  <br>
+                                            Wholesale: {{p.manufacturer_price | currency}}<br>
+                                            Inventory: {{p.inventory}}  <br> -->
+                                            SIZE: {{ p.litres_per_bottle }}<br/>
+                                            INVENTORY: {{ p.inventory }}
+                                        </small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!-- // -->
+<!-- EDIT EXISTING TRANSFER -->
+                        <div data-ng-show="newTransaction.method == 'edit'">
+                            <div data-ng-show="newTransaction.status.selected.id == 4 || newTransaction.status.selected.id >= 7">
+                                <small>{{ p.product }} | SIZE: {{ p.litres_per_bottle }}L</small>
+                            </div>
+                            <div data-ng-hide="newTransaction.status.selected.id == 4 || newTransaction.status.selected.id >= 7">
+                                <div data-id="{{ $index }}" 
+                                     data-ng-model="p.selected" 
+                                     custom-select-options="customProductOptions" 
+                                     custom-select="p.id as p.value for p in newTransaction.productList | filter: { value: $searchTerm } track by $index" 
+                                     style="width: 100%;" 
+                                     next-on-enter>
+                                    <div class="media" style="border-bottom: 1px dotted #ccc;">
+                                        <div class="media-left" style="margin:2px auto;">
+                                            <img fallback-src 
+                                                 class="media-object" 
+                                                 data-ng-src="images/icons/{{p.package_type.selected.id}}.png" 
+                                                 hspace="3" 
+                                                 vspace="3" 
+                                                 style="width: 45px; height: 45px;">
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading text-capitalize">{{ p.product }}<br/>
+                                            SKU: {{ p.sku }}</h5>
+                                            <span class="Initiated"><small>
+                                                <!-- Retail: {{p.retail_price | currency}}  <br>
+                                                Wholesale: {{p.manufacturer_price | currency}}<br>
+                                                Inventory: {{p.inventory}}  <br> -->
+                                                SIZE: {{ p.litres_per_bottle }}<br/>
+                                                INVENTORY: {{ p.inventory }}
+                                            </small></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td><small>{{ p.sku }}</small></td>
+					<td><small>{{ p.litres_per_bottle | number:2 }}L</small></td>
+                    <td style="width: 100px;">
+                        
+                        <div data-ng-show="newTransaction.method == 'add'">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon input-sm">
+                                        <button data-ng-click="decrement($index)" 
+                                                data-ng-disabled="p.quantity == 0 || (p.inventory == 0 && newTransaction.transfer_type.selected.id == 1)">-</button></div>
+                                    <input next-on-enter type="text" 
+                                           class="form-control input-sm"
+                                           style="width: 55px !important;" 
+                                           data-ng-change="getTotal('quantity',$index)" 
+                                           data-ng-disabled="(p.inventory == 0 && newTransaction.transfer_type.selected.id == 1)"
+                                           data-ng-model="p.quantity" 
+                                           min="{{ p.min | number }}" 
+                                           max="{{ p.max | number }}"/>
+                                    <div class="input-group-addon input-sm">
+                                        <button data-ng-click="increment($index)" 
+                                                data-ng-disabled="p.quantity == p.inventory || (p.inventory == 0 && newTransaction.transfer_type.selected.id == 1)">+</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div data-ng-show="newTransaction.method == 'edit'">
+                            <div data-ng-show="newTransaction.status.selected.id == 4 || newTransaction.status.selected.id >= 7">
+                                <small>{{ p.quantity }}</small>
+                            </div>
+                            <div data-ng-hide="newTransaction.status.selected.id == 4 || newTransaction.status.selected.id >= 7">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon input-sm">
+                                            <button data-ng-click="decrement($index)" 
+                                                    data-ng-disabled="(p.inventory == 0 && newTransaction.transfer_type.selected.id == 1)">-</button></div>
+                                        <input next-on-enter type="text" 
+                                               class="form-control input-sm"
+                                               style="width: 55px !important;" 
+                                               data-ng-change="getTotal('quantity',$index)"  
+                                               data-ng-model="p.quantity" 
+                                               min="{{ p.min | number }}" 
+                                               max="{{ p.max | number }}"/>
+                                        <div class="input-group-addon input-sm">
+                                            <button data-ng-click="increment($index)" 
+                                                    data-ng-disabled="(p.inventory == 0 && newTransaction.transfer_type.selected.id == 1)">+</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </td>
+                    <td data-ng-show="newTransaction.status.selected.id == 5 && newTransaction.transfer_type.selected.id !== 2"><small><span data-ng-bind="p.nInventory"></span></small></td>
+                    <td class="clearfix" style="float:right;">
+                        <div data-ng-show="newTransaction.method == 'add'">
+                            <button next-on-enter data-ng-click="removeRow($index, 'remove')" 
+                                    class="btn btn-sm">
+                                <i class="fa fa-times fa-1x"></i>
+                                <small>Remove</small>
+                            </button>
+                        </div>
+                        <div data-ng-show="newTransaction.method == 'edit'">
+                            <div data-ng-hide="newTransaction.status.selected.id == 4 || newTransaction.status.selected.id >= 7">
+                                <button next-on-enter data-ng-click="removeRow($index, 'remove')" 
+                                        class="btn btn-sm">
+                                    <i class="fa fa-times fa-1x"></i>
+                                    <small>Remove</small>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>

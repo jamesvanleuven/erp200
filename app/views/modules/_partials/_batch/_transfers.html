@@ -1,0 +1,42 @@
+                <div class="col-md-6 transfers" style="text-align: left; display: none;">
+                    <div class="btn-group" role="group">
+                        
+                        <!-- PRINT PDF -->
+                        <button next-on-enter type="button" 
+                                class="btn btn-primary btn-sm"
+                                data-ng-click="batchEvent($event)"
+                                data-id="print" 
+                                data-type="print"
+                                data-ng-disabled="disableButton"
+                                data-id="print">
+                        <i class="fa fa-print"></i> <small>Print</small></button>
+
+                        <!-- EXPORT CSV -->
+                        <button next-on-enter type="button" 
+                                class="btn btn-primary btn-sm"
+                                data-ng-click="batchEvent($event);"
+                                data-id="export"
+                                data-type="export" 
+                                data-ng-disabled="disableButton"
+                                data-id="export">
+                        <i class="fa fa-file-excel-o"></i> <small>Export</small></button>
+                        
+                        <!-- PICKLIST PDF -->
+                        <button next-on-enter type="button" 
+                                class="btn btn-primary btn-sm" title="Pick List {{currentModule.name}} Batch"
+                                data-id="picklist"
+                                data-type="picklist"
+                                data-ng-click="batchEvent($event)"
+                                data-ng-disabled="disableButton">
+                        <i class="fa fa-print"></i> <small>Pick List</small></button>
+                        
+                        <!-- BILL OF LADING - PDF -->
+                        <button next-on-enter type="button" 
+                                class="btn btn-primary btn-sm"
+                                data-id="billoflading" 
+                                data-type="billoflading"
+                                data-ng-click="batchEvent($event);"
+                                data-ng-disabled="disableButton">
+                        <i class="fa fa-file-text-o"></i> <small>Bill of Lading</small></button>
+                    </div>
+                </div>

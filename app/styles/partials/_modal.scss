@@ -1,0 +1,117 @@
+.form-control:focus {
+  border-color: dodgerblue;
+  box-shadow: inset 0 1px 1px dodgerblue, 0 0 8px dodgerblue;
+}
+
+.error {
+  border-color: #FF0000;
+  box-shadow: inset 0 1px 1px #FF0000, 0 0 8px #FF0000;
+}
+
+.success {
+  border-color: green;
+  box-shadow: inset 0 1px 1px green, 0 0 8px green;
+}
+
+.note-label {
+    font-size: 90%;
+    font-weight: 600;
+}
+
+.author {
+    font-style: italic;
+    color: #ccc;
+}
+
+.underline {
+    border-bottom: 1px solid #ccc;
+}
+.issues {
+    border-bottom: 1px solid red;
+}
+
+a.author {
+    text-decoration: none;
+    cursor: hand;
+}
+
+.note {
+    font-size: 0.9em;
+    margin: 5px;
+}
+
+.comment {
+    font-size: 70%;
+}
+
+#notesFrame {
+    max-height: 170px !important;
+    overflow-x: scroll;
+    height: 170px !important;
+    margin-top: -22px;  
+}
+
+#noteContainer {
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 1px 3px 2px 1px;
+}
+
+#noteContainer blockquote {
+    margin: 0 0 0 5px;
+}
+
+/* drop down styles */
+.status-title {
+    font-size: 1.5em !important;
+}
+
+.Initiated {
+    color: darkorange;
+}
+
+.Accepted {
+   color: dodgerblue;
+}
+
+.Received {
+    color: green;
+}
+
+.Entered {
+    color: orangered;
+}
+.Pending {
+    @extend .text-info;
+}
+.Delivered {
+    @extend .text-success;
+}
+.Voided {
+    color: #000;
+}
+
+/* establishment-logo editing */
+
+.establishment-logo {
+	position: relative;
+	display: inline-block;
+}
+
+.establishment-logo:hover .edit-image {
+	display: block;
+}
+
+.edit-image {
+	padding-top: 7px;	
+	padding-right: 7px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: none;
+}
+
+.edit-image a {
+	color: #000;
+}

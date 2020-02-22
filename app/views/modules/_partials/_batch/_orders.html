@@ -1,0 +1,98 @@
+                <div class="col-md-6 orders" style="text-align: left; display: none;">
+                    <div class="btn-group" role="group">
+                        
+                        <!-- ROUTING -->
+                        <div class="btn-group" 
+                             data-id="routing" 
+                             data-type="routing"
+                             data-ng-disabled="disableButton" 
+                             data-ng-mouseenter="buttonOptions($event);" 
+                             data-ng-mouseleave="buttonOptions($event);">
+                            <button next-on-enter type="button" 
+                                    data-id="routing"  
+                                    data-viewpoint="view"
+                                    class="btn btn-primary btn-sm dropdown-toggle" 
+                                    data-ng-click="batchEvent($event)"
+                                    data-ng-disabled='disableButton'>
+                                <small>Routing</small> <i class="caret"></i></button>
+                            <ul id="routing" 
+                                data-id="routing"
+                                data-viewpoint="send"
+                                data-ng-click="batchEvent($event);" 
+                                data-ng-disabled="disableButton" 
+                                class="dropdown-menu" style="margin-top: -2px;">
+                                <li><a href="javascript:void(0);" 
+                                       data-ng-disabled="disableButton" >
+                                    <i class="fa fa-map-marker"></i> <small>Send Routes</small></a></li>
+                            </ul>                            
+                        </div>
+
+                        <!-- DOC60 PDF -->
+                        <button next-on-enter type="button" 
+                                class="btn btn-primary btn-sm" title="{{currentModule.name}} Batch"
+                                data-id="doc60"
+                                data-type="doc60"
+                                data-ng-click="batchEvent($event)"
+                                data-ng-disabled="disableButton">
+                        <i class="fa fa-file-pdf-o"></i> <small>Invoice</small></button>
+                        
+                        <!-- PRINT PDF -->
+                        <button next-on-enter type="button" 
+                                class="btn btn-primary btn-sm" title="Print {{currentModule.name}} Batch"
+                                data-id="print"
+                                data-type="print"
+                                data-ng-click="batchEvent($event)"
+                                data-ng-disabled="disableButton">
+                        <i class="fa fa-print"></i> <small>Print</small></button>
+                        
+                        <!-- PICKLIST PDF -->
+                        <button next-on-enter type="button" 
+                                class="btn btn-primary btn-sm" title="Pick List {{currentModule.name}} Batch"
+                                data-id="picklist"
+                                data-type="picklist"
+                                data-ng-click="batchEvent($event)"
+                                data-ng-disabled="disableButton">
+                        <i class="fa fa-print"></i> <small>Pick List</small></button>
+
+                        <!-- EXPORT CSV -->
+                        <button next-on-enter type="button" 
+                                class="btn btn-primary btn-sm" title="Export {{currentModule.name}} Batch"
+                                data-id="export"
+                                data-type="export"
+                                data-ng-click="batchEvent($event)"
+                                data-ng-disabled="disableButton">
+                        <i class="fa fa-file-excel-o"></i> <small>Export</small></button>
+                        
+                        <!-- LDB CSV -->
+                        <button next-on-enter type="button" 
+                                class="btn btn-primary btn-sm" title="Export {{currentModule.name}} LDB Batch"
+                                data-id="ldb"
+                                data-type="ldb"
+                                data-ng-click="batchEvent($event)"
+                                data-ng-disabled="disableButton">
+                        <i class="fa fa-file-excel-o"></i> <small>LDB</small></button>
+                        
+                        <!-- BATCHSTATUS -->
+                        
+                        <!-- <div class="btn-group" 
+                             data-id="delivered" 
+                             data-ng-disabled="disableButton" 
+                             data-ng-mouseenter="buttonOptions($event);" 
+                             data-ng-mouseleave="buttonOptions($event);">
+                            <button next-on-enter type="button" class="btn btn-primary btn-sm dropdown-toggle" 
+                                    data-ng-disabled="disableButton">
+                                <small>Mark as...</small> <i class="caret"></i></button>
+                            <ul id="delivered" 
+                                data-id="delivered" 
+                                data-type="delivered"
+                                data-ng-disabled="disableButton" 
+                                data-ng-click="batchEvent($event)"
+                                class="dropdown-menu" style="margin-top: -2px;">
+                              <li><a href="javascript:void(0);">
+                                <i class="fa fa-check"></i> <small>Delivered</small></a></li>
+                            </ul>                            
+                        </div> -->
+                        
+                        
+                    </div>
+                </div>

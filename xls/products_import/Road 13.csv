@@ -1,0 +1,96 @@
+product,sku,batch_id,batch_name,upc,litres_per_bottle,bottles_per_skid,bottles_per_case,alcohol_percentage,litter_rate,mfr_price,rtl_price,sp_price,ws_price,category_1,category_2,active
+Zinfandel,116095,,,626990081319,0,1,12,0.14,0,0.29,0.29,0,0,Wine,Canada,t
+Viognier Riesling Sauvignon Blanc 2009,122192,,,626990081401,0,1,6,0.13,0,0.23,0.23,0,0,Wine,Canada,t
+MerlotSyrah 2011,140236,,,626990105305,0,1,12,0.14,0,0.39,0.39,0,0,Wine,Canada,f
+Stemwinder 2014,164681,,,626990081371,0,1,12,0.14,0,0.17,0.15,0,0,Wine,Canada,f
+Golden Mile Cellars Meritage,183475,,,0,0.03,1,6,0.13,0,0.98,0.98,0,0,Wine,Canada,t
+Old Vines Chenin Blanc Late Harvest,222976,,,626990105343,0,1,12,0.1,0,0,0,0,0,Wine,Canada,f
+Sparkling Chenin Blanc Home Vineyard 2011,223008,,,626990187578,0.01,1,1,0.12,0,0.89,0.89,0,0,Wine,Canada,f
+PeterS Vineyard Riesling,234567,,,626990140122,0,1,12,0.13,0,0.21,0.21,0,0,Wine,Canada,t
+Honest JohnS Red Block 1 2013,23457,,,626990140146,0,1,12,0.13,0,0.14,0.14,0,0,Wine,Canada,f
+Honest JohnS White Block 1 2014,234575,,,626990187653,0,1,12,0.13,0,0.1,0.1,0,0,Wine,Canada,f
+Honest JohnS White Block 1 2012,234575,B,,0,7.5,1,12,0.13,0.1,0.1,0.1,0,0,Wine,Canada,f
+Honest JohnS Red Block 1 2011,23457,B,,0,7.5,1,12,0.13,0.1,0.14,0.14,0,0,Wine,Canada,t
+SeventyFour K 2013 Block 1,253062,,,0,7.5,1,12,0.1,0.1,0.18,0.18,0,0,Wine,Packaged,f
+SeventyFour K 2012 Block 1,253062,B,,626990105411,0,1,12,0.13,0,0.18,0.18,0,0,Wine,Canada,f
+Pinot Noir Fleet Road 2012,255471,,,626990105404,0,1,12,0.12,0,0.24,0.24,0,0,Wine,Canada,f
+The Similkameen Collective  Consensus,286476,,,0,7.5,1,6,0.12,0.1,0.52,0.52,0,0,Wine,Packaged,f
+Honest JohnS Red 2014,290684,B,,626990222255,75,1,12,0.13,0,0.16,0.16,0,0,Wine,Canada,f
+The Similkameen Collective  Roussanne,290890,,,0,7.5,1,6,0.05,0.1,0.3,0.3,0,0,Wine,Packaged,f
+Jackpot Malbec 2013,312926,,,626990140160,0,1,6,0.13,0,0.39,0.39,0,0,Wine,Canada,f
+Jackpot Malbec 2011,312926,B,,0,7.5,1,6,0.13,0.1,0.39,0.39,0,0,Wine,Canada,f
+Jackpot Petit Verdot 2012,312975,,,626990140177,0,1,6,0.15,0,0.65,0.65,0,0,Wine,Canada,f
+Rockpile 2008,313601,,,626990105299,0.03,1,1,0.14,0,1.05,1.05,0,0,Wine,Canada,t
+Riesling,344630,,,626990062738,0,1,12,0.12,0,0.19,0.19,0,0,Wine,Canada,t
+Golden Mile Cellars Syrah 2006,355404,,,626990062660,0,1,12,0.13,0,0.24,0.24,0,0,Wine,Canada,t
+Wildebeest  White 2013,357061,,,626990140191,0,1,12,0.14,0,0.14,0.14,0,0,Wine,Canada,f
+Wildebeest  Red 2012,357129,,,626990140207,0,1,12,0.14,0,0.21,0.21,0,0,Wine,Canada,t
+Honest JohnS Rose 2014,357327,,,626990081340,0,1,12,0.12,0,0.15,0.15,0,0,Wine,Canada,f
+Honest JohnS Rose 2015,357327,B,,0,0,1,12,0.12,0.01,0.15,0.15,0,0,Wine,Canada,f
+Golden Mile  Old Vine Chenin 0406,379735,,,626990038146,0,1,12,0.13,0,0.19,0.19,0,0,Wine,Canada,t
+SeventyFour K 2012,410837,,,626990140108,0.03,1,1,0.13,0,1.49,1.49,0,0,Wine,Canada,f
+Syrah 2011,417287,,,626990081289,0,1,12,0.13,0,0.21,0.2,0,0,Wine,Canada,f
+Syrah 2012,417287,B,,0,7.5,1,12,0.13,0.1,0.21,0.2,0,0,Wine,Canada,f
+Old Vines Chenin Blanc 2014,450890,,,626990062745,0,1,12,0.12,0,0.21,0.21,0,0,Wine,Canada,f
+5th Element 2011,45922,,,626990081302,0,1,6,0.14,0,0.42,0.42,0,0,Wine,Canada,f
+Notable Blend Red,468652,,,626990217244,0,1,12,0.14,0,0.14,0.14,0,0,Wine,Canada,t
+Golden Mile  Fifth Element White 2006,479592,,,626990062684,0,1,6,0.13,0,0.2,0.2,0,0,Wine,Canada,t
+Golden Mile  Pinot Noir Black Arts 2006,492017,,,626990053422,0,1,12,0.13,0,0.29,0.29,0,0,Wine,Canada,t
+Golden Mile  Pinot Noir 2005,492108,,,626990053415,0,1,12,0.13,0,0.25,0.25,0,0,Wine,Canada,t
+Golden Mile  Chardonnay 2005,492447,,,626990053392,0,1,12,0.14,0,0.2,0.2,0,0,Wine,Canada,t
+Golden Mile  Zinfandel 2005,492546,,,626990053385,0,1,12,0.14,0,0.3,0.3,0,0,Wine,Canada,t
+Golden Mile  Syrah Black Arts 2006,492637,,,626990053378,0,1,12,0.14,0,0.35,0.35,0,0,Wine,Canada,t
+Golden Mile  Cabernet Sauvignon 2004,493312,,,626990038207,0,1,12,0.14,0,0.25,0.25,0,0,Wine,Canada,t
+Home Vineyard Riesling,503128,,,626990105312,0,1,12,0.12,0,0.18,0.18,0,0,Wine,Canada,t
+Castle Vineyard Pinot Noir  2012,508671,,,626990105381,0,1,12,0.13,0,0.44,0.44,0,0,Wine,Canada,f
+Castle Vineyard Pinot Noir 2011,508671,B,,0,7.5,1,12,0.13,0.1,0.44,0.44,0,0,Wine,Canada,f
+MitchellS Vineyard Pinot Gris,523183,,,626990105336,0,1,12,0.13,0,0.2,0.2,0,0,Wine,Canada,t
+Gsm,579938,,,626990255888,75,1,12,0.13,10,0.39,0.3,0,0,Wine,Canada,f
+Road 1  Gsm 2013,579938,,,626990217374,0,1,12,0.14,0,0.3,0.3,0,0,Wine,Canada,t
+Jackpot Chardonnay 2012,580910,,,626990062769,0,1,6,0.14,0,0.34,0.34,0,0,Wine,Canada,f
+Jackpot Chardonnay 2011,580910,B,,0,7.5,1,6,0.14,0.1,0.34,0.34,0,0,Wine,Canada,f
+Golden Mile  Fifth Element Red 2005,584003,,,626990062691,0,1,12,0.13,0,0.35,0.35,0,0,Wine,Canada,t
+Viognier Block 1 2013,589390,,,626990140221,0,1,12,0.14,0,0.15,0.15,0,0,Wine,Canada,f
+Marsanne 2014,589846,,,626990217367,0,1,12,0.14,0,0.2,0.2,0,0,Wine,Canada,f
+Honest JohnS White 2013,601070,,,626990062721,0,1,12,0.13,0,0.14,0.14,0,0,Wine,Canada,f
+Honest JohnS White 2014,601070,,,626990199762,75,1,12,0.13,10,0.14,0.14,0,0,Wine,Canada,f
+Honest JohnS White 2012,601070,B,,0,7.5,1,12,0.13,0.1,0.14,0.14,0,0,Wine,Canada,f
+Roussanne 2013,658658,,,626990217350,0,1,12,0.14,0,0.2,0.2,0,0,Wine,Canada,t
+Syrah Mourvedre 2013,686675,,,626990159650,0,1,12,0.13,0,0.3,0.3,0,0,Wine,Canada,f
+Syrah Mourvedre 2011,686675,B,,0,7.5,1,12,0.13,0.1,0.3,0.3,0,0,Wine,Canada,f
+Chardonnay 2012,738823,,,626990062752,0,1,12,0.13,0,0.17,0.17,0,0,Wine,Canada,f
+Chardonnay 2013,738823,B,,6269900199748,75,1,12,0.13,0,0.17,0.17,0,0,Wine,Canada,f
+Viognier 2014,739888,,,626990105374,0,1,12,0.13,0,0.18,0.18,0,0,Wine,Canada,t
+Viognier 2015,739888,,,626990255864,0,1,12,0.14,10,0.24,0.18,0,0,Wine,Canada,f
+Pinot Noir 2013,753251,,,626990062783,0,1,12,0.13,0,0.17,0.17,0,0,Wine,Canada,f
+Pinot Noir 2012,753251,B,,0,0,1,12,0.13,0.1,0.17,0.17,0,0,Wine,Canada,f
+Merlot 2012,757914,,,626990081265,0,1,12,0.15,0,0.21,0.21,0,0,Wine,Canada,t
+Cabernet Franc,763920,,,626990140238,0,1,12,0.14,0,0.24,0.24,0,0,Wine,Canada,t
+Jackpot ViognierRoussanneMarsanne 2014,782748,,,626990105350,0,1,6,0.13,0,0.29,0.29,0,0,Wine,Canada,t
+Jackpot Viognier,789040,,,626990062776,0,1,12,0.13,0,0.29,0.29,0,0,Wine,Canada,t
+SeventyFour K 2012,78915,,,626990081388,0,1,12,0.14,0,0.21,0.21,0,0,Wine,Canada,t
+SeventyFour K 2013,78915,,,626990199823,0,1,12,0.14,0,0.21,0.21,0,0,Wine,Canada,f
+Honest JohnS Red 2013,78915,B,,626990062806,0,1,12,0.13,0,0.16,0.16,0,0,Wine,Canada,f
+Honest JohnS Red 2013 Keg,789792,,,626990140115,0.19,1,1,0.13,0.3,4.06,4.06,0,0,Wine,Canada,t
+Honest JohnS Red 2014 Keg,789792,B,,0,0.19,1,1,0.12,0.3,4.06,4.06,0,0,Wine,Draught,f
+SeventyFour K Keg,791061,,,626990140184,0.19,1,1,0.13,0.3,4.74,4.74,0,0,Wine,Canada,f
+MitchellS Vineyard Gewurztraminer,813691,,,626990105329,0,1,12,0.13,0,0.21,0.21,0,0,Wine,Canada,t
+Sparkling Chenin Blanc 2012,820696,,,626990081333,0,1,6,0.12,0,0.3,0.3,0,0,Wine,Canada,f
+Jackpot Riesling 2009,820720,,,626990081395,0,1,6,0.13,0,0.3,0.3,0,0,Wine,Canada,t
+5th Element 2012,830489,,,0,0.03,1,1,0.14,0,1.99,1.99,0,0,Wine,Canada,f
+Chip Off The Old Block Chenin Blanc 2014,837963,,,0,0,1,12,0.14,0,0.16,0.16,0,0,Wine,Canada,t
+Chip Off The Old Block Chenin Blanc 2015,837963,B,,0,0,1,12,0.14,10,0.16,0.16,0,0,Wine,,f
+Syrah Malbec 2013,843995,,,626990140092,0,1,12,0.12,0,0.23,0.23,0,0,Wine,Canada,f
+Syrah Malbec 2014,843995,B,,626990222347,0,1,12,0.12,0,0.35,0.23,0,0,Wine,Canada,f
+Jackpot Vrm,848283,,,626990199793,0,1,6,0.13,0,0.29,0.29,0,0,Wine,Canada,t
+Viognier Roussanne Marsanne 2008,848697,,,626990081364,0,1,12,0.13,0,0.29,0.29,0,0,Wine,Canada,t
+Stemwinder Keg,854596,,,626990199830,0.19,1,1,0.13,0.3,3.98,3.47,0,0,Wine,Canada,f
+Jackpot Pinot Noir 2011,859421,,,626990062790,0,1,6,0.13,0,0.3,0.3,0,0,Wine,Canada,f
+Jackpot Cabernet Sauvignon,875724,,,626990199816,0,1,6,0.14,0,0.43,0.43,0,0,Wine,Canada,t
+Jackpot Syrah 2012,876698,,,626990081296,0,1,6,0.14,0,0.34,0.34,0,0,Wine,Canada,f
+Jackpot Syrah 2011,876698,B,,0,0,1,6,0.14,0.1,0.34,0.34,0,0,Wine,Canada,f
+Vrm 2013,891309,,,626990140214,0,1,6,0.13,0,0.25,0.25,0,0,Wine,Canada,f
+Cabernet Sauvignon 2012,897629,,,626990081272,0,1,12,0.14,0,0.32,0.32,0,0,Wine,Canada,t
+Jackpot Chenin Blanc,950444,,,626990140153,0,1,6,0.15,0,0.4,0.4,0,0,Wine,Canada,t
+The Similkameen Collective  Syrah Viognier,967844,,,0,7.5,1,6,0.12,0.1,0.39,0.39,0,0,Wine,Packaged,f
+The Similkameen Collective  Gsm,993592,,,0,7.5,1,6,0.12,0.1,0.43,0.43,0,0,Wine,Packaged,f

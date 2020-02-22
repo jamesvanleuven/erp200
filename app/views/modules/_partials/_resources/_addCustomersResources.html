@@ -1,0 +1,313 @@
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="col-md-10 well well-sm">
+            
+            <!-- LICENSE NUMBER -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">License Number</span>
+                        <input type="text" 
+                               id="license_number"
+                               class="form-control input-sm" 
+                               data-ng-model="newResource.license_number.value" placeholder="ie: 9999999"/>
+                    </div>
+                </div>
+            </div>
+			
+            <!-- LICENSE TYPE -->
+            <div class="col-md-4">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">License Type</span>
+                        <div id="license_type" 
+							 custom-select="l as l.value for l in $root.assets.customers.license_type track by $index" 
+							 custom-select-options="customLicenseTypes"
+                             data-ng-model="newResource.license_type.selected">
+							<div class="media" style="border-bottom: 1px solid #ccc;">
+								<div class="media-body">
+									 <h5 class="media-heading text-capitalize">{{ l.value }} ({{l.abbr}})</h5>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CUSTOMER NAME -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">Customer Name</span>
+                        <input type="text" 
+                               id="customer"
+                               class="form-control input-sm" 
+                               data-ng-model="newResource.customer.value" 
+							   placeholder="ie: Customer Name"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CUSTOMER TYPE -->
+            <div class="col-md-4">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon input-sm">Customer Type</span>
+                        <div id="customer_type" 
+							 custom-select="c.id as c.value for c in $root.assets.customers.customer_type track by $index" 
+							 custom-select-options="customCustomerTypes"
+                             data-ng-model="newResource.customer_type.selected">
+							<div class="media" style="border-bottom: 1px solid #ccc;">
+								<div class="media-body">
+									 <h5 class="media-heading text-capitalize">{{ c.value }} ({{c.abbr}})</h5>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-2">
+            <!-- CORPORATE LOGO -->
+            <div class="col-md-4">
+                <div class="establishment-logo">
+                    <img class="media-object" src="https://placehold.it/150x150/cccccc/ffffff&text=LOGO" vspace="5" hspace="5">
+                    <div class="edit-image"><a href="javascript:void(0);"><i class="fa fa-pencil fa-md"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row-fluid">
+        <div class="col-md-6">
+            <h5>Customer Address</h5>
+            <div class="row-fluid">
+				
+                <!-- CUSTOMER STREET -->
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon input-sm">Street</span>
+                            <input type="text" id="street"
+                                   class="form-control input-sm" 
+                                   data-ng-model="newResource.address.value" 
+                                   placeholder=" 8385 Fraser Street" required/>
+                            <!--
+							<div custom-select="s as s.value for s in asyncAddressing($searchTerm) track by $index" 
+								 custom-select-options="resourceAddressingOptions" 
+								 data-ng-model="newResource.full_address.street.value"
+								 style="width:100%;" required>
+								<div class="media" style="border-bottom: 1px dotted #ccc;">
+									<div class="media-left" style="margin:2px auto;">
+									</div>
+									<div class="media-body">
+										 <h5 class="media-heading text-capitalize">{{ s.value }}</h5>
+										<address>
+											<small><em>
+												{{ s.city }}, {{s.state}} {{s.zipcode}}
+												</em></small>
+										</address>
+									</div>
+								</div>
+							</div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+
+				<!-- CUSTOMER MUNICIPALITY -->
+				<div class="col-md-12">
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon input-sm">City/Municipalities</span>
+							<div id="city" class="address-block" 
+								 custom-select="c as c.value for c in asyncResource($searchTerm, 'states') track by $index" 
+								 custom-select-options="customCityOptions" 
+								 data-ng-model="newResource.full_address.city" 
+								 style="width: 100%;" required>
+								<div class="media" style="border-bottom: 1px dotted #ccc;">
+									<div class="media-left" style="margin:2px auto;">
+										<!-- <img fallback-src 
+											 src="images/flags/{{ s.abbr }}.png" 
+											 class="media-object" 
+											 hspace="3" 
+											 vspace="3" 
+											 style="width: 50px; height: 50px;"/> -->
+									</div>
+									<div class="media-body">
+										 <h5 class="media-heading text-capitalize">{{ c.value }}</h5>
+									</div>
+								</div>
+							</div>
+							<span id="load-states" class="input-group-addon input-sm" style="display:none;">
+								<i class="fa fa-spinner fa-pulse fa-2x fa-fw margin-bottom"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- CUSTOMER PROVINCE -->
+				<div class="col-md-12">
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon input-sm">State/Province</span>
+							<div id="province" class="address-block"
+								 custom-select="s as s.value for s in asyncResource($searchTerm, 'provinces') track by $index" 
+								 custom-select-options="customProvinceOptions" 
+								 data-ng-model="newResource.full_address.province" 
+								 style="width: 100%;" required>
+								<div class="media" style="border-bottom: 1px dotted #ccc;">
+									<div class="media-left" style="margin:2px auto;">
+										<img fallback-src 
+											 data-ng-src="images/flags/{{ s.abbr }}.png" 
+											 class="media-object" 
+											 hspace="3" 
+											 vspace="3" 
+											 style="width: 35px; height: 20px"/>
+									</div>
+									<div class="media-body">
+										 <h5 class="media-heading text-capitalize">{{ s.value }}</h5>
+									</div>
+								</div>
+							</div>
+							<span id="load-provinces" class="input-group-addon input-sm" style="display:none;">
+								<i class="fa fa-spinner fa-pulse fa-2x fa-fw margin-bottom"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+
+                <!-- CUSTOMER ZIPCODE -->
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon input-sm">Zip/Postal Code</span>
+                            <input type="text" 
+                                   id="zipcode"
+                                   class="address-block form-control input-sm" 
+                                   data-ng-model="newResource.full_address.zipcode" required/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- OPENING CLOSING HOURS -->
+		<div class="col-md-6">
+			<h5>Hours of Operation</h5>
+			<div class="row-fluid">
+				<div class="col-md-6">
+					<div class="form-group">
+						<div class="input-group"
+							 moment-picker="newResource.opens_at.value"
+							 format="hh:mm:ss A" 
+							 validate="true"
+							 min-date"''" 
+							 max-date="''">
+							<span class="input-group-addon input-sm">Opens:</span>
+							<input class="form-control input-sm"
+								   placeholder="Select a time"
+								   data-ng-model="newResource.opens_at.value" 
+								   ng-model-options="{ updateOn: 'blur' }">
+							<span class="input-group-addon input-sm"><i class="fa fa-clock-o"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<div class="input-group"
+							 moment-picker="newResource.closes_at.value"
+							 format="hh:mm:ss A" 
+							 min-date"''" 
+							 max-date="''">
+							<span class="input-group-addon input-sm">Closes:</span>
+							<input class="form-control input-sm"
+								   placeholder="Select a time"
+								   data-ng-model="newResource.closes_at.value" 
+								   ng-model-options="{ updateOn: 'blur' }">
+							<span class="input-group-addon input-sm"><i class="fa fa-clock-o"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!-- DELIVERY DAYS -->
+        <div class="col-md-6">
+            <h5>Delivery Days</h5>
+            <div class="row-fluid">
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon input-sm">
+                                <input type="checkbox" 
+                                       checked="checked" 
+                                       data-ng-model="newResource.delivery_days.value[1].deliver"/>
+                            </span>
+                            <span class="input-group-addon input-sm">Mon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon input-sm">
+                                <input type="checkbox" 
+                                       checked="checked" 
+                                       data-ng-model="newResource.delivery_days.value[2].deliver"/>
+                            </span>
+                            <span class="input-group-addon input-sm">Tues</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon input-sm">
+                                <input type="checkbox" 
+                                       checked="checked" 
+                                       data-ng-model="newResource.delivery_days.value[3].deliver"/>
+                            </span>
+                            <span class="input-group-addon input-sm">Wed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon input-sm">
+                                <input type="checkbox" 
+                                       checked="checked" 
+                                       data-ng-model="newResource.delivery_days.value[4].deliver"/>
+                            </span>
+                            <span class="input-group-addon input-sm">Thu</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon input-sm">
+                                <input type="checkbox" 
+                                       checked="checked" 
+                                       data-ng-model="newResource.delivery_days.value[5].deliver"/>
+                            </span>
+                            <span class="input-group-addon input-sm">Fri</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon input-sm">
+                                <input type="checkbox" 
+                                       checked="checked" 
+                                       data-ng-model="newResource.delivery_days.value[6].deliver"/>
+                            </span>
+                            <span class="input-group-addon input-sm">Sat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

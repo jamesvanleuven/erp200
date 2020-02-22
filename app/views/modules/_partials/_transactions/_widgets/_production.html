@@ -1,0 +1,38 @@
+
+<div class="col-md-6">
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon input-sm">Delivery Date</span>
+			<span id="delivery_day">
+				<input next-on-enter type="text" 
+				   class="form-control input-sm" 
+				   data-ng-model="newTransaction.deliver_date.startDate" disabled/>
+			</span>
+		</div>
+	</div>
+</div>
+
+<div class="col-md-6">
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon input-sm">Receiving Warehouse</span>
+			<div custom-select="warehouse as warehouse.value for warehouse in $root.assets.transfers.to_warehouse | filter: { value: $searchTerm } track by warehouse.id" 
+				 data-ng-model="newTransaction.to_warehouse.selected" 
+				 custom-select-options="customLocationOptions"
+				 style="width: 100%;" disabled="disabled" readonly="readonly"/>
+		</div>
+	</div>
+</div>
+
+<div class="col-md-6">
+	<button data-ng-click="boolean('pickup')" 
+			class="btn btn-sm" 
+			data-ng-class="newTransaction.pickup.value ? 'btn-info' : ''" 
+			type="button" 
+			next-on-enter>Pickup</button>
+	<button data-ng-click="boolean('rush')" 
+			class="btn btn-sm" 
+			data-ng-hide="newTransaction.customer.selected.value == ''"
+			data-ng-class="newTransaction.rush.value ? 'btn-danger' : ''" 
+			type="button" next-on-enter>Rush</button>
+</div>

@@ -1,0 +1,12 @@
+Aggregating the data
+
+loop through the objects array
+    store the first sku
+    find the index of the last similar sku
+    use the start of the index and the last of the index to create another loop to go through
+        loop through this sub array
+        create a quantity variable
+        if the the product names are the same
+            keep adding quantity
+        push a new object with the sku, product, volume and new quantity into the new array
+        jump the index by the lastindexof

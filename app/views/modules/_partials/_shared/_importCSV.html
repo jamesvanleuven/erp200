@@ -1,0 +1,57 @@
+<div class="row-fluid">
+    <div class="col-md-12">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon input-sm">Select your CSV File: </div>
+                <ng-csv-import class="import" 
+                               content="csv.content" 
+                               header="csv.header" 
+                               header-visible="csv.headerVisible" 
+                               separator="csv.separator" 
+                               separator-visible="csv.separatorVisible" 
+                               result="csv.result" 
+                               encoding="csv.encoding" 
+                               encoding-visible="csv.encodingVisible" 
+                               upload-button-label="csv.uploadButtonLabel"></ng-csv-import>
+            </div>
+        </div>
+    </div>
+    <div id="matchColumns" class="col-md-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Data Columns</th>
+                    <th></th>
+                    <th>CSV Headers</th>
+                    <th style="width:65% !important;"></th>
+                </tr>
+            </thead>
+            <tbody data-ng-init="csv.import">
+                <tr data-ng-repeat="c in csv.import.columns"  data-id="{{$index}}">
+                    <td><small>{{c.name}}</small></td>
+                    <td> == </td>
+                    <td><select name="header[$index]" 
+                                class="form-control input-sm"
+                                id="header[$index]" 
+                                data-ng-change="importData($index)" 
+                                data-ng-model="c.mapping" 
+                                data-ng-options="_h as _h.value for _h in csv.import.headers"></select></td>
+                    <!-- <td>{{ c.mapping.data | json }}</td> -->
+                    <td class="panel-heading">
+                        <span data-ng-repeat="obj in c.mapping.data track by $index" style="max-width: 150px;">
+                            <span data-id="{{$index}}" 
+                                  title="Row {{ $index+1 }}" 
+                                  data-ng-show="!obj.length" 
+                                  class="label label-warning">NULL</span>
+                            <span data-id="{{$index}}" 
+                                  title="Row {{ $index+1 }}" 
+                                  data-ng-show="obj.length" 
+                                  class="label label-info" 
+                                  style="font-size: 11px;">{{ obj }}</span>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,79 @@
+product,sku,batch_id,batch_name,upc,litres_per_bottle,bottles_per_skid,bottles_per_case,alcohol_percentage,litter_rate,mfr_price,rtl_price,sp_price,ws_price,category_1,category_2,active
+Twenty Pounder Double Ipa,104174,,,628201000423,0,1,12,0.09,0,0.05,0.05,0,0,Beer,Packaged,f
+White Bark Witbier,125773,,,0,0.19,1,1,0.05,0.3,0.73,0.73,0,0,Beer,Draught,f
+Belle Royale,128173,,,628201000164,0,1,12,0.09,0,0.1,0.1,0,0,Beer,Packaged,f
+Bird Of Prey Flanders Red,136044,,,0,0.5,1,1,0.08,0.3,2.8,2.8,0,0,Beer,Draught,f
+Drawn To Light,142752,,,628201000188,6.5,1,12,0.07,0,0.05,0.06,0,0,Beer,Canada,t
+Drawn To Light Abbey Ale,142752,,,628201000188,0,1,12,0.07,0,0.05,0.06,0,0,Beer,Packaged,f
+Cuvee DHiver Cask,157776,,,0,0.4,1,1,0.06,0.3,0,0,0,0,Beer,Draught,f
+Cuvee DHiver Cask,162073,,,0,0.18,1,1,0.06,0.3,0,0,0,0,Beer,Draught,f
+Farm Hand Saison,173963,,,0,0.19,1,1,0.05,0.3,0.73,0.73,0,0,Beer,Draught,f
+Belle Royale,176941,,,0,0.18,1,1,0.09,0.3,0,0,0,0,Beer,Draught,f
+White Bark Witbier,186718,,,628201000034,0,1,12,0.05,0,0.05,0.05,0,0,Beer,Packaged,f
+Twenty Pounder Double Ipa,187674,,,0,0.4,1,1,0.09,0.3,0,0,0,0,Beer,Draught,f
+Bird Of Prey Flanders Red,200170,,,628201000195,0,1,12,0.07,0,0.1,0.1,0,0,Beer,Packaged,f
+Sartori Harvest Ipa,200576,,,0,0.18,1,1,0.07,0.3,1.15,1.15,0,0,Beer,Draught,f
+Crooked Coast Altbier,204263,,,0,0.5,1,1,0.05,0.3,1.7,1.7,0,0,Beer,Draught,f
+Son Of The Morning Strong Golden Ale,217869,,,628201001666,0,1,12,0.1,0,0.07,0.07,0,0,Beer,Packaged,f
+Singularity Russian Imperial Stout Cask 20l,230946,,,0,0.2,1,1,0.11,0.3,1.9,1.9,0,0,Beer,Draught,f
+Mad Bruin Sour Brown Ale,267955,,,628201001550,0,1,12,0.07,0,0.09,0.09,0,0,Beer,Packaged,f
+Mad Bruin Sour Brown Ale,267989,,,0,0.18,1,1,0.07,0.3,1.15,1.15,0,0,Beer,Draught,f
+Fat Tug Ipa,27722,,,0,0.19,1,1,0.07,0.3,0.84,0.84,0,0,Beer,Draught,f
+Clodhopper Local Malt Dubbel,319566,,,0,0.19,1,1,0.07,0.3,1.05,1.05,0,0,Beer,Draught,f
+Clodhopper Local Malt Dubbel,320507,,,628201002229,0,1,12,0.07,0,0.06,0.06,0,0,Beer,Packaged,f
+Cuvee DHiver,34645,,,628201000171,0,1,12,0.06,0,0.06,0.06,0,0,Beer,Packaged,f
+Cry Me A River Gose,367532,,,0,0.19,1,1,0.05,0.3,0.73,0.73,0,0,Beer,Draught,f
+Naughty Hildegard Esb,368787,,,0,0.19,1,1,0.06,0.3,0.84,0.84,0,0,Beer,Draught,f
+Old Cellar Dweller Cask,369991,,,0,0.4,1,1,0.11,0.3,0,0,0,0,Beer,Draught,f
+Bird Of Prey Flanders Red,376640,,,0,0.19,1,1,0.07,0.3,1.5,1.5,0,0,Beer,Draught,f
+Lustrum  Wild Sour Ale,378034,,,628201000881,0,1,12,0.09,0,0.1,0.1,0,0,Beer,Packaged,f
+Crooked Coast Ale Growler,379719,,,0,0.01,1,1,0.05,0,0.11,0.11,0,0,Beer,Packaged,t
+Spring Rite Local Malt Abbey Ale,38596,,,0,0.18,1,1,0.07,0.3,0,0,0,0,Beer,Draught,f
+Driftwood  Farmhand Saison Growler,394718,,,0,0.01,1,1,0.05,0,0,0,0,0,Beer,Packaged,t
+Driftwood  White Bark Wheat Ale Growler,407668,,,0,0.01,1,1,0.05,0,0,0,0,0,Beer,Packaged,t
+Naughty Hildegard Esb,42903,,,628201000003,0,1,12,0.06,0,0.05,0.05,0,0,Beer,Packaged,f
+Entangled Hopfenweisse,436196,,,628201000676,0,1,12,0.08,0,0.05,0.05,0,0,Beer,Packaged,f
+Driftwood  Ale Growler,448837,,,0,0.01,1,1,0.05,0,0,0,0,0,Beer,Packaged,t
+Heretic Local Malt Belgian Styletripel,461731,,,628201000553,0,1,12,0.08,0,0.06,0.06,0,0,Beer,Packaged,f
+Fat Tug Ipa Growler,4895,,,0,0.01,1,1,0.07,0,0.12,0.12,0,0,Beer,Packaged,t
+Entangled Hopfenweisse,491068,,,0,0.5,1,1,0.08,0.3,1.87,1.87,0,0,Beer,Draught,f
+Lustrum Wild Sour Ale,502807,,,0,0.19,1,1,0.09,0.3,1.5,1.5,0,0,Beer,Draught,f
+Crooked Coast Altbier,509174,,,0,0.19,1,1,0.05,0.3,0.73,0.73,0,0,Beer,Draught,f
+Entangled  Hopfenweisse,517763,,,0,0.19,1,1,0.08,0.3,0.84,0.84,0,0,Beer,Draught,f
+White Bark Witbier,518118,,,0,0.5,1,1,0.05,0.3,1.7,1.7,0,0,Beer,Draught,f
+Driftwood  GoseUh Growler,518134,,,0,0.01,1,1,0.05,0,0,0,0,0,Beer,Packaged,t
+Brother Barts Belgian Brown Ale,523175,,,628201000119,0,1,12,0.07,0,0.06,0.06,0,0,Beer,Packaged,f
+Farm Hand Saison,528141,,,628201000027,0,1,12,0.05,0,0.05,0.05,0,0,Beer,Packaged,f
+Driftwood  Blackstone Porter Growler,532374,,,0,0.01,1,1,0.05,0,0,0,0,0,Beer,Packaged,t
+Driftwood Ale,548297,,,0,0.5,1,1,0.05,0.3,0,0,0,0,Beer,Draught,f
+New Growth Pale Ale,548297,,,0,0.5,1,1,0.05,0.3,1.7,1.7,0,0,Beer,Draught,f
+Blackstone Porter,550624,,,0,0.5,1,1,0.05,0.3,0,0,0,0,Beer,Draught,f
+Naughty Hildegard Esb,576223,,,0,0.5,1,1,0.06,0.3,1.87,1.87,0,0,Beer,Draught,f
+Blackstone Porter Cask,593657,,,0,0.4,1,1,0.05,0.3,0,0,0,0,Beer,Draught,f
+Heretic Local Malt Belgian Style Tripel,601294,,,0,0.19,1,1,0.08,0.3,1.05,1.05,0,0,Beer,Draught,f
+Naughty Hildegard Esb Cask,638700,,,0,0.4,1,1,0.06,0.3,0,0,0,0,Beer,Draught,f
+Blackstone Porter,645374,,,628201000072,0,1,12,0.05,0,0.05,0.05,0,0,Beer,Packaged,f
+Cry Me A River Gose,646810,,,628201000997,0,1,12,0.05,0,0.05,0.05,0,0,Beer,Packaged,f
+Driftwood  Sartori Harvest Ipa Growler,651539,,,0,0.01,1,1,0.06,0,0,0,0,0,Beer,Packaged,t
+Sartori Harvest Ipa 20l Cask,666453,,,0,0.2,1,1,0.06,0.3,1.15,1.15,0,0,Beer,Draught,f
+Son Of The Morning,669812,,,0,0.18,1,1,0.1,0.3,1.15,1.15,0,0,Beer,Draught,f
+Bratt Brettanomyces Ale,680488,,,628201000331,0,1,12,0.06,0,0.06,0.06,0,0,Beer,Packaged,f
+Sartori Harvest Ipa,742122,,,0,0.4,1,1,0.07,0.3,0,0,0,0,Beer,Draught,f
+Rock Bay MashUp,752170,,,628201000775,0,1,12,0.08,0,0.07,0.07,0,0,Beer,Packaged,f
+Driftwood  Naughty Hildegard Esb Growler,764324,,,0,0.01,1,1,0.06,0,0,0,0,0,Beer,Packaged,t
+Driftwood  Bratt Brettanomyces Ale Growler,785998,,,0,0.01,1,1,0.06,0,0,0,0,0,Beer,Packaged,t
+Crooked Coast Altbier,811976,,,628201000140,0,1,12,0.05,0,0.05,0.05,0,0,Beer,Packaged,f
+Blackstone Porter,817197,,,0,0.18,1,1,0.05,0.3,0,0,0,0,Beer,Draught,f
+Farm Hand Saison,822395,,,0,0.5,1,1,0.05,0.3,1.7,1.7,0,0,Beer,Draught,f
+Sartori Harvest Ipa,83188,,,628201000157,0,1,12,0.07,0,0.06,0.06,0,0,Beer,Packaged,f
+Fat Tug Ipa,844399,,,628201000126,0,1,12,0.07,0,0.05,0.05,0,0,Beer,Packaged,f
+New Growth Pale Ale,847012,,,628201000010,0,1,12,0.05,0,0.05,0.05,0,0,Beer,Packaged,f
+Old Cellar Dweller,858571,,,0,0.2,1,1,0.11,0.3,1.9,1.9,0,0,Beer,Draught,f
+Fat Tug Ipa,87163,,,0,0.5,1,1,0.07,0.3,1.87,1.87,0,0,Beer,Draught,f
+Cry Me A River Gose,875849,,,0,0.5,1,1,0.05,0.3,1.7,1.7,0,0,Beer,Draught,f
+New Growth Pale Ale,879361,,,0,0.19,1,1,0.05,0.3,0.73,0.73,0,0,Beer,Draught,f
+Old Cellar Dweller,881250,,,628201000096,0,1,12,0.12,0,0.1,0.1,0,0,Beer,Packaged,f
+Singularity Russian Imperial Stout,890764,,,628201000133,0,1,12,0.11,0,0.1,0.1,0,0,Beer,Packaged,f
+Pilsner Doehnel,892042,,,0,0.19,1,1,0.05,0.3,1.05,1.05,0,0,Beer,Draught,f
+Pilsner Doehnel,893461,,,628201000669,0,1,12,0.05,0,0.06,0.06,0,0,Beer,Packaged,f
+Twenty Pounder,91595,,,0,0.19,1,1,0.09,0.3,1.2,1.2,0,0,Beer,Draught,f

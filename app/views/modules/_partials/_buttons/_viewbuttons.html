@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 clearfix" style="padding:0px;">
+            <div class="clearfix">
+			
+				<div data-ng-hide="currentModule.type == '3'">
+					<!-- BATCH ORDER BUTTONS -->
+					<div data-ng-include="'views/modules/_partials/_batch/_orders.html'"></div>
+					<!-- BATCH TRANSFER BUTTONS -->
+					<div data-ng-include="'views/modules/_partials/_batch/_transfers.html'"></div>
+				</div>
+				
+				<div data-ng-hide="currentModule.type == '3'" class="pull-right" style="text-align: right;">
+					<div class="btn-group" role="group">
+						<button type="button" 
+							class="search-button btn btn-primary btn-sm" title="Filter {{currentModule.name}} Search"
+							data-ng-click="sidebar()" 
+							data-ng-disabled="disableButton">
+							<i class="fa fa-search"></i> <small>Search</small></button>
+						<button type="button" 
+								class="btn btn-primary btn-sm" title="Add {{currentModule.name}} Manually" 
+								data-id="add" 
+								data-ng-click="button(-1, $event)" 
+								data-ng-disabled="disableButton">
+							<i class="fa fa-plus"></i> <small>Add <span data-ng-bind="currentModule.name"/></small></button>
+
+						<button type="button" 
+								class="btn btn-primary btn-sm" title="Import {{currentModule.name}} CSV" 
+								data-id="import" 
+								data-ng-click="button(0, $event)" 
+								data-ng-disabled="disableButton">
+							<i class="fa fa-upload"></i> <small>Import <span data-ng-bind="currentModule.name"/></small></button>
+					</div>
+				</div>
+				
+				<div data-ng-show="currentModule.type == '3'">
+					<div data-ng-show="$root.credentials.group_id == '1'" data-ng-include="'views/modules/_partials/_reports/_options_admin.html'"></div>
+                    <div data-ng-show="$root.credentials.group_id != '1'" data-ng-include="'views/modules/_partials/_reports/_options.html'"></div>
+				</div>
+				
+				
+            </div>
+        </div>
+    </div>
+</div>

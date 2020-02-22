@@ -1,0 +1,55 @@
+<!-- SELECTED MANUFACTURER FOR WAREHOUSE TO WAREHOUSE 
+if warehouse to warehosue
+                show 'from_warehouse & to_warehouse' with the option to select either
+                show 'delivery date', pickup, status, product line items and notes
+                the newInventory quantity must be the difference between the inventory and the quantity selected
+                do NOT adjust the inventory key/value pair - it is used in the math on the server to test the db inventory quantity
+-->
+
+<div class="col-md-6">
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon input-sm">Shipping Warehouse</span>
+			<div custom-select="fw as fw.value for fw in $root.assets.transfers.to_warehouse | filter: { value: $searchTerm }" 
+				 data-ng-model="newTransaction.from_warehouse.selected" 
+				 style="width: 100%;" disabled="disabled" readonly="readonly"/>
+		</div>
+	</div>
+</div>
+<div class="col-md-6">
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon input-sm">Receiving Warehouse</span>
+			<div custom-select="tw as tw.value for tw in $root.assets.transfers.to_warehouse | filter: { value: $searchTerm }" 
+				 data-ng-model="newTransaction.to_warehouse.selected" 
+				 custom-select-options="customLocationOptions" 
+				 style="width: 100%;"
+				 data-ng-disabled="newTransaction.status.selected.id != 5" next-on-enter></div>
+		</div>
+	</div>
+</div>
+<div class="col-md-6">
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon input-sm">Delivery Date</span>
+			<span id="delivery_day">
+				<input next-on-enter type="text" 
+				   class="form-control input-sm" 
+				   data-ng-model="newTransaction.deliver_date.startDate" disabled/>
+			</span>
+		</div>
+	</div>
+</div>
+
+<div class="col-md-6">
+	<button data-ng-click="boolean('pickup')" 
+			class="btn btn-sm" 
+			data-ng-class="newTransaction.pickup.value ? 'btn-info' : ''" 
+			type="button" 
+			next-on-enter>Pickup</button>
+	<button data-ng-click="boolean('rush')" 
+			class="btn btn-sm" 
+			data-ng-hide="newTransaction.customer.selected.value == ''"
+			data-ng-class="newTransaction.rush.value ? 'btn-danger' : ''" 
+			type="button" next-on-enter>Rush</button>
+</div>

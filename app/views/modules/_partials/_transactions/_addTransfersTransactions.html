@@ -1,0 +1,219 @@
+<!--
+<div class="well well-sm container-fluid">
+    <div class="row-fluid row" style="margin-bottom:15px;">
+ 
+        <!-- SELECT MANUFACTURER --
+        <div class="col-md-4" ng-show="$root.credentials.group_id == 1 || $root.credentials.group_id === 3">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon input-sm">Manufacturer</span>
+                    <div custom-select="m.id as m.value for m in asyncModule($searchTerm, 'manufacturers') track by $index" 
+                         custom-select-options="customManufacturersOptions" 
+                         data-ng-model="newTransaction.manufacturer.selected" 
+                         style="width: 100%;" next-on-enter required>
+                        <div class="media" style="border-bottom: 1px dotted #ccc;">
+                            <div class="media-left" style="margin:2px auto;">
+                                <img src="images/brand/{{ m.key }}.png" 
+                                     class="media-object" 
+                                     hspace="3" 
+                                     vspace="3" 
+                                     style="width: 50px; height: 50px;"/>
+                            </div>
+                            <div class="media-body">
+                                 <h5 class="media-heading">{{ m.value }}<br/>
+                                    <small>LIC NO. {{ m.license_number }}</small><br/>
+                                    <small>STORE NO. {{ m.store_number }}</small></h5>
+                                <address>
+                                    <small><em>
+                                        {{ m.address }}<br/>
+                                    </em></small>
+                                    <small>Opens: {{ m.opens }}<br/>
+                                    Closes: {{ m.closes }}<br />
+                                    <!-- Delivery Days: {{ m.delivery_days.toString() }} --
+                                    </small>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SELECT TRANSFER TYPE --
+        <div class="col-md-4" data-ng-show="newTransaction.manufacturer.selected.id !== 0">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon input-sm">Transfer Type</span>
+                    <div custom-select="t as t.value for t in $root.assets.transfers.transfer_type | filter: { value: $searchTerm } track by $index" 
+                         data-ng-model="newTransaction.transfer_type.selected" 
+                         custom-select-options="transferTypeOptions"
+                         style="width: 100%;" next-on-enter>{{t.value}}</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SET STATUS OPTIONS --
+        <div class="col-md-4">
+            <div class="pull-right">
+                <button custom-popover next-on-enter 
+                        data-id="note-popover"
+                        type="button" 
+                        class="btn btn-warning btn-sm"  
+                        content-template="views/modules/_partials/_transactions/_widgets/_orderNotes.html" 
+                        data-title="{{currentModule.name.toLowerCase() }} notes" 
+                        data-animation="am-fade-and-slide-top" 
+                        data-placement="auto"
+                        data-ng-click="showPopover(newTransaction.notes.value.length, $root);">
+                    <span class="badge">{{ newTransaction.notes.value.length }}</span> <small>Notes</small></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row-fluid row" style="margin-bottom:15px;">
+
+        <div data-ng-if="newTransaction.transfer_type.selected.id == 1">
+            <div data-ng-include="'views/modules/_partials/_transactions/_widgets/_warehouse.html'"></div>
+        </div>
+        
+        <div data-ng-if="newTransaction.transfer_type.selected.id == 2">
+            <div data-ng-include="'views/modules/_partials/_transactions/_widgets/_production.html'"></div>
+        </div>
+        
+        <div data-ng-if="newTransaction.transfer_type.selected.id == 3">
+            <div data-ng-include="'views/modules/_partials/_transactions/_widgets/_adjustment.html'"></div>
+        </div>
+ 
+    </div>
+</div>
+-->
+
+
+<!-- NEW ADD TRANSFER LAYOUT -->
+<div class="col-md-10">
+    
+    <div class="panel">
+        <div class="panel-body">
+            
+            <div class="col-sm-12">
+                <div class="row">
+                    
+                    <!-- MANUFACTURER: DISTRIBUTORS AND SYSTEM ADMINSTRATORS -->
+                    <div class="col-sm-6" ng-show="$root.credentials.group_id == 1 || $root.credentials.group_id === 3">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon input-sm">Manufacturer</span>
+                                <div custom-select="m.id as m.value for m in asyncModule($searchTerm, 'manufacturers') track by $index" 
+                                     custom-select-options="customManufacturersOptions" 
+                                     data-ng-model="newTransaction.manufacturer.selected" 
+                                     style="width: 100%;" next-on-enter required>
+                                    <div class="media" style="border-bottom: 1px dotted #ccc;">
+                                        <div class="media-left" style="margin:2px auto;">
+                                            <img src="images/brand/{{ m.key }}.png" 
+                                                 class="media-object" 
+                                                 hspace="3" 
+                                                 vspace="3" 
+                                                 style="width: 50px; height: 50px;"/>
+                                        </div>
+                                        <div class="media-body">
+                                             <h5 class="media-heading">{{ m.value }}<br/>
+                                                <small>LIC NO. {{ m.license_number }}</small><br/>
+                                                <small>STORE NO. {{ m.store_number }}</small></h5>
+                                            <address>
+                                                <small><em>
+                                                    {{ m.address }}<br/>
+                                                </em></small>
+                                                <small>Opens: {{ m.opens }}<br/>
+                                                Closes: {{ m.closes }}<br />
+                                                <!-- Delivery Days: {{ m.delivery_days.toString() }} -->
+                                                </small>
+                                            </address>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- TRANSFER-TYPE: MANUFACTURER.SELECTED.ID > 0 -->
+                    <div class="col-sm-6" data-ng-show="newTransaction.manufacturer.selected.id !== 0">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon input-sm">Transfer Type</span>
+                                <div custom-select="t as t.value for t in $root.assets.transfers.transfer_type | filter: { value: $searchTerm } track by $index" 
+                                     data-ng-model="newTransaction.transfer_type.selected" 
+                                     custom-select-options="transferTypeOptions"
+                                     style="width: 100%;" next-on-enter>{{t.value}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- LINE-IEMS: -->
+
+            <div class="col-sm-12" data-ng-if="newTransaction.transfer_type.selected.id == 1">
+                <div class="row" data-ng-include="'views/modules/_partials/_transactions/_widgets/_warehouse.html'"></div>
+            </div>
+
+            <div class="col-sm-12" data-ng-if="newTransaction.transfer_type.selected.id == 2">
+                <div class="row" data-ng-include="'views/modules/_partials/_transactions/_widgets/_production.html'"></div>
+            </div>
+
+            <div class="col-sm-12" data-ng-if="newTransaction.transfer_type.selected.id == 3">
+                <div class="row" data-ng-include="'views/modules/_partials/_transactions/_widgets/_adjustment.html'"></div>
+            </div>
+            
+            <!-- LINE-ITEMS -->
+            <div class="col-sm-12" data-ng-show="newTransaction.manufacturer.selected.id !== 0 && newTransaction.transfer_type.selected.id > 0">
+                <div class="row" data-ng-include="'views/modules/_partials/_transactions/_widgets/_transferLineItems.html'"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-2">
+    
+    <div class="panel panel-default" data-spy="affix" role="complementary" data-offset-top="0" data-offset-pin="0">
+        <div class="panel-body">
+            <div class="button-group btn-group-xs" role="group">
+                <button custom-popover next-on-enter 
+                        data-id="note-popover"
+                        type="button" 
+                        class="btn btn-xs"  
+                        content-template="views/modules/_partials/_transactions/_widgets/_orderNotes.html" 
+                        data-title="{{currentModule.name.toLowerCase() }} notes" 
+                        data-animation="am-fade-and-slide-top" 
+                        data-placement="auto"
+                        data-ng-click="showPopover(newTransaction.notes.value.length, $root);">
+                    <span class="badge">{{ newTransaction.notes.value.length }}</span> <small>Notes</small></button>
+            </div>
+        </div>
+		
+        <ul class="list-group" data-ng-show="newTransaction.transfer_type.selected.id > 0">
+			<!-- 
+            <li class="list-group-item clearfix" data-ng-hide="newTransaction.transfer_type.selected.id == 3">
+                <button class="btn btn-default btn-sm" data-ng-click="boolean('pickup', $index)" type="button">PICKUP</button>
+            </li>
+			<li class="list-group-item clearfix" data-ng-hide="newTransaction.transfer_type.selected.id == 3">
+				<button data-ng-click="boolean('pickup')" 
+						class="btn btn-sm" 
+						data-ng-class="newTransaction.pickup.value ? 'btn-info' : ''" 
+						type="button" next-on-enter>Pickup</button>
+			</li>
+			<li class="list-group-item clearfix" data-ng-hide="newTransaction.transfer_type.selected.id == 3">
+				<button data-ng-click="boolean('rush')" 
+						class="btn btn-sm" 
+						data-ng-hide="newTransaction.customer.selected.value == ''" 
+						data-ng-class="newTransaction.rush.value ? 'btn-danger' : ''" 
+						type="button" next-on-enter>Rush</button>
+			</li>
+			-->
+            <li class="list-group-item clearfix" data-ng-show="newTransaction.status.selected.id == 8 && newTransaction.method == 'add'">
+                <small><em>For negative adjustments, you will need to manually change the quantity using a negative (-) symbol before the number [ ie: -10 ]</em></small>
+            </li>
+        </ul>
+    </div>
+    
+</div>
+

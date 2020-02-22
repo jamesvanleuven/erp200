@@ -1,0 +1,64 @@
+manufacturer_id,products,sku,batch_id,batch_name,upc,litres_per_bottle,bottles_per_skid,bottles_per_case,alcohol_percentage,litter_rate,manufacturer_price,retail_price,promo_price,wholesale_price,category_1,category_2,active
+245,Blonde Ale,77800,,,0,0.5,1,1,0.06,0.3,1.75,1.75,0,0,Beer,Draught,f
+245,Blonde Ale,161232,,,0,0.01,1,1,0.06,0,0.08,0.08,0,0,Beer,Packaged,t
+245,Blonde Ale 650ml,161380,,,0,0.2,1,1,0.06,0.3,0.9,0.9,0,0,Beer,Draught,f
+245,Blonde Ale Growler,161406,,,0,0.5,1,1,0.04,0.3,1.65,1.65,0,0,Beer,Draught,t
+245,Blonde Ale Growler,178715,,,0,0.2,1,1,0.04,0.3,0.85,0.85,0,0,Beer,Draught,t
+245,Coffee Porter Growler,178723,,,0,0.01,1,1,0.06,0,0.06,0.06,0,0,Beer,Packaged,t
+245,Coffee Porter Growler,203240,,,0,0.01,1,1,0.06,0,0.09,0.09,0,0,Beer,Packaged,t
+245,Cosmic Wave Double Ipa 650ml,203257,,,0,0.2,1,1,0.06,0.3,0.8,0.8,0,0,Beer,Draught,t
+245,Dark Lager,203265,,,0,0.5,1,1,0.06,0.3,1.59,1.59,0,0,Beer,Draught,t
+245,Dark Lager,203273,,,626990137313,0,1,12,0.05,0,0.04,0.04,0,0,Beer,Packaged,f
+245,Dark Lager 650 Ml,252932,,,626990137320,0,1,12,0.07,0,0.05,0.05,0,0,Beer,Packaged,f
+245,Dawn Patrol Coffee Porter,252965,,,0,0.2,1,1,0.06,0.3,0.85,0.85,0,0,Beer,Draught,f
+245,Dawn Patrol Coffee Porter,282848,,,0,0.01,1,1,0.04,0,0.09,0.09,0,0,Beer,Packaged,t
+245,Dawn Patrol Coffee Porter 650ml,320481,,,0,0.5,1,1,0.04,0.3,1.65,1.65,0,0,Beer,Draught,t
+245,Fogust Wheat Ale,343749,,,0,0.01,1,1,0.04,0,0.08,0.08,0,0,Beer,Packaged,t
+245,Fogust Wheat Ale,343780,,,0,0.5,1,1,0.05,0.3,1.55,1.55,0,0,Beer,Draught,f
+245,Fogust Wheat Ale 650ml,370056,,,0,0.01,1,1,0.06,0,0.08,0.08,0,0,Beer,Packaged,t
+245,Fogust Wheat Ale Growler,401604,,,0,0.01,1,1,0.05,0,0.08,0.08,0,0,Beer,Packaged,t
+245,Fogust Wheat Ale Growler,402685,,,0,0.5,1,1,0.06,0.3,1.75,1.75,0,0,Beer,Draught,f
+245,Hoppin Cretin Ipa,403717,,,0,0.01,1,1,0.04,0,0.08,0.08,0,0,Beer,Packaged,t
+245,Hoppin Cretin Ipa,453258,,,626990137375,0,1,1,0.04,0,0.05,0.05,0,0,Beer,Packaged,t
+245,Hoppin Cretin Ipa 650ml,473694,,,0,0,1,12,0.04,0,0.05,0.06,0,0,Beer,Packaged,f
+245,Hoppin Cretin Ipa Growler,503151,,,0,0.01,1,1,0.04,0,0.06,0.06,0,0,Beer,Packaged,t
+245,Hoppin Cretin Ipa Growler,507657,,,0,0.01,1,1,0.06,0,0.05,0.05,0,0,Beer,Packaged,t
+245,Hunt And Gather,509752,,,6,0,1,12,0.04,0,0.04,0.04,0,0,Beer,Bc,f
+245,Hunt And Gather,510164,,,626990137351,0,1,12,0.06,0,0.05,0.05,0,0,Beer,Packaged,f
+245,Hunt And Gather 650ml,513796,,,0,0.5,1,1,0.06,0.3,1.75,1.75,0,0,Beer,Draught,f
+245,Kelp Stout,539890,,,0,0.01,1,1,0.04,0,0.06,0.06,0,0,Beer,Packaged,t
+245,Kelp Stout,550509,,,0,0.5,1,1,0.04,0.3,1.59,1.59,0,0,Beer,Draught,t
+245,Kelp Stout 650ml,551556,,,0,0.5,1,1,0.06,0.3,1.65,1.65,0,0,Beer,Draught,f
+245,Lager,560151,,,0,0.01,1,1,0.06,0,0.05,0.05,0,0,Beer,Packaged,t
+245,Lager,561373,,,626990137405,0,1,12,0.06,0,0.06,0.06,0,0,Beer,Packaged,f
+245,Lager 355ml Cans,563064,,,0,0.2,1,1,0.05,0.3,0.75,0.75,0,0,Beer,Draught,f
+245,Lager 650 Ml,565960,,,0,0.01,1,1,0.05,0,0.06,0.06,0,0,Beer,Packaged,t
+245,Pilsknot,574228,,,0,0.01,1,1,0.06,0,0.08,0.08,0,0,Beer,Packaged,t
+245,Pilsknot,574715,,,0,0.2,1,1,0.06,0.3,0.9,0.9,0,0,Beer,Draught,f
+245,Pilsknot Growler,601922,,,626990137368,0,1,12,0.06,0,0.06,0.06,0,0,Beer,Packaged,f
+245,Pilsknot Growler,609271,,,0,0.2,1,1,0.04,0.3,0.75,0.75,0,0,Beer,Bc,f
+245,Pumpkin Ale,643478,,,0,0,1,12,0.05,0,0.06,0.06,0,0,Beer,Packaged,f
+245,Pumpkin Ale,650903,,,0,0.5,1,1,0.05,0.3,1.61,1.61,0,0,Beer,Draught,t
+245,Pumpkin Ale Growler,651513,,,0,0.5,1,1,0.05,0.3,1.55,1.55,0,0,Beer,Draught,f
+245,Pumpkin Ale Growler,662692,,,0,6.5,1,12,0.05,0.1,0.09,0.09,0,0,Beer,Packaged,f
+245,Spruce Tree Ale,663591,,,0,0.2,1,1,0.04,0.3,0.9,0.9,0,0,Beer,Draught,f
+245,Spruce Tree Ale,664151,,,0,0.01,1,1,0.04,0,0.05,0.05,0,0,Beer,Packaged,t
+245,Spruce Tree Ale 650ml,721720,,,0,0.2,1,1,0.04,0.3,0.8,0.8,0,0,Beer,Draught,t
+245,Spruce Tree Ale Growler,738286,,,0,0.5,1,1,0.05,0.3,1.75,1.75,0,0,Beer,Draught,f
+245,Spruce Tree Ale Growler,767020,,,626990137337,0,1,12,0.05,0,0.04,0.04,0,0,Beer,Packaged,f
+245,Super Tuff 650ml,780320,,,0,0.5,1,1,0.04,0.3,1.55,1.55,0,0,Beer,Bc,f
+245,The West Kolsch,799064,,,0,0.2,1,1,0.05,0.3,0.81,0.81,0,0,Beer,Draught,t
+245,The West Kolsch,824110,,,0,0.01,1,1,0.05,0,0.08,0.08,0,0,Beer,Packaged,t
+245,The West Kolsch,825489,,,0,0.2,1,1,0.04,0.3,0.85,0.85,0,0,Beer,Draught,t
+245,The West Kolsch Growler,830687,,,0,0.2,1,1,0.06,0.3,0.9,0.9,0,0,Beer,Draught,f
+245,The West Kolsch L Growler,839902,,,0,0.5,1,1,0.04,0.3,1.75,1.75,0,0,Beer,Draught,f
+245,Tuff Lite Lime,840181,,,0,0.01,1,1,0.05,0,0.05,0.05,0,0,Beer,Packaged,t
+245,Tuff Lite Lime,843466,,,0,0.01,1,1,0.06,0,0.06,0.06,0,0,Beer,Packaged,t
+245,Tuff Lite Lime,846881,,,0,0.2,1,1,0.05,0.3,0.9,0.9,0,0,Beer,Draught,f
+245,Tuff Lite Lime Growler,848309,,,0,3.55,6,24,0.05,0.6,0.11,0.11,0,0,Beer,Canada,f
+245,Tuff Lite Lime Growler,859777,,,626990137399,0,1,1,0.04,0,0.04,0.04,0,0,Beer,Packaged,t
+245,Tuff Session Ale,861062,,,0,0.01,1,1,0.04,0,0.06,0.06,0,0,Beer,Packaged,t
+245,Tuff Session Ale,870915,,,626990137382,0,1,12,0.09,0,0.06,0.06,0,0,Beer,Packaged,f
+245,Tuff Session Ale,882159,,,0,0.2,1,1,0.05,0.3,0.75,0.75,0,0,Beer,Draught,f
+245,Tuff Session Ale 650ml,896548,,,626990137344,0,1,1,0.04,0,0.05,0.05,0,0,Beer,Packaged,t
+245,Tuff Session Ale Growler,899047,,,0,0.01,1,1,0.05,0,0.11,0.11,0,0,Beer,Packaged,t
